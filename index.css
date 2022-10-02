@@ -9,34 +9,52 @@
 
 /* Set the background color for my page: */
 body{
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(26, 128, 116);
  
 }
 
 
 /* Choose the appearance of the tags, h1, h3 and p: */
-h1, h3, p{
-    color:rgb(17, 17, 17);
+h1, h3{
+    color:rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
+
+p{
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-size: smaller;
+}
+
     
 .myWeek1{
-    margin: auto;
+    margin: 20mm;
     max-width: 600px;
-    background-color: bisque;
+    background-color: rgb(20, 95, 86);
+    border-radius: 25px;
 }
 
 
 /* Set the apperance of the class, chart */
-.chart{
-    background-color: orange;
-    width:330px;
-    border-width: 10px;
+/* .chart{
+    background-color: rgb(0, 0, 0);
+    width: 369px;
+    height: 267px;
+    border-width: 0px;
+    border-left: 80px;
     border-style: solid;
     border-radius: 5px;
-    border-color: red;
+    border-color: rgb(0, 0, 0);
 
+    
+} */
+#Chart1{
+    background-color: rgb(0, 0, 0);
+    margin: 0px 0px 0px 70px;
+    /*    top right bottom left */
+    border-width: 0px;
     
 }
     
