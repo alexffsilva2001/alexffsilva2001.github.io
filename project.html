@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    
+    <!-- Title for the page -->
+    <title>Title of Project</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="index.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+<body>
+    
+    <div class="myWeek1">
+        <div class="chart1" id="chloro1"></div>
+    </div>
+
+    <div class="myWeek1">
+        <div class="chart1" id="chloro2"></div>
+    </div>
+
+    <div class="myWeek1">
+        <div class="chart1" id="graff"></div>
+    </div>
+
+    <div class="myWeek1">
+        <div class="chart1" id="loess"></div>
+    </div>
+
+    <div class="myWeek1">
+        <div class="chart1" id="trellis_Cap"></div>
+    </div>
+
+    <div class="myWeek1">
+        <div class="chart1" id="trellis_Cos"></div>
+    </div>
+
+    <div class="myWeek1">
+        <img src="Clusters_DNI_Lat.png" alt="Global Clusters" width="400" height="400">
+    </div>
+
+    <div class="myWeek1">
+        <img src="Correlation Matrix.png" alt="Correlation Matrix" width="400" height="400">
+    </div>
+
+    <div class="myWeek1">
+        <img src="Reg_Use_cost.png" alt="Regression1" width="400" height="400">
+    </div>
+
+    <div class="myWeek1">
+        <img src="Reg_Rain_DNI.png" alt="Regression2" width="400" height="400">
+    </div>
+
+
+
+
+
+</body>
+
+<script>
+    //Define charts:
+    var DNI_chloro = "DNI_chloro.json";
+    var Rain_chloro = "Rain_chloro.json";
+    var graff = "scatter1.json";
+    var loess = "manual_Temp_ECons.json";
+    var trellis_Costs = "SolarCosts.json";
+    var trellis_Cap = "SolarCapacity.json";
+    var DNI_chloro = "DNI_chloro.json";
+    var DNI_chloro = "DNI_chloro.json";
+    var DNI_chloro = "DNI_chloro.json";
+
+    
+    // Embed charts:
+    vegaEmbed('#chloro1', DNI_chloro);
+    vegaEmbed('#chloro2', Rain_chloro);
+    vegaEmbed('#graff', graff);
+    vegaEmbed('#loess', loess);
+    vegaEmbed('#trellis_Cos', trellis_Costs);
+    vegaEmbed('#trellis_Cap', trellis_Cap);
+    vegaEmbed('#chloro2', Rain_chloro);
+    vegaEmbed('#chloro2', Rain_chloro);
+    vegaEmbed('#chloro2', Rain_chloro);
+
+</script>
+
+</html>

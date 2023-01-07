@@ -1,0 +1,614 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "values": [
+   {
+     "Country": "Albania",
+     "Electricity consumption in 2014": 2309.366503,
+     "Average Temperature": "13.620140625"
+   },
+   {
+     "Country": "Algeria",
+     "Electricity consumption in 2014": 1368.621519,
+     "Average Temperature": "24.278"
+   },
+   {
+     "Country": "Angola",
+     "Electricity consumption in 2014": 310.0816685,
+     "Average Temperature": "22.4459296875"
+   },
+   {
+     "Country": "Argentina",
+     "Electricity consumption in 2014": 3074.702071,
+     "Average Temperature": "15.282984375"
+   },
+   {
+     "Country": "Armenia",
+     "Electricity consumption in 2014": 1976.864492,
+     "Average Temperature": "9.99140625"
+   },
+   {
+     "Country": "Australia",
+     "Electricity consumption in 2014": 10071.39898,
+     "Average Temperature": "22.3053125"
+   },
+   {
+     "Country": "Austria",
+     "Electricity consumption in 2014": 8355.841952,
+     "Average Temperature": "7.42340625"
+   },
+   {
+     "Country": "Azerbaijan",
+     "Electricity consumption in 2014": 2202.393918,
+     "Average Temperature": "12.7315390625"
+   },
+   {
+     "Country": "Bahrain",
+     "Electricity consumption in 2014": 19969.73612,
+     "Average Temperature": "27.3379296875"
+   },
+   {
+     "Country": "Bangladesh",
+     "Electricity consumption in 2014": 317.24537,
+     "Average Temperature": "25.55565625"
+   },
+   {
+     "Country": "Belarus",
+     "Electricity consumption in 2014": 3690.103683,
+     "Average Temperature": "7.295453125"
+   },
+   {
+     "Country": "Belgium",
+     "Electricity consumption in 2014": 7709.123078,
+     "Average Temperature": "10.607859375"
+   },
+   {
+     "Country": "Benin",
+     "Electricity consumption in 2014": 97.1281349,
+     "Average Temperature": "28.0278828125"
+   },
+   {
+     "Country": "Bolivia",
+     "Electricity consumption in 2014": 728.2229062,
+     "Average Temperature": "21.3507890625"
+   },
+   {
+     "Country": "Botswana",
+     "Electricity consumption in 2014": 1677.597002,
+     "Average Temperature": "22.443875"
+   },
+   {
+     "Country": "Brazil",
+     "Electricity consumption in 2014": 2610.999282,
+     "Average Temperature": "25.5915546875"
+   },
+   {
+     "Country": "Bulgaria",
+     "Electricity consumption in 2014": 4708.927458,
+     "Average Temperature": "11.6318046875"
+   },
+   {
+     "Country": "Cambodia",
+     "Electricity consumption in 2014": 272.5034428,
+     "Average Temperature": "27.393671875"
+   },
+   {
+     "Country": "Cameroon",
+     "Electricity consumption in 2014": 279.9155231,
+     "Average Temperature": "25.1786953125"
+   },
+   {
+     "Country": "Chile",
+     "Electricity consumption in 2014": 3895.436156,
+     "Average Temperature": "9.993703125"
+   },
+   {
+     "Country": "China",
+     "Electricity consumption in 2014": 3905.317598,
+     "Average Temperature": "7.713546875"
+   },
+   {
+     "Country": "Colombia",
+     "Electricity consumption in 2014": 1320.34513,
+     "Average Temperature": "25.499234375"
+   },
+   {
+     "Country": "Costa Rica",
+     "Electricity consumption in 2014": 1922.883198,
+     "Average Temperature": "26.36766666666667"
+   },
+   {
+     "Country": "Croatia",
+     "Electricity consumption in 2014": 3714.382988,
+     "Average Temperature": "12.541109375"
+   },
+   {
+     "Country": "Cuba",
+     "Electricity consumption in 2014": 1447.666993,
+     "Average Temperature": "26.122147286821704"
+   },
+   {
+     "Country": "Cyprus",
+     "Electricity consumption in 2014": 3548.868092,
+     "Average Temperature": "19.9610625"
+   },
+   {
+     "Country": "Dominican Republic",
+     "Electricity consumption in 2014": 1597.142222,
+     "Average Temperature": "26.428317829457367"
+   },
+   {
+     "Country": "Ecuador",
+     "Electricity consumption in 2014": 1375.862154,
+     "Average Temperature": "22.4976875"
+   },
+   {
+     "Country": "El Salvador",
+     "Electricity consumption in 2014": 949.9919962,
+     "Average Temperature": "25.61495348837209"
+   },
+   {
+     "Country": "Eritrea",
+     "Electricity consumption in 2014": 96.28621076,
+     "Average Temperature": "27.7672421875"
+   },
+   {
+     "Country": "Estonia",
+     "Electricity consumption in 2014": 6732.367473,
+     "Average Temperature": "6.2186484375"
+   },
+   {
+     "Country": "Ethiopia",
+     "Electricity consumption in 2014": 68.05233164,
+     "Average Temperature": "23.935296875"
+   },
+   {
+     "Country": "France",
+     "Electricity consumption in 2014": 6939.943525,
+     "Average Temperature": "13.8392265625"
+   },
+   {
+     "Country": "Gabon",
+     "Electricity consumption in 2014": 1118.536954,
+     "Average Temperature": "24.989734375"
+   },
+   {
+     "Country": "Georgia",
+     "Electricity consumption in 2014": 2693.97276,
+     "Average Temperature": "9.5404609375"
+   },
+   {
+     "Country": "Germany",
+     "Electricity consumption in 2014": 7035.482975,
+     "Average Temperature": "9.336890625"
+   },
+   {
+     "Country": "Ghana",
+     "Electricity consumption in 2014": 339.1927426,
+     "Average Temperature": "27.5604140625"
+   },
+   {
+     "Country": "Greece",
+     "Electricity consumption in 2014": 5062.606422,
+     "Average Temperature": "15.79859375"
+   },
+   {
+     "Country": "Guatemala",
+     "Electricity consumption in 2014": 601.1897311,
+     "Average Temperature": "23.8477984496124"
+   },
+   {
+     "Country": "Haiti",
+     "Electricity consumption in 2014": 39.56691514,
+     "Average Temperature": "27.120007751937987"
+   },
+   {
+     "Country": "Honduras",
+     "Electricity consumption in 2014": 608.1390944,
+     "Average Temperature": "25.443589147286826"
+   },
+   {
+     "Country": "Hungary",
+     "Electricity consumption in 2014": 3965.958233,
+     "Average Temperature": "10.951875"
+   },
+   {
+     "Country": "India",
+     "Electricity consumption in 2014": 797.349232,
+     "Average Temperature": "24.727875"
+   },
+   {
+     "Country": "Indonesia",
+     "Electricity consumption in 2014": 808.4189721,
+     "Average Temperature": "26.365796875"
+   },
+   {
+     "Country": "Iraq",
+     "Electricity consumption in 2014": 1243.846759,
+     "Average Temperature": "23.184640625"
+   },
+   {
+     "Country": "Ireland",
+     "Electricity consumption in 2014": 5672.064134,
+     "Average Temperature": "10.2786875"
+   },
+   {
+     "Country": "Israel",
+     "Electricity consumption in 2014": 6600.89828,
+     "Average Temperature": "20.8323046875"
+   },
+   {
+     "Country": "Italy",
+     "Electricity consumption in 2014": 5002.40668,
+     "Average Temperature": "13.8469296875"
+   },
+   {
+     "Country": "Jamaica",
+     "Electricity consumption in 2014": 1084.917705,
+     "Average Temperature": "26.858170542635666"
+   },
+   {
+     "Country": "Japan",
+     "Electricity consumption in 2014": 7819.714636,
+     "Average Temperature": "12.8830078125"
+   },
+   {
+     "Country": "Jordan",
+     "Electricity consumption in 2014": 1921.107652,
+     "Average Temperature": "20.6047421875"
+   },
+   {
+     "Country": "Kazakhstan",
+     "Electricity consumption in 2014": 5600.208465,
+     "Average Temperature": "6.7874140625"
+   },
+   {
+     "Country": "Kenya",
+     "Electricity consumption in 2014": 167.4380987,
+     "Average Temperature": "24.92078125"
+   },
+   {
+     "Country": "Kuwait",
+     "Electricity consumption in 2014": 15297.81071,
+     "Average Temperature": "26.4927421875"
+   },
+   {
+     "Country": "Latvia",
+     "Electricity consumption in 2014": 3507.404521,
+     "Average Temperature": "6.68971875"
+   },
+   {
+     "Country": "Lebanon",
+     "Electricity consumption in 2014": 2583.378464,
+     "Average Temperature": "18.80671875"
+   },
+   {
+     "Country": "Libya",
+     "Electricity consumption in 2014": 1889.545086,
+     "Average Temperature": "23.4734453125"
+   },
+   {
+     "Country": "Lithuania",
+     "Electricity consumption in 2014": 3821.14517,
+     "Average Temperature": "7.220734375"
+   },
+   {
+     "Country": "Luxembourg",
+     "Electricity consumption in 2014": 13914.67845,
+     "Average Temperature": "10.2953046875"
+   },
+   {
+     "Country": "Malaysia",
+     "Electricity consumption in 2014": 4539.499326,
+     "Average Temperature": "26.5898203125"
+   },
+   {
+     "Country": "Malta",
+     "Electricity consumption in 2014": 4924.544019,
+     "Average Temperature": "19.529703125"
+   },
+   {
+     "Country": "Mauritius",
+     "Electricity consumption in 2014": 2182.509156,
+     "Average Temperature": "24.382421875"
+   },
+   {
+     "Country": "Mexico",
+     "Electricity consumption in 2014": 2186.375822,
+     "Average Temperature": "21.354937984496125"
+   },
+   {
+     "Country": "Moldova",
+     "Electricity consumption in 2014": 1725.094172,
+     "Average Temperature": "10.3366328125"
+   },
+   {
+     "Country": "Montenegro",
+     "Electricity consumption in 2014": 4612.34139,
+     "Average Temperature": "11.255875"
+   },
+   {
+     "Country": "Morocco",
+     "Electricity consumption in 2014": 902.9565381,
+     "Average Temperature": "18.7857421875"
+   },
+   {
+     "Country": "Mozambique",
+     "Electricity consumption in 2014": 483.4726029,
+     "Average Temperature": "24.2386328125"
+   },
+   {
+     "Country": "Namibia",
+     "Electricity consumption in 2014": 1674.988107,
+     "Average Temperature": "21.1343671875"
+   },
+   {
+     "Country": "Nepal",
+     "Electricity consumption in 2014": 143.5068381,
+     "Average Temperature": "15.6830703125"
+   },
+   {
+     "Country": "Netherlands",
+     "Electricity consumption in 2014": 6712.774758,
+     "Average Temperature": "10.6577109375"
+   },
+   {
+     "Country": "New Zealand",
+     "Electricity consumption in 2014": 9012.731097,
+     "Average Temperature": "10.9634609375"
+   },
+   {
+     "Country": "Nicaragua",
+     "Electricity consumption in 2014": 562.2776901,
+     "Average Temperature": "26.73462015503876"
+   },
+   {
+     "Country": "Niger",
+     "Electricity consumption in 2014": 50.84654595,
+     "Average Temperature": "28.5105703125"
+   },
+   {
+     "Country": "Nigeria",
+     "Electricity consumption in 2014": 142.1292221,
+     "Average Temperature": "27.669546875"
+   },
+   {
+     "Country": "Oman",
+     "Electricity consumption in 2014": 6474.500202,
+     "Average Temperature": "28.1800625"
+   },
+   {
+     "Country": "Pakistan",
+     "Electricity consumption in 2014": 419.6845943,
+     "Average Temperature": "21.7084453125"
+   },
+   {
+     "Country": "Panama",
+     "Electricity consumption in 2014": 2070.822489,
+     "Average Temperature": "27.062515625"
+   },
+   {
+     "Country": "Paraguay",
+     "Electricity consumption in 2014": 1682.066869,
+     "Average Temperature": "23.9327890625"
+   },
+   {
+     "Country": "Peru",
+     "Electricity consumption in 2014": 1334.192046,
+     "Average Temperature": "20.391328125"
+   },
+   {
+     "Country": "Philippines",
+     "Electricity consumption in 2014": 690.7659626,
+     "Average Temperature": "27.0977578125"
+   },
+   {
+     "Country": "Poland",
+     "Electricity consumption in 2014": 3971.799761,
+     "Average Temperature": "8.701585937499999"
+   },
+   {
+     "Country": "Portugal",
+     "Electricity consumption in 2014": 4662.6008,
+     "Average Temperature": "15.6608828125"
+   },
+   {
+     "Country": "Qatar",
+     "Electricity consumption in 2014": 16415.25154,
+     "Average Temperature": "28.24621875"
+   },
+   {
+     "Country": "Romania",
+     "Electricity consumption in 2014": 2584.411787,
+     "Average Temperature": "10.0102421875"
+   },
+   {
+     "Country": "Saudi Arabia",
+     "Electricity consumption in 2014": 9047.685513,
+     "Average Temperature": "26.8149296875"
+   },
+   {
+     "Country": "Senegal",
+     "Electricity consumption in 2014": 232.7078258,
+     "Average Temperature": "28.8258671875"
+   },
+   {
+     "Country": "Serbia",
+     "Electricity consumption in 2014": 4271.744667,
+     "Average Temperature": "11.115265625"
+   },
+   {
+     "Country": "Singapore",
+     "Electricity consumption in 2014": 8844.687593,
+     "Average Temperature": "27.3491875"
+   },
+   {
+     "Country": "Slovenia",
+     "Electricity consumption in 2014": 6727.999302,
+     "Average Temperature": "10.896328125"
+   },
+   {
+     "Country": "South Africa",
+     "Electricity consumption in 2014": 4183.82749,
+     "Average Temperature": "17.928796875"
+   },
+   {
+     "Country": "Spain",
+     "Electricity consumption in 2014": 5355.987006,
+     "Average Temperature": "14.6526328125"
+   },
+   {
+     "Country": "Sri Lanka",
+     "Electricity consumption in 2014": 531.0905766,
+     "Average Temperature": "27.7245546875"
+   },
+   {
+     "Country": "Sudan",
+     "Electricity consumption in 2014": 263.5174293,
+     "Average Temperature": "28.0048125"
+   },
+   {
+     "Country": "Suriname",
+     "Electricity consumption in 2014": 3493.176895,
+     "Average Temperature": "27.14725"
+   },
+   {
+     "Country": "Sweden",
+     "Electricity consumption in 2014": 13480.14822,
+     "Average Temperature": "3.7018125"
+   },
+   {
+     "Country": "Switzerland",
+     "Electricity consumption in 2014": 7520.166025,
+     "Average Temperature": "8.1633125"
+   },
+   {
+     "Country": "Tajikistan",
+     "Electricity consumption in 2014": 1486.245831,
+     "Average Temperature": "5.323609375"
+   },
+   {
+     "Country": "Tanzania",
+     "Electricity consumption in 2014": 101.9393027,
+     "Average Temperature": "23.10615625"
+   },
+   {
+     "Country": "Thailand",
+     "Electricity consumption in 2014": 2483.557147,
+     "Average Temperature": "26.7882109375"
+   },
+   {
+     "Country": "Togo",
+     "Electricity consumption in 2014": 151.4739278,
+     "Average Temperature": "27.7036796875"
+   },
+   {
+     "Country": "Tunisia",
+     "Electricity consumption in 2014": 1408.091103,
+     "Average Temperature": "21.2536328125"
+   },
+   {
+     "Country": "Turkmenistan",
+     "Electricity consumption in 2014": 2585.662543,
+     "Average Temperature": "16.406796875"
+   },
+   {
+     "Country": "Ukraine",
+     "Electricity consumption in 2014": 3418.569317,
+     "Average Temperature": "9.21525"
+   },
+   {
+     "Country": "United Arab Emirates",
+     "Electricity consumption in 2014": 11562.98852,
+     "Average Temperature": "29.1713515625"
+   },
+   {
+     "Country": "United Kingdom",
+     "Electricity consumption in 2014": 5130.390253,
+     "Average Temperature": "9.470171875"
+   },
+   {
+     "Country": "United States",
+     "Electricity consumption in 2014": 12993.96558,
+     "Average Temperature": "9.767922480620156"
+   },
+   {
+     "Country": "Uruguay",
+     "Electricity consumption in 2014": 3093.173789,
+     "Average Temperature": "17.9242109375"
+   },
+   {
+     "Country": "Uzbekistan",
+     "Electricity consumption in 2014": 1645.441629,
+     "Average Temperature": "13.8535234375"
+   },
+   {
+     "Country": "Vietnam",
+     "Electricity consumption in 2014": 1431.164341,
+     "Average Temperature": "24.373046875"
+   },
+   {
+     "Country": "Zambia",
+     "Electricity consumption in 2014": 701.940863,
+     "Average Temperature": "21.8845"
+   },
+   {
+     "Country": "Zimbabwe",
+     "Electricity consumption in 2014": 597.2970217,
+     "Average Temperature": "21.6370390625"
+   }
+  ]
+    },
+    "width":300,
+    "layer": [
+      {
+        "mark": {
+          "type": "point",
+          "filled": true
+        },
+        "encoding": {
+          "x": {
+            "field": "Average Temperature",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "Electricity consumption in 2014",
+            "type": "quantitative"
+          },
+          "tooltip": [
+            {"field": "Country", "type": "nominal", "title": "Country"},
+            {"field": "Electricity consumption in 2014", "type": "quantitative", "title": "Electricity consumption","format": ".2f"},
+            {
+              "field": "Average Temperature",
+              "type": "quantitative",
+              "title": "Temperature in °C",
+              "format": ".2f"
+            }
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "line",
+          "color": "firebrick"
+        },
+        "transform": [
+          {
+            "loess": "Electricity consumption in 2014",
+            "on": "Average Temperature"
+          }
+        ],
+        "encoding": {
+          "x": {
+            "field": "Average Temperature",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "Electricity consumption in 2014",
+            "type": "quantitative"
+          }
+        }
+      }
+    ]
+  }
+  

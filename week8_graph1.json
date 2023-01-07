@@ -1,0 +1,55 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/alexffsilva2001/alexffsilva2001.github.io/main/week8chart1.csv"
+  },
+  //"background": "#5A0000",
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          //"timeUnit": "month",
+          "field": "Week",
+          "type": "temporal"
+        },
+        "y": {
+          //"aggregate": "ci0",
+          "field": "Bitcoin searches worldwide",
+          //"title": {"value":"fd", "color":{"value": "#FFFFFF"}},
+          "title": "Bitcoin News Searches (xcolor)",
+          "scale": {"domain": [0, 120]},
+          "type": "quantitative",
+          "axis": {
+            "orient": "left"
+          }
+        },//#e3242b"
+        "color":{"value": "#ef7d6a"},
+        "size":{"value": 2}
+      }
+    },
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {
+          //"timeUnit": "month",
+          "field": "Week",
+          "type": "temporal"
+        },
+        "y": {
+          //"aggregate": "mean",
+          "field": "BTC-USD",
+          "title": "BTC-USD price (ycolor)",
+          "scale": {"domain": [0, 70000]},
+          "type": "quantitative",
+          "axis": {
+            "orient": "right"
+          }
+          
+        },
+        "color": {"value": "#702963"},
+      }
+    }
+  ],
+  "resolve": {"scale": {"y": "independent"}}
+}

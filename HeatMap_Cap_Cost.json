@@ -1,0 +1,859 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Qualifying Position vs Race Outcome",
+      "subtitleFontStyle": "italic",
+      "fontSize": 20,
+      "subtitleFontSize": 12,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+        "values": [
+   {
+     "Country": "US",
+     "Year": 2011,
+     "Solar Capacity": 5.2,
+     "Solar Energy Costs": 4534
+   },
+   {
+     "Country": "France",
+     "Year": 2011,
+     "Solar Capacity": 3,
+     "Solar Energy Costs": 5592
+   },
+   {
+     "Country": "Germany",
+     "Year": 2011,
+     "Solar Capacity": 25.9,
+     "Solar Energy Costs": 2959
+   },
+   {
+     "Country": "Italy",
+     "Year": 2011,
+     "Solar Capacity": 13.1,
+     "Solar Energy Costs": 4876
+   },
+   {
+     "Country": "Netherlands",
+     "Year": 2011,
+     "Solar Capacity": 0.1,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "Spain",
+     "Year": 2011,
+     "Solar Capacity": 4.3,
+     "Solar Energy Costs": 3263
+   },
+   {
+     "Country": "Turkey",
+     "Year": 2011,
+     "Solar Capacity": 0.025,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "Ukraine",
+     "Year": 2011,
+     "Solar Capacity": 0.2,
+     "Solar Energy Costs": 4922
+   },
+   {
+     "Country": "United Kingdom",
+     "Year": 2011,
+     "Solar Capacity": 1,
+     "Solar Energy Costs": 4700
+   },
+   {
+     "Country": "Australia",
+     "Year": 2011,
+     "Solar Capacity": 2.5,
+     "Solar Energy Costs": 6777
+   },
+   {
+     "Country": "China",
+     "Year": 2011,
+     "Solar Capacity": 3.1,
+     "Solar Energy Costs": 3417
+   },
+   {
+     "Country": "India",
+     "Year": 2011,
+     "Solar Capacity": 0.6,
+     "Solar Energy Costs": 3112
+   },
+   {
+     "Country": "Japan",
+     "Year": 2011,
+     "Solar Capacity": 4.9,
+     "Solar Energy Costs": 5431
+   },
+   {
+     "Country": "Vietnam",
+     "Year": 2011,
+     "Solar Capacity": 0.025,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "South Korea",
+     "Year": 2011,
+     "Solar Capacity": 0.7,
+     "Solar Energy Costs": 5912
+   },
+   {
+     "Country": "US",
+     "Year": 2012,
+     "Solar Capacity": 8.1,
+     "Solar Energy Costs": 4425
+   },
+   {
+     "Country": "France",
+     "Year": 2012,
+     "Solar Capacity": 4.4,
+     "Solar Energy Costs": 5153
+   },
+   {
+     "Country": "Germany",
+     "Year": 2012,
+     "Solar Capacity": 34.1,
+     "Solar Energy Costs": 2341
+   },
+   {
+     "Country": "Italy",
+     "Year": 2012,
+     "Solar Capacity": 16.8,
+     "Solar Energy Costs": 2571
+   },
+   {
+     "Country": "Netherlands",
+     "Year": 2012,
+     "Solar Capacity": 0.3,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "Spain",
+     "Year": 2012,
+     "Solar Capacity": 4.6,
+     "Solar Energy Costs": 2688
+   },
+   {
+     "Country": "Turkey",
+     "Year": 2012,
+     "Solar Capacity": 0.025,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "Ukraine",
+     "Year": 2012,
+     "Solar Capacity": 0.4,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "United Kingdom",
+     "Year": 2012,
+     "Solar Capacity": 1.8,
+     "Solar Energy Costs": 2781
+   },
+   {
+     "Country": "Australia",
+     "Year": 2012,
+     "Solar Capacity": 3.8,
+     "Solar Energy Costs": 4908
+   },
+   {
+     "Country": "China",
+     "Year": 2012,
+     "Solar Capacity": 6.7,
+     "Solar Energy Costs": 2742
+   },
+   {
+     "Country": "India",
+     "Year": 2012,
+     "Solar Capacity": 1,
+     "Solar Energy Costs": 2730
+   },
+   {
+     "Country": "Japan",
+     "Year": 2012,
+     "Solar Capacity": 6.6,
+     "Solar Energy Costs": 3918
+   },
+   {
+     "Country": "Vietnam",
+     "Year": 2012,
+     "Solar Capacity": 0.025,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "South Korea",
+     "Year": 2012,
+     "Solar Capacity": 1,
+     "Solar Energy Costs": 2290
+   },
+   {
+     "Country": "US",
+     "Year": 2013,
+     "Solar Capacity": 11.8,
+     "Solar Energy Costs": 3914
+   },
+   {
+     "Country": "France",
+     "Year": 2013,
+     "Solar Capacity": 5.3,
+     "Solar Energy Costs": 3245
+   },
+   {
+     "Country": "Germany",
+     "Year": 2013,
+     "Solar Capacity": 36.7,
+     "Solar Energy Costs": 2007
+   },
+   {
+     "Country": "Italy",
+     "Year": 2013,
+     "Solar Capacity": 18.2,
+     "Solar Energy Costs": 2035
+   },
+   {
+     "Country": "Netherlands",
+     "Year": 2013,
+     "Solar Capacity": 0.7,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "Spain",
+     "Year": 2013,
+     "Solar Capacity": 4.7,
+     "Solar Energy Costs": 2310
+   },
+   {
+     "Country": "Turkey",
+     "Year": 2013,
+     "Solar Capacity": 0.025,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "Ukraine",
+     "Year": 2013,
+     "Solar Capacity": 0.7,
+     "Solar Energy Costs": 4012
+   },
+   {
+     "Country": "United Kingdom",
+     "Year": 2013,
+     "Solar Capacity": 2.9,
+     "Solar Energy Costs": 2306
+   },
+   {
+     "Country": "Australia",
+     "Year": 2013,
+     "Solar Capacity": 4.6,
+     "Solar Energy Costs": 2881
+   },
+   {
+     "Country": "China",
+     "Year": 2013,
+     "Solar Capacity": 17.7,
+     "Solar Energy Costs": 2117
+   },
+   {
+     "Country": "India",
+     "Year": 2013,
+     "Solar Capacity": 1.4,
+     "Solar Energy Costs": 2810
+   },
+   {
+     "Country": "Japan",
+     "Year": 2013,
+     "Solar Capacity": 13.6,
+     "Solar Energy Costs": 3348
+   },
+   {
+     "Country": "Vietnam",
+     "Year": 2013,
+     "Solar Capacity": 0.025,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "South Korea",
+     "Year": 2013,
+     "Solar Capacity": 1.6,
+     "Solar Energy Costs": 2663
+   },
+   {
+     "Country": "US",
+     "Year": 2014,
+     "Solar Capacity": 16,
+     "Solar Energy Costs": 2885
+   },
+   {
+     "Country": "France",
+     "Year": 2014,
+     "Solar Capacity": 6,
+     "Solar Energy Costs": 2369
+   },
+   {
+     "Country": "Germany",
+     "Year": 2014,
+     "Solar Capacity": 37.9,
+     "Solar Energy Costs": 1600
+   },
+   {
+     "Country": "Italy",
+     "Year": 2014,
+     "Solar Capacity": 18.6,
+     "Solar Energy Costs": 1972
+   },
+   {
+     "Country": "Netherlands",
+     "Year": 2014,
+     "Solar Capacity": 1,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "Spain",
+     "Year": 2014,
+     "Solar Capacity": 4.7,
+     "Solar Energy Costs": 2316
+   },
+   {
+     "Country": "Turkey",
+     "Year": 2014,
+     "Solar Capacity": 0.025,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "Ukraine",
+     "Year": 2014,
+     "Solar Capacity": 0.8,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "United Kingdom",
+     "Year": 2014,
+     "Solar Capacity": 5.5,
+     "Solar Energy Costs": 1943
+   },
+   {
+     "Country": "Australia",
+     "Year": 2014,
+     "Solar Capacity": 5.3,
+     "Solar Energy Costs": 3007
+   },
+   {
+     "Country": "China",
+     "Year": 2014,
+     "Solar Capacity": 28.4,
+     "Solar Energy Costs": 1763
+   },
+   {
+     "Country": "India",
+     "Year": 2014,
+     "Solar Capacity": 3.4,
+     "Solar Energy Costs": 1907
+   },
+   {
+     "Country": "Japan",
+     "Year": 2014,
+     "Solar Capacity": 23.3,
+     "Solar Energy Costs": 3069
+   },
+   {
+     "Country": "Vietnam",
+     "Year": 2014,
+     "Solar Capacity": 0.025,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "South Korea",
+     "Year": 2014,
+     "Solar Capacity": 2.5,
+     "Solar Energy Costs": 2211
+   },
+   {
+     "Country": "US",
+     "Year": 2015,
+     "Solar Capacity": 21.7,
+     "Solar Energy Costs": 2571
+   },
+   {
+     "Country": "France",
+     "Year": 2015,
+     "Solar Capacity": 7.1,
+     "Solar Energy Costs": 1559
+   },
+   {
+     "Country": "Germany",
+     "Year": 2015,
+     "Solar Capacity": 39.2,
+     "Solar Energy Costs": 1280
+   },
+   {
+     "Country": "Italy",
+     "Year": 2015,
+     "Solar Capacity": 18.9,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "Netherlands",
+     "Year": 2015,
+     "Solar Capacity": 1.5,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "Spain",
+     "Year": 2015,
+     "Solar Capacity": 4.7,
+     "Solar Energy Costs": 1195
+   },
+   {
+     "Country": "Turkey",
+     "Year": 2015,
+     "Solar Capacity": 0.2,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "Ukraine",
+     "Year": 2015,
+     "Solar Capacity": 0.8,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "United Kingdom",
+     "Year": 2015,
+     "Solar Capacity": 9.6,
+     "Solar Energy Costs": 1529
+   },
+   {
+     "Country": "Australia",
+     "Year": 2015,
+     "Solar Capacity": 5.9,
+     "Solar Energy Costs": 2236
+   },
+   {
+     "Country": "China",
+     "Year": 2015,
+     "Solar Capacity": 43.5,
+     "Solar Energy Costs": 1362
+   },
+   {
+     "Country": "India",
+     "Year": 2015,
+     "Solar Capacity": 5.4,
+     "Solar Energy Costs": 1300
+   },
+   {
+     "Country": "Japan",
+     "Year": 2015,
+     "Solar Capacity": 34.2,
+     "Solar Energy Costs": 2221
+   },
+   {
+     "Country": "Vietnam",
+     "Year": 2015,
+     "Solar Capacity": 0.025,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "South Korea",
+     "Year": 2015,
+     "Solar Capacity": 3.6,
+     "Solar Energy Costs": 2091
+   },
+   {
+     "Country": "US",
+     "Year": 2016,
+     "Solar Capacity": 33,
+     "Solar Energy Costs": 2221
+   },
+   {
+     "Country": "France",
+     "Year": 2016,
+     "Solar Capacity": 7.7,
+     "Solar Energy Costs": 1320
+   },
+   {
+     "Country": "Germany",
+     "Year": 2016,
+     "Solar Capacity": 40.7,
+     "Solar Energy Costs": 1162
+   },
+   {
+     "Country": "Italy",
+     "Year": 2016,
+     "Solar Capacity": 19.3,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "Netherlands",
+     "Year": 2016,
+     "Solar Capacity": 2.1,
+     "Solar Energy Costs": 1147
+   },
+   {
+     "Country": "Spain",
+     "Year": 2016,
+     "Solar Capacity": 4.7,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "Turkey",
+     "Year": 2016,
+     "Solar Capacity": 0.8,
+     "Solar Energy Costs": 1566
+   },
+   {
+     "Country": "Ukraine",
+     "Year": 2016,
+     "Solar Capacity": 1,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "United Kingdom",
+     "Year": 2016,
+     "Solar Capacity": 11.9,
+     "Solar Energy Costs": 1465
+   },
+   {
+     "Country": "Australia",
+     "Year": 2016,
+     "Solar Capacity": 6.7,
+     "Solar Energy Costs": 1925
+   },
+   {
+     "Country": "China",
+     "Year": 2016,
+     "Solar Capacity": 77.8,
+     "Solar Energy Costs": 1233
+   },
+   {
+     "Country": "India",
+     "Year": 2016,
+     "Solar Capacity": 9.7,
+     "Solar Energy Costs": 1119
+   },
+   {
+     "Country": "Japan",
+     "Year": 2016,
+     "Solar Capacity": 42,
+     "Solar Energy Costs": 2437
+   },
+   {
+     "Country": "Vietnam",
+     "Year": 2016,
+     "Solar Capacity": 0.025,
+     "Solar Energy Costs": 2249
+   },
+   {
+     "Country": "South Korea",
+     "Year": 2016,
+     "Solar Capacity": 4.5,
+     "Solar Energy Costs": 2064
+   },
+   {
+     "Country": "US",
+     "Year": 2017,
+     "Solar Capacity": 41.4,
+     "Solar Energy Costs": 1873
+   },
+   {
+     "Country": "France",
+     "Year": 2017,
+     "Solar Capacity": 8.6,
+     "Solar Energy Costs": 1240
+   },
+   {
+     "Country": "Germany",
+     "Year": 2017,
+     "Solar Capacity": 42.3,
+     "Solar Energy Costs": 1114
+   },
+   {
+     "Country": "Italy",
+     "Year": 2017,
+     "Solar Capacity": 19.7,
+     "Solar Energy Costs": 972
+   },
+   {
+     "Country": "Netherlands",
+     "Year": 2017,
+     "Solar Capacity": 2.9,
+     "Solar Energy Costs": 1548
+   },
+   {
+     "Country": "Spain",
+     "Year": 2017,
+     "Solar Capacity": 4.7,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "Turkey",
+     "Year": 2017,
+     "Solar Capacity": 3.4,
+     "Solar Energy Costs": 1256
+   },
+   {
+     "Country": "Ukraine",
+     "Year": 2017,
+     "Solar Capacity": 1.2,
+     "Solar Energy Costs": 1225
+   },
+   {
+     "Country": "United Kingdom",
+     "Year": 2017,
+     "Solar Capacity": 12.8,
+     "Solar Energy Costs": 1267
+   },
+   {
+     "Country": "Australia",
+     "Year": 2017,
+     "Solar Capacity": 7.4,
+     "Solar Energy Costs": 1971
+   },
+   {
+     "Country": "China",
+     "Year": 2017,
+     "Solar Capacity": 130.8,
+     "Solar Energy Costs": 1157
+   },
+   {
+     "Country": "India",
+     "Year": 2017,
+     "Solar Capacity": 17.9,
+     "Solar Energy Costs": 1116
+   },
+   {
+     "Country": "Japan",
+     "Year": 2017,
+     "Solar Capacity": 49.5,
+     "Solar Energy Costs": 2210
+   },
+   {
+     "Country": "Vietnam",
+     "Year": 2017,
+     "Solar Capacity": 0.025,
+     "Solar Energy Costs": 2869
+   },
+   {
+     "Country": "South Korea",
+     "Year": 2017,
+     "Solar Capacity": 5.8,
+     "Solar Energy Costs": 1581
+   },
+   {
+     "Country": "US",
+     "Year": 2018,
+     "Solar Capacity": 49.8,
+     "Solar Energy Costs": 1549
+   },
+   {
+     "Country": "France",
+     "Year": 2018,
+     "Solar Capacity": 9.7,
+     "Solar Energy Costs": 1074
+   },
+   {
+     "Country": "Germany",
+     "Year": 2018,
+     "Solar Capacity": 45.2,
+     "Solar Energy Costs": 1113
+   },
+   {
+     "Country": "Italy",
+     "Year": 2018,
+     "Solar Capacity": 20.1,
+     "Solar Energy Costs": 870
+   },
+   {
+     "Country": "Netherlands",
+     "Year": 2018,
+     "Solar Capacity": 4.6,
+     "Solar Energy Costs": 1168
+   },
+   {
+     "Country": "Spain",
+     "Year": 2018,
+     "Solar Capacity": 4.8,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "Turkey",
+     "Year": 2018,
+     "Solar Capacity": 5.1,
+     "Solar Energy Costs": 1206
+   },
+   {
+     "Country": "Ukraine",
+     "Year": 2018,
+     "Solar Capacity": 2,
+     "Solar Energy Costs": 1344
+   },
+   {
+     "Country": "United Kingdom",
+     "Year": 2018,
+     "Solar Capacity": 13.1,
+     "Solar Energy Costs": 1362
+   },
+   {
+     "Country": "Australia",
+     "Year": 2018,
+     "Solar Capacity": 8.6,
+     "Solar Energy Costs": 1520
+   },
+   {
+     "Country": "China",
+     "Year": 2018,
+     "Solar Capacity": 175,
+     "Solar Energy Costs": 879
+   },
+   {
+     "Country": "India",
+     "Year": 2018,
+     "Solar Capacity": 27.1,
+     "Solar Energy Costs": 793
+   },
+   {
+     "Country": "Japan",
+     "Year": 2018,
+     "Solar Capacity": 56.2,
+     "Solar Energy Costs": 2101
+   },
+   {
+     "Country": "Vietnam",
+     "Year": 2018,
+     "Solar Capacity": 0.1,
+     "Solar Energy Costs": null
+   },
+   {
+     "Country": "South Korea",
+     "Year": 2018,
+     "Solar Capacity": 8.1,
+     "Solar Energy Costs": 1326
+   },
+   {
+     "Country": "US",
+     "Year": 2019,
+     "Solar Capacity": 59.1,
+     "Solar Energy Costs": 1221
+   },
+   {
+     "Country": "France",
+     "Year": 2019,
+     "Solar Capacity": 10.8,
+     "Solar Energy Costs": 979
+   },
+   {
+     "Country": "Germany",
+     "Year": 2019,
+     "Solar Capacity": 48.9,
+     "Solar Energy Costs": 899
+   },
+   {
+     "Country": "Italy",
+     "Year": 2019,
+     "Solar Capacity": 20.9,
+     "Solar Energy Costs": 830
+   },
+   {
+     "Country": "Netherlands",
+     "Year": 2019,
+     "Solar Capacity": 7.2,
+     "Solar Energy Costs": 1121
+   },
+   {
+     "Country": "Spain",
+     "Year": 2019,
+     "Solar Capacity": 8.8,
+     "Solar Energy Costs": 766
+   },
+   {
+     "Country": "Turkey",
+     "Year": 2019,
+     "Solar Capacity": 6,
+     "Solar Energy Costs": 921
+   },
+   {
+     "Country": "Ukraine",
+     "Year": 2019,
+     "Solar Capacity": 5.9,
+     "Solar Energy Costs": 874
+   },
+   {
+     "Country": "United Kingdom",
+     "Year": 2019,
+     "Solar Capacity": 13.3,
+     "Solar Energy Costs": 1018
+   },
+   {
+     "Country": "Australia",
+     "Year": 2019,
+     "Solar Capacity": 13,
+     "Solar Energy Costs": 1236
+   },
+   {
+     "Country": "China",
+     "Year": 2019,
+     "Solar Capacity": 204.6,
+     "Solar Energy Costs": 794
+   },
+   {
+     "Country": "India",
+     "Year": 2019,
+     "Solar Capacity": 34.9,
+     "Solar Energy Costs": 618
+   },
+   {
+     "Country": "Japan",
+     "Year": 2019,
+     "Solar Capacity": 63.2,
+     "Solar Energy Costs": 2070
+   },
+   {
+     "Country": "Vietnam",
+     "Year": 2019,
+     "Solar Capacity": 5,
+     "Solar Energy Costs": 1054
+   },
+   {
+     "Country": "South Korea",
+     "Year": 2019,
+     "Solar Capacity": 12,
+     "Solar Energy Costs": 1252
+   }
+  ]
+    },
+    "width": "container",
+    "height": 310,
+    "mark": "rect",
+    "encoding": {
+      "x": {
+        "bin": {"maxbins": 20},
+        "field": "Solar Energy Costs",
+        "type": "quantitative",
+        "title": "Qualifying Position",
+        "axis": {"format": ""}
+      },
+      "y": {
+        "bin": {"maxbins": 20},
+        "field": "Solar Capacity",
+        "type": "quantitative",
+        "title": "Final Race Position",
+        "scale":{"domain":[0,100]}
+      },
+      "color": {
+        "aggregate": "count",
+        "type": "quantitative",
+        "scale": {"scheme": "darkred"}
+      },
+      "tooltip": [
+        {
+          "field": "qualipos",
+          "type": "quantitative",
+          "title": "Qualifying Position"
+        },
+        {"field": "racepos", "type": "quantitative", "title": "Race Position"},
+        {"aggregate": "count", "type": "quantitative", "title": "Count"}
+      ]
+    },
+    "config": {"view": {"stroke": "transparent"}}
+  }

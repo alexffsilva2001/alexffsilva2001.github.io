@@ -1,0 +1,205 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+    "data": {
+      "values": [
+   {
+     "Country Name": "Algeria",
+     "Average recent methane emission": "1871.8486876839083",
+     "%Electricity generated from Solar energy in 2021": 1.04
+   },
+   {
+     "Country Name": "Argentina",
+     "Average recent methane emission": "1804.2209452375716",
+     "%Electricity generated from Solar energy in 2021": 1.48
+   },
+   {
+     "Country Name": "Australia",
+     "Average recent methane emission": "1818.3006765274224",
+     "%Electricity generated from Solar energy in 2021": 11.35
+   },
+   {
+     "Country Name": "Austria",
+     "Average recent methane emission": "1862.0643485175565",
+     "%Electricity generated from Solar energy in 2021": 3.1
+   },
+   {
+     "Country Name": "Belgium",
+     "Average recent methane emission": "1860.0649977949208",
+     "%Electricity generated from Solar energy in 2021": 5.59
+   },
+   {
+     "Country Name": "Brazil",
+     "Average recent methane emission": "1844.5379172183327",
+     "%Electricity generated from Solar energy in 2021": 2.53
+   },
+   {
+     "Country Name": "Bulgaria",
+     "Average recent methane emission": "1868.9262015433685",
+     "%Electricity generated from Solar energy in 2021": 3.13
+   },
+   {
+     "Country Name": "Canada",
+     "Average recent methane emission": "1861.8707061547425",
+     "%Electricity generated from Solar energy in 2021": 0.82
+   },
+   {
+     "Country Name": "Chile",
+     "Average recent methane emission": "1809.8107960969612",
+     "%Electricity generated from Solar energy in 2021": 13.24
+   },
+   {
+     "Country Name": "Denmark",
+     "Average recent methane emission": "1860.58116752556",
+     "%Electricity generated from Solar energy in 2021": 4.01
+   },
+   {
+     "Country Name": "Egypt",
+     "Average recent methane emission": "1876.489400107868",
+     "%Electricity generated from Solar energy in 2021": 2.37
+   },
+   {
+     "Country Name": "France",
+     "Average recent methane emission": "1862.1405644520285",
+     "%Electricity generated from Solar energy in 2021": 2.67
+   },
+   {
+     "Country Name": "Greece",
+     "Average recent methane emission": "1872.6594008097916",
+     "%Electricity generated from Solar energy in 2021": 8.89
+   },
+   {
+     "Country Name": "Honduras",
+     "Average recent methane emission": "1872.844161033507",
+     "%Electricity generated from Solar energy in 2021": 10.69
+   },
+   {
+     "Country Name": "Hungary",
+     "Average recent methane emission": "1863.919707672562",
+     "%Electricity generated from Solar energy in 2021": 9.18
+   },
+   {
+     "Country Name": "Israel",
+     "Average recent methane emission": "1879.4730419446832",
+     "%Electricity generated from Solar energy in 2021": 6.35
+   },
+   {
+     "Country Name": "Italy",
+     "Average recent methane emission": "1874.2959598585212",
+     "%Electricity generated from Solar energy in 2021": 8.64
+   },
+   {
+     "Country Name": "Jordan",
+     "Average recent methane emission": "1876.4157182289723",
+     "%Electricity generated from Solar energy in 2021": 16
+   },
+   {
+     "Country Name": "Malaysia",
+     "Average recent methane emission": "1870.546685506332",
+     "%Electricity generated from Solar energy in 2021": 0.86
+   },
+   {
+     "Country Name": "Mexico",
+     "Average recent methane emission": "1867.5412174120324",
+     "%Electricity generated from Solar energy in 2021": 4.2
+   },
+   {
+     "Country Name": "Morocco",
+     "Average recent methane emission": "1879.6893988948668",
+     "%Electricity generated from Solar energy in 2021": 4.41
+   },
+   {
+     "Country Name": "Netherlands",
+     "Average recent methane emission": "1865.6324006410132",
+     "%Electricity generated from Solar energy in 2021": 9.4
+   },
+   {
+     "Country Name": "Pakistan",
+     "Average recent methane emission": "1894.022529411177",
+     "%Electricity generated from Solar energy in 2021": 0.84
+   },
+   {
+     "Country Name": "Philippines",
+     "Average recent methane emission": "1876.3182301055408",
+     "%Electricity generated from Solar energy in 2021": 1.39
+   },
+   {
+     "Country Name": "Poland",
+     "Average recent methane emission": "1855.0474204098225",
+     "%Electricity generated from Solar energy in 2021": 2.16
+   },
+   {
+     "Country Name": "Portugal",
+     "Average recent methane emission": "1865.13120276275",
+     "%Electricity generated from Solar energy in 2021": 4.47
+   },
+   {
+     "Country Name": "Romania",
+     "Average recent methane emission": "1865.1081372861956",
+     "%Electricity generated from Solar energy in 2021": 2.87
+   },
+   {
+     "Country Name": "Slovakia",
+     "Average recent methane emission": "1859.0372598378324",
+     "%Electricity generated from Solar energy in 2021": 2.16
+   },
+   {
+     "Country Name": "South Africa",
+     "Average recent methane emission": "1813.262748057478",
+     "%Electricity generated from Solar energy in 2021": 2.98
+   },
+   {
+     "Country Name": "Spain",
+     "Average recent methane emission": "1868.2783647723595",
+     "%Electricity generated from Solar energy in 2021": 9.69
+   },
+   {
+     "Country Name": "Sweden",
+     "Average recent methane emission": "1836.0656330684008",
+     "%Electricity generated from Solar energy in 2021": 0.61
+   },
+   {
+     "Country Name": "Switzerland",
+     "Average recent methane emission": "1863.9443293775128",
+     "%Electricity generated from Solar energy in 2021": 4.76
+   },
+   {
+     "Country Name": "Thailand",
+     "Average recent methane emission": "1899.5030709138357",
+     "%Electricity generated from Solar energy in 2021": 2.3
+   },
+   {
+     "Country Name": "Turkey",
+     "Average recent methane emission": "1873.0897335535565",
+     "%Electricity generated from Solar energy in 2021": 3.92
+   },
+   {
+     "Country Name": "Ukraine",
+     "Average recent methane emission": "1864.182686199554",
+     "%Electricity generated from Solar energy in 2021": 3.84
+   },
+   {
+     "Country Name": "United Arab Emirates",
+     "Average recent methane emission": "1896.8456021570764",
+     "%Electricity generated from Solar energy in 2021": 4.93
+   }
+  ]
+    },
+    "mark": "point",
+    "encoding": {
+      "x": {"field": "Average recent methane emission", "type": "quantitative", "scale": {"domain": [1800, 1900]}},
+      "y": {"field": "%Electricity generated from Solar energy in 2021", "type": "quantitative"},
+      "color":{"field":"Country Name","legend":null},
+      "tooltip": [
+        {"field": "Country Name", "type": "nominal", "title": "Country"},
+        {"field": "Average recent methane emission", "type": "quantitative", "title": "Emissions","format": ".2f"},
+        {
+          "field": "%Electricity generated from Solar energy in 2021",
+          "type": "quantitative",
+          "title": "Solar-generated Energy (%)",
+          "format": ".2f"
+        }
+      ]
+    }
+  }
+  

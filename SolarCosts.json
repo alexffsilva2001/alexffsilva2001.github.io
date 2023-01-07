@@ -1,0 +1,74 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Solar Energy Costs over time",
+      "subtitle": [
+        "",
+        "% Change in V.C Investment level from 2 Years previous. Constant prices, US$. Source: OECD.",
+        ""
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 12.5,
+      "fontSize": 15.5,
+      "anchor": "middle",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/alexffsilva2001/alexffsilva2001.github.io/main/Solar_Capac_Costs.csv"
+    },
+    "height": 135,
+    "width": 160,
+    "mark": {"type": "line", "strokeWidth": 1.4},
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": null,
+        "axis": {"grid": true, "labelAngle": 30, "labelFontSize": 12}
+      },
+      "y": {
+        "field": "Solar Energy Costs",
+        "type": "quantitative",
+        "title": "2-Year % Change"
+      },
+      "facet": {
+        "field": "Country",
+        "columns": 3,
+        "title": null,
+        "header": {
+          "titleColor": "black",
+          "labelColor": "black",
+          "labelFontSize": 14
+        }
+      },
+      "color": {
+        "value": "black",
+        "condition": [
+          {"test": "datum.Country =='Australia'", "value": "darkred"},
+          {"test": "datum.Country =='China'", "value": "red"},
+          {"test": "datum.Country =='France'", "value": "brown"},
+          {"test": "datum.Country =='Germany'", "value": "orange"},
+          {"test": "datum.Country =='India'", "value": "gold"},
+          {"test": "datum.Country =='Italy'", "value": "#9ACD32"},
+          {"test": "datum.Country =='Japan'", "value": "green"},
+          {"test": "datum.Country =='Netherlands'", "value": "turquoise"},
+          {"test": "datum.Country =='South Korea'", "value": "blue"},
+          {"test": "datum.Country =='Spain'", "value": "violet"},
+          {"test": "datum.Country =='Turkey'", "value": "magenta"},
+          {"test": "datum.Country =='US'", "value": "indigo"},
+          {"test": "datum.Country =='Ukraine'", "value": "black"},
+          {"test": "datum.Country =='United Kingdom'", "value": "grey"},
+          {"test": "datum.Country =='Vietnam'", "value": "cyan"}
+        ]
+      },
+      "tooltip": [
+        {
+          "field": "2 yr % Change",
+          "type": "quantitative",
+          "title": "2-Year % Change"
+        },
+        {"field": "Year", "type": "temporal", "title": "Year"}
+      ]
+    },
+    "resolve": {"scale": {"y": "independent"}}
+  }

@@ -1,0 +1,50 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "width":500,
+    "height":500,
+  
+    "data":{
+      "url":"https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoUSStates.json",
+      //This above is a topojson of the location of the US states ONLY.
+      "format":{"property": "features"}},
+  
+        "projection": {
+          "type":"albersUsa"
+        },
+  
+        "transform": [
+          {
+            "lookup": "properties.NAME",
+            //"Alabama" is inside properties as "Name" in the topojson/geojson
+            "from":{
+              "data":{
+                "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataUSstatesCrimeWide.csv"},
+                //This above is a csv of the GTA committed in each sate. It's the additional/extra info
+              "key": "State",
+              //"Alabama" is inside "State" in the csv file
+              "fields": ["Motor Vehicle Theft", "Robbery", "Burglary"] 
+              }
+            }
+        ],
+  
+        "mark":{
+          "type": "geoshape",
+          "stroke":"darkgrey",
+          "strokeWidth":0.5
+        },
+  
+        "encoding": {
+  
+          "color":{
+            "field": "Motor Vehicle Theft",
+            "type": "quantitative"
+          },
+  
+          "tooltip":[
+          {"field":"properties.NAME", "type":"nominal", "title": "State"},
+          {"field":"Motor Vehicle Theft", "title":"Crimes"},
+          {"field":"Robbery", "title":"Robbed"},
+          {"field":"Burglary", "title":"Burgled"}]         
+          }
+  }
