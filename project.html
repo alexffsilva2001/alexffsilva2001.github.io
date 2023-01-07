@@ -19,44 +19,96 @@
 <body>
     
     <div class="myWeek1">
+        <h1>FIRST 1</h1>
+        <p>Photovoltaic systems absorb solar energy (irradiance). Ergo the more irradiance the better their output.
+           One would think that countries around the equator have the most irradiance since they have the highest temperature however this is false as illustrated here:
+        </p>
+        <h2>Although solar panels absorb energy from the sun, hotter temperatures actually make them less efficient.</h2>
         <div class="chart1" id="chloro1"></div>
-    </div>
 
-    <div class="myWeek1">
+
+        <h1>FIRST 2</h1>
+        <p>The areas in the chloropleth above are seen here to have low percipitation and so can be identified as deserts, meaning higher output of PV systems comes from those placed in deserts as opposed to those by the equator</p>
         <div class="chart1" id="chloro2"></div>
+
+
+        <h1>FIRST 3</h1>
+        <p>Upon the disproval that countries close to the equator have higher irradiances, this clustering algorithm groups 3 sets of countries on their choice of solar energy adoption:</p>
+        <p>Closest to equator: Higher spread of irradiance - Ideal to for some, not all</p>
+        <p>2000-4000Kms from equator: Smaller spread of higher irradiance - Ideal for all</p>
+        <p>Furthest from equator: Smaller spread of lower irradiance - Ideal for none</p>
+        <img src="Clusters_DNI_Lat.png" alt="Global Clusters" width="400" height="400">
+    </div>
+    <div class="myWeek1">
+        <h1>Change chloropleth's to have drop-down boxes of temperature, DNI and precipiation</h1>
+    </div>
+    <div class="myWeek1">
+        
     </div>
 
     <div class="myWeek1">
+        <h1>SECOND</h1>
+        <p>One of the main benefits of switching to Solar is to reduce GHG emissions.
+            Using the graph below, we can see that adoption of solar energy from high emission countries has not occurred but that it has paid off for those who have adopted it like Australia and Chile
+            Notably, Argentina has a 25% energy generation from all renewables, hence its low emissions, but South Africa as one of the highest GHG emittors is simply found to have low methane emissions as opposed to all other greenhouse gases
+        </p>
         <div class="chart1" id="graff"></div>
     </div>
 
     <div class="myWeek1">
+        <h1>THIRD</h1>
+        <p>Countries that consume more energy emit more pollution and so would benefit more from the switch to solar.
+            In this regression, warmer countries are shown to consume less electricity up until their average temperature exceeds ~23°C where the developed ones can consume more on ventilation and the less-developed majority cannot.
+            This means that countries on the extremes of temperature would benefit the most from the switch as they can consume environmentally-cleaner energy.
+        </p>
         <div class="chart1" id="loess"></div>
     </div>
 
     <div class="myWeek1">
+        <h1>FORTH 1</h1>
+        <p>Adoption of technology is largely connected its cost. This chart shows that as costs of energy decreased, its maximum outputs have increased and this combination drives up its usage</p>
         <div class="chart1" id="trellis_Cap"></div>
-    </div>
 
-    <div class="myWeek1">
+
+        <h1>FORTH 2</h1>
         <div class="chart1" id="trellis_Cos"></div>
     </div>
 
-    <div class="myWeek1">
-        <img src="Clusters_DNI_Lat.png" alt="Global Clusters" width="400" height="400">
+    <div>
+        <h1>Add a toggle and have both trellis charts in one AND ALSO USAGE ie %SOLAR</h1>
     </div>
 
     <div class="myWeek1">
+       
+    </div>
+     
+    <div class="myWeek1">
+        <h1>See if you can put regressions and clustering into vega to make them look nicer? Ask ChatGPT</h1>
+    </div>
+
+    <div class="myWeek1">
+        
+    </div>
+
+    <div class="myWeek1">
+        <h1>FIFTH</h1>
+        <h2>CHANGE TITLE OF THIS REGRESSION</h2>
+        <p>Join this under trellis charts to show how larger costs equals lower use. BUT that lower costs does not mean higher use. Countries not adopting due to other factors such as legislation or development (Find a data on these and plot costs against them to see if lower costs are less developed or if they are have more restrictive legislation OR IF CLIMATE CHANGE SUPPORT ISN'T AS BIG IN THESE COUNTRIES WITH THE COP27 ATTENDEES DATA</p>
+        <img src="Reg_Use_cost.png" alt="Regression1" width="400" height="400">
+
+        <div class="chart1" id="scatter2"></div>
+    </div>
+
+
+    <div class="myWeek1">
+        <h1>SIXTH</h1>
+        <p>This correlation matrix highlights:</p>
+        <p>Positive relationships between **Electricity Consumption with Entrepreneurship** and with **Solar Energy Costs**</p>
+        <p>Negative relationships between Distance from equator with Irradiance and Temperature and between **Irradiance and Solar Energy Costs** and between Solar Capacity and Temperature</p>
         <img src="Correlation Matrix.png" alt="Correlation Matrix" width="400" height="400">
     </div>
 
-    <div class="myWeek1">
-        <img src="Reg_Use_cost.png" alt="Regression1" width="400" height="400">
-    </div>
 
-    <div class="myWeek1">
-        <img src="Reg_Rain_DNI.png" alt="Regression2" width="400" height="400">
-    </div>
 
 
 
@@ -72,7 +124,7 @@
     var loess = "manual_Temp_ECons.json";
     var trellis_Costs = "SolarCosts.json";
     var trellis_Cap = "SolarCapacity.json";
-    var DNI_chloro = "DNI_chloro.json";
+    var scatter2 = "GDP_Costs.json";
     var DNI_chloro = "DNI_chloro.json";
     var DNI_chloro = "DNI_chloro.json";
 
@@ -84,7 +136,7 @@
     vegaEmbed('#loess', loess);
     vegaEmbed('#trellis_Cos', trellis_Costs);
     vegaEmbed('#trellis_Cap', trellis_Cap);
-    vegaEmbed('#chloro2', Rain_chloro);
+    vegaEmbed('#scatter2', scatter2);
     vegaEmbed('#chloro2', Rain_chloro);
     vegaEmbed('#chloro2', Rain_chloro);
 
