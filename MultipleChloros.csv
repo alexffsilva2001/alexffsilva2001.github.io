@@ -1,164 +1,653 @@
-Country,Average DNI (KWh/m^2/day),Average precipitation in depth (mm)
-Afghanistan,4.339285714285714,327.0
-Albania,5.541666666666667,1485.0
-Algeria,5.819444444444445,89.0
-Angola,4.339285714285714,1010.0
-Argentina,5.4375,591.0
-Armenia,4.325,562.0
-Australia,5.819444444444445,534.0
-Austria,5.34375,1110.0
-Azerbaijan,3.9375,447.0
-Bahamas,4.875,1292.0
-Bahrain,6.75,83.0
-Bangladesh,3.9375,2666.0
-Barbados,4.5,1422.0
-Belarus,4.5,618.0
-Belgium,3.3125,847.0
-Belize,3.75,1705.0
-Benin,3.3125,1039.0
-Bhutan,3.9375,2200.0
-Bolivia,5.819444444444445,1146.0
-Botswana,7.275,416.0
-Brazil,4.339285714285714,1761.0
-Brunei,4.875,2722.0
-Bulgaria,4.325,608.0
-Burkina Faso,4.0,748.0
-Burundi,3.3125,1274.0
-Cambodia,3.6,1904.0
-Cameroon,3.9375,1604.0
-Canada,3.6,537.0
-Cape Verde,6.75,228.0
-Central African Republic,3.9375,1343.0
-Chad,6.140625,322.0
-Chile,5.4375,1522.0
-China,5.4375,645.0
-Colombia,5.041666666666667,3240.0
-Comoros,4.875,900.0
-Congo,3.6607142857142856,1646.0
-Costa Rica,4.339285714285714,2926.0
-Croatia,5.025,1113.0
-Cuba,5.34375,1335.0
-Cyprus,5.75,498.0
-Denmark,3.3125,703.0
-Djibouti,4.59375,220.0
-Dominica,4.25,2083.0
-Dominican Republic,5.34375,1410.0
-Ecuador,4.270833333333333,2274.0
-Egypt,6.482142857142857,18.0
-El Salvador,6.1875,1784.0
-Equatorial Guinea,2.0,2156.0
-Eritrea,4.729166666666667,384.0
-Estonia,4.0,626.0
-Ethiopia,4.339285714285714,848.0
-Fiji,4.875,2592.0
-Finland,4.0,536.0
-France,4.339285714285714,867.0
-Gabon,2.0,1831.0
-Gambia,3.75,836.0
-Georgia,4.325,1026.0
-Germany,4.075,700.0
-Ghana,3.9375,1187.0
-Greece,5.025,652.0
-Grenada,4.25,2350.0
-Guatemala,4.729166666666667,1996.0
-Guinea,3.3125,1651.0
-Guinea-Bissau,3.0,1577.0
-Guyana,4.59375,2387.0
-Haiti,5.708333333333333,1440.0
-Honduras,4.729166666666667,1976.0
-Hungary,4.875,589.0
-Iceland,3.3125,1940.0
-India,5.4375,1083.0
-Indonesia,5.107142857142857,2702.0
-Iran,5.4375,228.0
-Iraq,5.708333333333333,216.0
-Ireland,3.333333333333333,1118.0
-Israel,5.708333333333333,435.0
-Italy,5.421875,832.0
-Jamaica,4.875,2051.0
-Japan,4.0,1668.0
-Jordan,6.583333333333333,111.0
-Kazakhstan,4.325,250.0
-Kenya,4.339285714285714,630.0
-Kuwait,4.59375,121.0
-Kyrgyzstan,4.339285714285714,533.0
-Laos,3.6,1834.0
-Latvia,4.0,667.0
-Lebanon,6.125,661.0
-Lesotho,6.1875,788.0
-Liberia,2.0,2391.0
-Libya,6.140625,56.0
-Lithuania,4.0,656.0
-Luxembourg,4.0,934.0
-Madagascar,4.71875,1513.0
-Malawi,4.325,1181.0
-Malaysia,4.325,2875.0
-Maldives,5.625,1972.0
-Mali,4.325,282.0
-Malta,5.125,560.0
-Mauritania,4.325,92.0
-Mauritius,4.708333333333333,2041.0
-Mexico,5.819444444444445,758.0
-Moldova,5.625,450.0
-Mongolia,4.339285714285714,241.0
-Morocco,5.4375,346.0
-Mozambique,4.325,1032.0
-Myanmar,3.9375,2091.0
-Namibia,5.819444444444445,285.0
-Nepal,5.222222222222222,1500.0
-Netherlands,3.3125,778.0
-New Zealand,3.9375,1732.0
-Nicaragua,4.339285714285714,2280.0
-Niger,5.025,151.0
-Nigeria,3.9375,1150.0
-Norway,3.3125,1414.0
-Oman,5.8,125.0
-Pakistan,5.041666666666667,494.0
-Panama,4.0,2928.0
-Papua New Guinea,4.325,3142.0
-Paraguay,5.1875,1130.0
-Peru,4.71875,1738.0
-Philippines,4.339285714285714,2348.0
-Poland,3.6,600.0
-Portugal,5.819444444444445,854.0
-Qatar,6.583333333333333,74.0
-Romania,4.875,637.0
-Russia,4.339285714285714,460.0
-Rwanda,3.0,1212.0
-Samoa,5.625,2880.0
-Saudi Arabia,5.819444444444445,59.0
-Senegal,3.3125,686.0
-Seychelles,4.0,2330.0
-Sierra Leone,2.625,2526.0
-Singapore,3.75,2497.0
-Slovakia,4.25,824.0
-Slovenia,4.875,1162.0
-Somalia,5.025,282.0
-South Africa,5.680555555555555,495.0
-Spain,5.819444444444445,636.0
-Sri Lanka,3.9375,1712.0
-Sudan,5.041666666666667,250.0
-Suriname,5.25,2331.0
-Sweden,3.3125,624.0
-Switzerland,5.34375,1537.0
-Syria,5.416666666666667,252.0
-Tajikistan,4.339285714285714,691.0
-Tanzania,4.339285714285714,1071.0
-Thailand,4.325,1622.0
-Togo,3.6,1168.0
-Tunisia,5.732142857142857,207.0
-Turkey,4.71875,593.0
-Turkmenistan,4.59375,161.0
-Uganda,4.339285714285714,1180.0
-Ukraine,4.325,565.0
-United Arab Emirates,6.482142857142857,78.0
-United Kingdom,3.6,1220.0
-United States,5.4375,715.0
-Uruguay,5.1875,1300.0
-Uzbekistan,4.729166666666667,206.0
-Vanuatu,6.1875,2000.0
-Venezuela,5.421875,2044.0
-Vietnam,3.9375,1821.0
-Yemen,5.732142857142857,167.0
-Zambia,4.59375,1020.0
-Zimbabwe,5.34375,657.0
+Country,Data_Set,Level
+Afghanistan,Data_Set,Average DNI (KWh/m^2/day)
+Afghanistan,Level,4.339285714285714
+Afghanistan,Data_Set,Average precipitation in depth (mm)
+Afghanistan,Level,327.0
+Albania,Data_Set,Average DNI (KWh/m^2/day)
+Albania,Level,5.541666666666667
+Albania,Data_Set,Average precipitation in depth (mm)
+Albania,Level,1485.0
+Algeria,Data_Set,Average DNI (KWh/m^2/day)
+Algeria,Level,5.819444444444445
+Algeria,Data_Set,Average precipitation in depth (mm)
+Algeria,Level,89.0
+Angola,Data_Set,Average DNI (KWh/m^2/day)
+Angola,Level,4.339285714285714
+Angola,Data_Set,Average precipitation in depth (mm)
+Angola,Level,1010.0
+Argentina,Data_Set,Average DNI (KWh/m^2/day)
+Argentina,Level,5.4375
+Argentina,Data_Set,Average precipitation in depth (mm)
+Argentina,Level,591.0
+Armenia,Data_Set,Average DNI (KWh/m^2/day)
+Armenia,Level,4.325
+Armenia,Data_Set,Average precipitation in depth (mm)
+Armenia,Level,562.0
+Australia,Data_Set,Average DNI (KWh/m^2/day)
+Australia,Level,5.819444444444445
+Australia,Data_Set,Average precipitation in depth (mm)
+Australia,Level,534.0
+Austria,Data_Set,Average DNI (KWh/m^2/day)
+Austria,Level,5.34375
+Austria,Data_Set,Average precipitation in depth (mm)
+Austria,Level,1110.0
+Azerbaijan,Data_Set,Average DNI (KWh/m^2/day)
+Azerbaijan,Level,3.9375
+Azerbaijan,Data_Set,Average precipitation in depth (mm)
+Azerbaijan,Level,447.0
+Bahamas,Data_Set,Average DNI (KWh/m^2/day)
+Bahamas,Level,4.875
+Bahamas,Data_Set,Average precipitation in depth (mm)
+Bahamas,Level,1292.0
+Bahrain,Data_Set,Average DNI (KWh/m^2/day)
+Bahrain,Level,6.75
+Bahrain,Data_Set,Average precipitation in depth (mm)
+Bahrain,Level,83.0
+Bangladesh,Data_Set,Average DNI (KWh/m^2/day)
+Bangladesh,Level,3.9375
+Bangladesh,Data_Set,Average precipitation in depth (mm)
+Bangladesh,Level,2666.0
+Barbados,Data_Set,Average DNI (KWh/m^2/day)
+Barbados,Level,4.5
+Barbados,Data_Set,Average precipitation in depth (mm)
+Barbados,Level,1422.0
+Belarus,Data_Set,Average DNI (KWh/m^2/day)
+Belarus,Level,4.5
+Belarus,Data_Set,Average precipitation in depth (mm)
+Belarus,Level,618.0
+Belgium,Data_Set,Average DNI (KWh/m^2/day)
+Belgium,Level,3.3125
+Belgium,Data_Set,Average precipitation in depth (mm)
+Belgium,Level,847.0
+Belize,Data_Set,Average DNI (KWh/m^2/day)
+Belize,Level,3.75
+Belize,Data_Set,Average precipitation in depth (mm)
+Belize,Level,1705.0
+Benin,Data_Set,Average DNI (KWh/m^2/day)
+Benin,Level,3.3125
+Benin,Data_Set,Average precipitation in depth (mm)
+Benin,Level,1039.0
+Bhutan,Data_Set,Average DNI (KWh/m^2/day)
+Bhutan,Level,3.9375
+Bhutan,Data_Set,Average precipitation in depth (mm)
+Bhutan,Level,2200.0
+Bolivia,Data_Set,Average DNI (KWh/m^2/day)
+Bolivia,Level,5.819444444444445
+Bolivia,Data_Set,Average precipitation in depth (mm)
+Bolivia,Level,1146.0
+Botswana,Data_Set,Average DNI (KWh/m^2/day)
+Botswana,Level,7.275
+Botswana,Data_Set,Average precipitation in depth (mm)
+Botswana,Level,416.0
+Brazil,Data_Set,Average DNI (KWh/m^2/day)
+Brazil,Level,4.339285714285714
+Brazil,Data_Set,Average precipitation in depth (mm)
+Brazil,Level,1761.0
+Brunei,Data_Set,Average DNI (KWh/m^2/day)
+Brunei,Level,4.875
+Brunei,Data_Set,Average precipitation in depth (mm)
+Brunei,Level,2722.0
+Bulgaria,Data_Set,Average DNI (KWh/m^2/day)
+Bulgaria,Level,4.325
+Bulgaria,Data_Set,Average precipitation in depth (mm)
+Bulgaria,Level,608.0
+Burkina Faso,Data_Set,Average DNI (KWh/m^2/day)
+Burkina Faso,Level,4.0
+Burkina Faso,Data_Set,Average precipitation in depth (mm)
+Burkina Faso,Level,748.0
+Burundi,Data_Set,Average DNI (KWh/m^2/day)
+Burundi,Level,3.3125
+Burundi,Data_Set,Average precipitation in depth (mm)
+Burundi,Level,1274.0
+Cambodia,Data_Set,Average DNI (KWh/m^2/day)
+Cambodia,Level,3.6
+Cambodia,Data_Set,Average precipitation in depth (mm)
+Cambodia,Level,1904.0
+Cameroon,Data_Set,Average DNI (KWh/m^2/day)
+Cameroon,Level,3.9375
+Cameroon,Data_Set,Average precipitation in depth (mm)
+Cameroon,Level,1604.0
+Canada,Data_Set,Average DNI (KWh/m^2/day)
+Canada,Level,3.6
+Canada,Data_Set,Average precipitation in depth (mm)
+Canada,Level,537.0
+Cape Verde,Data_Set,Average DNI (KWh/m^2/day)
+Cape Verde,Level,6.75
+Cape Verde,Data_Set,Average precipitation in depth (mm)
+Cape Verde,Level,228.0
+Central African Republic,Data_Set,Average DNI (KWh/m^2/day)
+Central African Republic,Level,3.9375
+Central African Republic,Data_Set,Average precipitation in depth (mm)
+Central African Republic,Level,1343.0
+Chad,Data_Set,Average DNI (KWh/m^2/day)
+Chad,Level,6.140625
+Chad,Data_Set,Average precipitation in depth (mm)
+Chad,Level,322.0
+Chile,Data_Set,Average DNI (KWh/m^2/day)
+Chile,Level,5.4375
+Chile,Data_Set,Average precipitation in depth (mm)
+Chile,Level,1522.0
+China,Data_Set,Average DNI (KWh/m^2/day)
+China,Level,5.4375
+China,Data_Set,Average precipitation in depth (mm)
+China,Level,645.0
+Colombia,Data_Set,Average DNI (KWh/m^2/day)
+Colombia,Level,5.041666666666667
+Colombia,Data_Set,Average precipitation in depth (mm)
+Colombia,Level,3240.0
+Comoros,Data_Set,Average DNI (KWh/m^2/day)
+Comoros,Level,4.875
+Comoros,Data_Set,Average precipitation in depth (mm)
+Comoros,Level,900.0
+Congo,Data_Set,Average DNI (KWh/m^2/day)
+Congo,Level,3.6607142857142856
+Congo,Data_Set,Average precipitation in depth (mm)
+Congo,Level,1646.0
+Costa Rica,Data_Set,Average DNI (KWh/m^2/day)
+Costa Rica,Level,4.339285714285714
+Costa Rica,Data_Set,Average precipitation in depth (mm)
+Costa Rica,Level,2926.0
+Croatia,Data_Set,Average DNI (KWh/m^2/day)
+Croatia,Level,5.025
+Croatia,Data_Set,Average precipitation in depth (mm)
+Croatia,Level,1113.0
+Cuba,Data_Set,Average DNI (KWh/m^2/day)
+Cuba,Level,5.34375
+Cuba,Data_Set,Average precipitation in depth (mm)
+Cuba,Level,1335.0
+Cyprus,Data_Set,Average DNI (KWh/m^2/day)
+Cyprus,Level,5.75
+Cyprus,Data_Set,Average precipitation in depth (mm)
+Cyprus,Level,498.0
+Denmark,Data_Set,Average DNI (KWh/m^2/day)
+Denmark,Level,3.3125
+Denmark,Data_Set,Average precipitation in depth (mm)
+Denmark,Level,703.0
+Djibouti,Data_Set,Average DNI (KWh/m^2/day)
+Djibouti,Level,4.59375
+Djibouti,Data_Set,Average precipitation in depth (mm)
+Djibouti,Level,220.0
+Dominica,Data_Set,Average DNI (KWh/m^2/day)
+Dominica,Level,4.25
+Dominica,Data_Set,Average precipitation in depth (mm)
+Dominica,Level,2083.0
+Dominican Republic,Data_Set,Average DNI (KWh/m^2/day)
+Dominican Republic,Level,5.34375
+Dominican Republic,Data_Set,Average precipitation in depth (mm)
+Dominican Republic,Level,1410.0
+Ecuador,Data_Set,Average DNI (KWh/m^2/day)
+Ecuador,Level,4.270833333333333
+Ecuador,Data_Set,Average precipitation in depth (mm)
+Ecuador,Level,2274.0
+Egypt,Data_Set,Average DNI (KWh/m^2/day)
+Egypt,Level,6.482142857142857
+Egypt,Data_Set,Average precipitation in depth (mm)
+Egypt,Level,18.0
+El Salvador,Data_Set,Average DNI (KWh/m^2/day)
+El Salvador,Level,6.1875
+El Salvador,Data_Set,Average precipitation in depth (mm)
+El Salvador,Level,1784.0
+Equatorial Guinea,Data_Set,Average DNI (KWh/m^2/day)
+Equatorial Guinea,Level,2.0
+Equatorial Guinea,Data_Set,Average precipitation in depth (mm)
+Equatorial Guinea,Level,2156.0
+Eritrea,Data_Set,Average DNI (KWh/m^2/day)
+Eritrea,Level,4.729166666666667
+Eritrea,Data_Set,Average precipitation in depth (mm)
+Eritrea,Level,384.0
+Estonia,Data_Set,Average DNI (KWh/m^2/day)
+Estonia,Level,4.0
+Estonia,Data_Set,Average precipitation in depth (mm)
+Estonia,Level,626.0
+Ethiopia,Data_Set,Average DNI (KWh/m^2/day)
+Ethiopia,Level,4.339285714285714
+Ethiopia,Data_Set,Average precipitation in depth (mm)
+Ethiopia,Level,848.0
+Fiji,Data_Set,Average DNI (KWh/m^2/day)
+Fiji,Level,4.875
+Fiji,Data_Set,Average precipitation in depth (mm)
+Fiji,Level,2592.0
+Finland,Data_Set,Average DNI (KWh/m^2/day)
+Finland,Level,4.0
+Finland,Data_Set,Average precipitation in depth (mm)
+Finland,Level,536.0
+France,Data_Set,Average DNI (KWh/m^2/day)
+France,Level,4.339285714285714
+France,Data_Set,Average precipitation in depth (mm)
+France,Level,867.0
+Gabon,Data_Set,Average DNI (KWh/m^2/day)
+Gabon,Level,2.0
+Gabon,Data_Set,Average precipitation in depth (mm)
+Gabon,Level,1831.0
+Gambia,Data_Set,Average DNI (KWh/m^2/day)
+Gambia,Level,3.75
+Gambia,Data_Set,Average precipitation in depth (mm)
+Gambia,Level,836.0
+Georgia,Data_Set,Average DNI (KWh/m^2/day)
+Georgia,Level,4.325
+Georgia,Data_Set,Average precipitation in depth (mm)
+Georgia,Level,1026.0
+Germany,Data_Set,Average DNI (KWh/m^2/day)
+Germany,Level,4.075
+Germany,Data_Set,Average precipitation in depth (mm)
+Germany,Level,700.0
+Ghana,Data_Set,Average DNI (KWh/m^2/day)
+Ghana,Level,3.9375
+Ghana,Data_Set,Average precipitation in depth (mm)
+Ghana,Level,1187.0
+Greece,Data_Set,Average DNI (KWh/m^2/day)
+Greece,Level,5.025
+Greece,Data_Set,Average precipitation in depth (mm)
+Greece,Level,652.0
+Grenada,Data_Set,Average DNI (KWh/m^2/day)
+Grenada,Level,4.25
+Grenada,Data_Set,Average precipitation in depth (mm)
+Grenada,Level,2350.0
+Guatemala,Data_Set,Average DNI (KWh/m^2/day)
+Guatemala,Level,4.729166666666667
+Guatemala,Data_Set,Average precipitation in depth (mm)
+Guatemala,Level,1996.0
+Guinea,Data_Set,Average DNI (KWh/m^2/day)
+Guinea,Level,3.3125
+Guinea,Data_Set,Average precipitation in depth (mm)
+Guinea,Level,1651.0
+Guinea-Bissau,Data_Set,Average DNI (KWh/m^2/day)
+Guinea-Bissau,Level,3.0
+Guinea-Bissau,Data_Set,Average precipitation in depth (mm)
+Guinea-Bissau,Level,1577.0
+Guyana,Data_Set,Average DNI (KWh/m^2/day)
+Guyana,Level,4.59375
+Guyana,Data_Set,Average precipitation in depth (mm)
+Guyana,Level,2387.0
+Haiti,Data_Set,Average DNI (KWh/m^2/day)
+Haiti,Level,5.708333333333333
+Haiti,Data_Set,Average precipitation in depth (mm)
+Haiti,Level,1440.0
+Honduras,Data_Set,Average DNI (KWh/m^2/day)
+Honduras,Level,4.729166666666667
+Honduras,Data_Set,Average precipitation in depth (mm)
+Honduras,Level,1976.0
+Hungary,Data_Set,Average DNI (KWh/m^2/day)
+Hungary,Level,4.875
+Hungary,Data_Set,Average precipitation in depth (mm)
+Hungary,Level,589.0
+Iceland,Data_Set,Average DNI (KWh/m^2/day)
+Iceland,Level,3.3125
+Iceland,Data_Set,Average precipitation in depth (mm)
+Iceland,Level,1940.0
+India,Data_Set,Average DNI (KWh/m^2/day)
+India,Level,5.4375
+India,Data_Set,Average precipitation in depth (mm)
+India,Level,1083.0
+Indonesia,Data_Set,Average DNI (KWh/m^2/day)
+Indonesia,Level,5.107142857142857
+Indonesia,Data_Set,Average precipitation in depth (mm)
+Indonesia,Level,2702.0
+Iran,Data_Set,Average DNI (KWh/m^2/day)
+Iran,Level,5.4375
+Iran,Data_Set,Average precipitation in depth (mm)
+Iran,Level,228.0
+Iraq,Data_Set,Average DNI (KWh/m^2/day)
+Iraq,Level,5.708333333333333
+Iraq,Data_Set,Average precipitation in depth (mm)
+Iraq,Level,216.0
+Ireland,Data_Set,Average DNI (KWh/m^2/day)
+Ireland,Level,3.333333333333333
+Ireland,Data_Set,Average precipitation in depth (mm)
+Ireland,Level,1118.0
+Israel,Data_Set,Average DNI (KWh/m^2/day)
+Israel,Level,5.708333333333333
+Israel,Data_Set,Average precipitation in depth (mm)
+Israel,Level,435.0
+Italy,Data_Set,Average DNI (KWh/m^2/day)
+Italy,Level,5.421875
+Italy,Data_Set,Average precipitation in depth (mm)
+Italy,Level,832.0
+Jamaica,Data_Set,Average DNI (KWh/m^2/day)
+Jamaica,Level,4.875
+Jamaica,Data_Set,Average precipitation in depth (mm)
+Jamaica,Level,2051.0
+Japan,Data_Set,Average DNI (KWh/m^2/day)
+Japan,Level,4.0
+Japan,Data_Set,Average precipitation in depth (mm)
+Japan,Level,1668.0
+Jordan,Data_Set,Average DNI (KWh/m^2/day)
+Jordan,Level,6.583333333333333
+Jordan,Data_Set,Average precipitation in depth (mm)
+Jordan,Level,111.0
+Kazakhstan,Data_Set,Average DNI (KWh/m^2/day)
+Kazakhstan,Level,4.325
+Kazakhstan,Data_Set,Average precipitation in depth (mm)
+Kazakhstan,Level,250.0
+Kenya,Data_Set,Average DNI (KWh/m^2/day)
+Kenya,Level,4.339285714285714
+Kenya,Data_Set,Average precipitation in depth (mm)
+Kenya,Level,630.0
+Kuwait,Data_Set,Average DNI (KWh/m^2/day)
+Kuwait,Level,4.59375
+Kuwait,Data_Set,Average precipitation in depth (mm)
+Kuwait,Level,121.0
+Kyrgyzstan,Data_Set,Average DNI (KWh/m^2/day)
+Kyrgyzstan,Level,4.339285714285714
+Kyrgyzstan,Data_Set,Average precipitation in depth (mm)
+Kyrgyzstan,Level,533.0
+Laos,Data_Set,Average DNI (KWh/m^2/day)
+Laos,Level,3.6
+Laos,Data_Set,Average precipitation in depth (mm)
+Laos,Level,1834.0
+Latvia,Data_Set,Average DNI (KWh/m^2/day)
+Latvia,Level,4.0
+Latvia,Data_Set,Average precipitation in depth (mm)
+Latvia,Level,667.0
+Lebanon,Data_Set,Average DNI (KWh/m^2/day)
+Lebanon,Level,6.125
+Lebanon,Data_Set,Average precipitation in depth (mm)
+Lebanon,Level,661.0
+Lesotho,Data_Set,Average DNI (KWh/m^2/day)
+Lesotho,Level,6.1875
+Lesotho,Data_Set,Average precipitation in depth (mm)
+Lesotho,Level,788.0
+Liberia,Data_Set,Average DNI (KWh/m^2/day)
+Liberia,Level,2.0
+Liberia,Data_Set,Average precipitation in depth (mm)
+Liberia,Level,2391.0
+Libya,Data_Set,Average DNI (KWh/m^2/day)
+Libya,Level,6.140625
+Libya,Data_Set,Average precipitation in depth (mm)
+Libya,Level,56.0
+Lithuania,Data_Set,Average DNI (KWh/m^2/day)
+Lithuania,Level,4.0
+Lithuania,Data_Set,Average precipitation in depth (mm)
+Lithuania,Level,656.0
+Luxembourg,Data_Set,Average DNI (KWh/m^2/day)
+Luxembourg,Level,4.0
+Luxembourg,Data_Set,Average precipitation in depth (mm)
+Luxembourg,Level,934.0
+Madagascar,Data_Set,Average DNI (KWh/m^2/day)
+Madagascar,Level,4.71875
+Madagascar,Data_Set,Average precipitation in depth (mm)
+Madagascar,Level,1513.0
+Malawi,Data_Set,Average DNI (KWh/m^2/day)
+Malawi,Level,4.325
+Malawi,Data_Set,Average precipitation in depth (mm)
+Malawi,Level,1181.0
+Malaysia,Data_Set,Average DNI (KWh/m^2/day)
+Malaysia,Level,4.325
+Malaysia,Data_Set,Average precipitation in depth (mm)
+Malaysia,Level,2875.0
+Maldives,Data_Set,Average DNI (KWh/m^2/day)
+Maldives,Level,5.625
+Maldives,Data_Set,Average precipitation in depth (mm)
+Maldives,Level,1972.0
+Mali,Data_Set,Average DNI (KWh/m^2/day)
+Mali,Level,4.325
+Mali,Data_Set,Average precipitation in depth (mm)
+Mali,Level,282.0
+Malta,Data_Set,Average DNI (KWh/m^2/day)
+Malta,Level,5.125
+Malta,Data_Set,Average precipitation in depth (mm)
+Malta,Level,560.0
+Mauritania,Data_Set,Average DNI (KWh/m^2/day)
+Mauritania,Level,4.325
+Mauritania,Data_Set,Average precipitation in depth (mm)
+Mauritania,Level,92.0
+Mauritius,Data_Set,Average DNI (KWh/m^2/day)
+Mauritius,Level,4.708333333333333
+Mauritius,Data_Set,Average precipitation in depth (mm)
+Mauritius,Level,2041.0
+Mexico,Data_Set,Average DNI (KWh/m^2/day)
+Mexico,Level,5.819444444444445
+Mexico,Data_Set,Average precipitation in depth (mm)
+Mexico,Level,758.0
+Moldova,Data_Set,Average DNI (KWh/m^2/day)
+Moldova,Level,5.625
+Moldova,Data_Set,Average precipitation in depth (mm)
+Moldova,Level,450.0
+Mongolia,Data_Set,Average DNI (KWh/m^2/day)
+Mongolia,Level,4.339285714285714
+Mongolia,Data_Set,Average precipitation in depth (mm)
+Mongolia,Level,241.0
+Morocco,Data_Set,Average DNI (KWh/m^2/day)
+Morocco,Level,5.4375
+Morocco,Data_Set,Average precipitation in depth (mm)
+Morocco,Level,346.0
+Mozambique,Data_Set,Average DNI (KWh/m^2/day)
+Mozambique,Level,4.325
+Mozambique,Data_Set,Average precipitation in depth (mm)
+Mozambique,Level,1032.0
+Myanmar,Data_Set,Average DNI (KWh/m^2/day)
+Myanmar,Level,3.9375
+Myanmar,Data_Set,Average precipitation in depth (mm)
+Myanmar,Level,2091.0
+Namibia,Data_Set,Average DNI (KWh/m^2/day)
+Namibia,Level,5.819444444444445
+Namibia,Data_Set,Average precipitation in depth (mm)
+Namibia,Level,285.0
+Nepal,Data_Set,Average DNI (KWh/m^2/day)
+Nepal,Level,5.222222222222222
+Nepal,Data_Set,Average precipitation in depth (mm)
+Nepal,Level,1500.0
+Netherlands,Data_Set,Average DNI (KWh/m^2/day)
+Netherlands,Level,3.3125
+Netherlands,Data_Set,Average precipitation in depth (mm)
+Netherlands,Level,778.0
+New Zealand,Data_Set,Average DNI (KWh/m^2/day)
+New Zealand,Level,3.9375
+New Zealand,Data_Set,Average precipitation in depth (mm)
+New Zealand,Level,1732.0
+Nicaragua,Data_Set,Average DNI (KWh/m^2/day)
+Nicaragua,Level,4.339285714285714
+Nicaragua,Data_Set,Average precipitation in depth (mm)
+Nicaragua,Level,2280.0
+Niger,Data_Set,Average DNI (KWh/m^2/day)
+Niger,Level,5.025
+Niger,Data_Set,Average precipitation in depth (mm)
+Niger,Level,151.0
+Nigeria,Data_Set,Average DNI (KWh/m^2/day)
+Nigeria,Level,3.9375
+Nigeria,Data_Set,Average precipitation in depth (mm)
+Nigeria,Level,1150.0
+Norway,Data_Set,Average DNI (KWh/m^2/day)
+Norway,Level,3.3125
+Norway,Data_Set,Average precipitation in depth (mm)
+Norway,Level,1414.0
+Oman,Data_Set,Average DNI (KWh/m^2/day)
+Oman,Level,5.8
+Oman,Data_Set,Average precipitation in depth (mm)
+Oman,Level,125.0
+Pakistan,Data_Set,Average DNI (KWh/m^2/day)
+Pakistan,Level,5.041666666666667
+Pakistan,Data_Set,Average precipitation in depth (mm)
+Pakistan,Level,494.0
+Panama,Data_Set,Average DNI (KWh/m^2/day)
+Panama,Level,4.0
+Panama,Data_Set,Average precipitation in depth (mm)
+Panama,Level,2928.0
+Papua New Guinea,Data_Set,Average DNI (KWh/m^2/day)
+Papua New Guinea,Level,4.325
+Papua New Guinea,Data_Set,Average precipitation in depth (mm)
+Papua New Guinea,Level,3142.0
+Paraguay,Data_Set,Average DNI (KWh/m^2/day)
+Paraguay,Level,5.1875
+Paraguay,Data_Set,Average precipitation in depth (mm)
+Paraguay,Level,1130.0
+Peru,Data_Set,Average DNI (KWh/m^2/day)
+Peru,Level,4.71875
+Peru,Data_Set,Average precipitation in depth (mm)
+Peru,Level,1738.0
+Philippines,Data_Set,Average DNI (KWh/m^2/day)
+Philippines,Level,4.339285714285714
+Philippines,Data_Set,Average precipitation in depth (mm)
+Philippines,Level,2348.0
+Poland,Data_Set,Average DNI (KWh/m^2/day)
+Poland,Level,3.6
+Poland,Data_Set,Average precipitation in depth (mm)
+Poland,Level,600.0
+Portugal,Data_Set,Average DNI (KWh/m^2/day)
+Portugal,Level,5.819444444444445
+Portugal,Data_Set,Average precipitation in depth (mm)
+Portugal,Level,854.0
+Qatar,Data_Set,Average DNI (KWh/m^2/day)
+Qatar,Level,6.583333333333333
+Qatar,Data_Set,Average precipitation in depth (mm)
+Qatar,Level,74.0
+Romania,Data_Set,Average DNI (KWh/m^2/day)
+Romania,Level,4.875
+Romania,Data_Set,Average precipitation in depth (mm)
+Romania,Level,637.0
+Russia,Data_Set,Average DNI (KWh/m^2/day)
+Russia,Level,4.339285714285714
+Russia,Data_Set,Average precipitation in depth (mm)
+Russia,Level,460.0
+Rwanda,Data_Set,Average DNI (KWh/m^2/day)
+Rwanda,Level,3.0
+Rwanda,Data_Set,Average precipitation in depth (mm)
+Rwanda,Level,1212.0
+Samoa,Data_Set,Average DNI (KWh/m^2/day)
+Samoa,Level,5.625
+Samoa,Data_Set,Average precipitation in depth (mm)
+Samoa,Level,2880.0
+Saudi Arabia,Data_Set,Average DNI (KWh/m^2/day)
+Saudi Arabia,Level,5.819444444444445
+Saudi Arabia,Data_Set,Average precipitation in depth (mm)
+Saudi Arabia,Level,59.0
+Senegal,Data_Set,Average DNI (KWh/m^2/day)
+Senegal,Level,3.3125
+Senegal,Data_Set,Average precipitation in depth (mm)
+Senegal,Level,686.0
+Seychelles,Data_Set,Average DNI (KWh/m^2/day)
+Seychelles,Level,4.0
+Seychelles,Data_Set,Average precipitation in depth (mm)
+Seychelles,Level,2330.0
+Sierra Leone,Data_Set,Average DNI (KWh/m^2/day)
+Sierra Leone,Level,2.625
+Sierra Leone,Data_Set,Average precipitation in depth (mm)
+Sierra Leone,Level,2526.0
+Singapore,Data_Set,Average DNI (KWh/m^2/day)
+Singapore,Level,3.75
+Singapore,Data_Set,Average precipitation in depth (mm)
+Singapore,Level,2497.0
+Slovakia,Data_Set,Average DNI (KWh/m^2/day)
+Slovakia,Level,4.25
+Slovakia,Data_Set,Average precipitation in depth (mm)
+Slovakia,Level,824.0
+Slovenia,Data_Set,Average DNI (KWh/m^2/day)
+Slovenia,Level,4.875
+Slovenia,Data_Set,Average precipitation in depth (mm)
+Slovenia,Level,1162.0
+Somalia,Data_Set,Average DNI (KWh/m^2/day)
+Somalia,Level,5.025
+Somalia,Data_Set,Average precipitation in depth (mm)
+Somalia,Level,282.0
+South Africa,Data_Set,Average DNI (KWh/m^2/day)
+South Africa,Level,5.680555555555555
+South Africa,Data_Set,Average precipitation in depth (mm)
+South Africa,Level,495.0
+Spain,Data_Set,Average DNI (KWh/m^2/day)
+Spain,Level,5.819444444444445
+Spain,Data_Set,Average precipitation in depth (mm)
+Spain,Level,636.0
+Sri Lanka,Data_Set,Average DNI (KWh/m^2/day)
+Sri Lanka,Level,3.9375
+Sri Lanka,Data_Set,Average precipitation in depth (mm)
+Sri Lanka,Level,1712.0
+Sudan,Data_Set,Average DNI (KWh/m^2/day)
+Sudan,Level,5.041666666666667
+Sudan,Data_Set,Average precipitation in depth (mm)
+Sudan,Level,250.0
+Suriname,Data_Set,Average DNI (KWh/m^2/day)
+Suriname,Level,5.25
+Suriname,Data_Set,Average precipitation in depth (mm)
+Suriname,Level,2331.0
+Sweden,Data_Set,Average DNI (KWh/m^2/day)
+Sweden,Level,3.3125
+Sweden,Data_Set,Average precipitation in depth (mm)
+Sweden,Level,624.0
+Switzerland,Data_Set,Average DNI (KWh/m^2/day)
+Switzerland,Level,5.34375
+Switzerland,Data_Set,Average precipitation in depth (mm)
+Switzerland,Level,1537.0
+Syria,Data_Set,Average DNI (KWh/m^2/day)
+Syria,Level,5.416666666666667
+Syria,Data_Set,Average precipitation in depth (mm)
+Syria,Level,252.0
+Tajikistan,Data_Set,Average DNI (KWh/m^2/day)
+Tajikistan,Level,4.339285714285714
+Tajikistan,Data_Set,Average precipitation in depth (mm)
+Tajikistan,Level,691.0
+Tanzania,Data_Set,Average DNI (KWh/m^2/day)
+Tanzania,Level,4.339285714285714
+Tanzania,Data_Set,Average precipitation in depth (mm)
+Tanzania,Level,1071.0
+Thailand,Data_Set,Average DNI (KWh/m^2/day)
+Thailand,Level,4.325
+Thailand,Data_Set,Average precipitation in depth (mm)
+Thailand,Level,1622.0
+Togo,Data_Set,Average DNI (KWh/m^2/day)
+Togo,Level,3.6
+Togo,Data_Set,Average precipitation in depth (mm)
+Togo,Level,1168.0
+Tunisia,Data_Set,Average DNI (KWh/m^2/day)
+Tunisia,Level,5.732142857142857
+Tunisia,Data_Set,Average precipitation in depth (mm)
+Tunisia,Level,207.0
+Turkey,Data_Set,Average DNI (KWh/m^2/day)
+Turkey,Level,4.71875
+Turkey,Data_Set,Average precipitation in depth (mm)
+Turkey,Level,593.0
+Turkmenistan,Data_Set,Average DNI (KWh/m^2/day)
+Turkmenistan,Level,4.59375
+Turkmenistan,Data_Set,Average precipitation in depth (mm)
+Turkmenistan,Level,161.0
+Uganda,Data_Set,Average DNI (KWh/m^2/day)
+Uganda,Level,4.339285714285714
+Uganda,Data_Set,Average precipitation in depth (mm)
+Uganda,Level,1180.0
+Ukraine,Data_Set,Average DNI (KWh/m^2/day)
+Ukraine,Level,4.325
+Ukraine,Data_Set,Average precipitation in depth (mm)
+Ukraine,Level,565.0
+United Arab Emirates,Data_Set,Average DNI (KWh/m^2/day)
+United Arab Emirates,Level,6.482142857142857
+United Arab Emirates,Data_Set,Average precipitation in depth (mm)
+United Arab Emirates,Level,78.0
+United Kingdom,Data_Set,Average DNI (KWh/m^2/day)
+United Kingdom,Level,3.6
+United Kingdom,Data_Set,Average precipitation in depth (mm)
+United Kingdom,Level,1220.0
+United States,Data_Set,Average DNI (KWh/m^2/day)
+United States,Level,5.4375
+United States,Data_Set,Average precipitation in depth (mm)
+United States,Level,715.0
+Uruguay,Data_Set,Average DNI (KWh/m^2/day)
+Uruguay,Level,5.1875
+Uruguay,Data_Set,Average precipitation in depth (mm)
+Uruguay,Level,1300.0
+Uzbekistan,Data_Set,Average DNI (KWh/m^2/day)
+Uzbekistan,Level,4.729166666666667
+Uzbekistan,Data_Set,Average precipitation in depth (mm)
+Uzbekistan,Level,206.0
+Vanuatu,Data_Set,Average DNI (KWh/m^2/day)
+Vanuatu,Level,6.1875
+Vanuatu,Data_Set,Average precipitation in depth (mm)
+Vanuatu,Level,2000.0
+Venezuela,Data_Set,Average DNI (KWh/m^2/day)
+Venezuela,Level,5.421875
+Venezuela,Data_Set,Average precipitation in depth (mm)
+Venezuela,Level,2044.0
+Vietnam,Data_Set,Average DNI (KWh/m^2/day)
+Vietnam,Level,3.9375
+Vietnam,Data_Set,Average precipitation in depth (mm)
+Vietnam,Level,1821.0
+Yemen,Data_Set,Average DNI (KWh/m^2/day)
+Yemen,Level,5.732142857142857
+Yemen,Data_Set,Average precipitation in depth (mm)
+Yemen,Level,167.0
+Zambia,Data_Set,Average DNI (KWh/m^2/day)
+Zambia,Level,4.59375
+Zambia,Data_Set,Average precipitation in depth (mm)
+Zambia,Level,1020.0
+Zimbabwe,Data_Set,Average DNI (KWh/m^2/day)
+Zimbabwe,Level,5.34375
+Zimbabwe,Data_Set,Average precipitation in depth (mm)
+Zimbabwe,Level,657.0
