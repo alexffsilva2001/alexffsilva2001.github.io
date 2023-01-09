@@ -1,0 +1,49 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/alexffsilva2001/alexffsilva2001.github.io/main/week8chart1.csv"
+    },
+    "layer": [
+      {
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "Week",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "Bitcoin searches worldwide",
+            "title": "Bitcoin News Searches (xcolor)",
+            "scale": {"domain": [0, 120]},
+            "type": "quantitative",
+            "axis": {
+              "orient": "left"
+            }
+          },
+          "color":{"value": "#ef7d6a"},
+          "size":{"value": 2}
+        }
+      },
+      {
+        "mark": "line",
+        "encoding": {
+          "x": {
+            "field": "Week",
+            "type": "temporal"
+          },
+          "y": {
+            "field": "BTC-USD",
+            "title": "BTC-USD price (ycolor)",
+            "scale": {"domain": [0, 70000]},
+            "type": "quantitative",
+            "axis": {
+              "orient": "right"
+            }
+            
+          },
+          "color": {"value": "#702963"}
+        }
+      }
+    ],
+    "resolve": {"scale": {"y": "independent"}}
+  }

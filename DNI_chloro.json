@@ -1,36 +1,48 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 400,
-    "height": 0,
-    "data": {
-      "url": "https://raw.githubusercontent.com/alexffsilva2001/alexffsilva2001.github.io/main/Average_DNI_per_country.csv",
-      "format": {"property": "csv"}
-    },
-  
-    "transform": [
-      {
-        "lookup": "Country",
-        "from":{
-          "data":{
-            "url": "https://raw.githubusercontent.com/alexffsilva2001/alexffsilva2001.github.io/main/World.geojson",
-            "format":{"property": "features"}
-          },
-          "key": "properties.NAME_EN",
-          "fields": ["properties", "type", "geometry"]
-        }
-      }
-    ],
-  
-  
-    "mark": "geoshape",
-    "encoding": {
-        "color":{
-          "field": "Average DNI (KWh/m^2/day)",
-          "legend":{"title": "Average DNI (KWh/m^2/day)", "orient": "right", "direction": "vertical"},
-          "type": "quantitative",
-          "bandPosition": 0,
-          "scale":{"scheme": "reds"}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 0,
+  "title": {
+    "text": "Solar Irradiance around the world",
+    "subtitle": [
+      "DNI: Direct Normal Irradiance",
+      "Source: https://data.world/doe/solar-resource-class-country"
+    ]
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/alexffsilva2001/alexffsilva2001.github.io/main/AvgRainfall_AvgDNI.csv",
+    "format": {"property": "csv"}
+  },
+  "transform": [
+    {
+      "lookup": "Country",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/alexffsilva2001/alexffsilva2001.github.io/main/World.geojson",
+          "format": {"property": "features"}
         },
-        "tooltip": [{"field": "properties.NAME", "type": "nominal", "title": "Country"},
-        {"field": "Average DNI (KWh/m^2/day)", "title": "Irradiance"}]
-  }}
+        "key": "properties.NAME_EN",
+        "fields": ["properties", "type", "geometry"]
+      }
+    }
+  ],
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "field": "Average DNI (KWh/m^2/day)",
+      "legend": {
+        "title": "DNI (KWh/m^2/day)",
+        "orient": "right",
+        "direction": "vertical"
+      },
+      "type": "quantitative",
+      "bandPosition": 0,
+      "scale": {"scheme": "reds"}
+    },
+    "tooltip": [
+      {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+      {"field": "Average DNI (KWh/m^2/day)", "title": "Irradiance"},
+      {"field": "Average precipitation in depth (mm)", "title": "Precipitation (mm)"}
+    ]
+  }
+}

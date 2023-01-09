@@ -1,112 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<!-- CSS -->
+<link rel="stylesheet" href="project.css"> 
+
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
+<title>Alexandre Silva's Project</title>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
-    
-    <!-- Title for the page -->
-    <title>Title of Project</title>
+    <!-- Title -->
+    <h1>Data Science Project</h1>
 
-    <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index.css">
+    <!-- Header -->
+    <h2>Alexandre Fernandes Ferreira da Silva</h2>
 
-    <!--The next three lines allow the Vega embed-->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
 </head>
 <body>
+
+<div class="navbuttons">
+    <button class="button" style="vertical-align:middle" onclick="location.href='portfolio.html'"><span>Portfolio </span></button>
+    <button class="button" style="vertical-align:middle" onclick="location.href='project.html'"><span>Project </span></button>
+    <button class="button" style="vertical-align:middle" onclick="location.href='https://github.com/alexffsilva2001/alexffsilva2001.github.io'"><span>GitHub </span></button>
+
+
+</div>
     
-    <div class="myWeek1">
-        <h1>FIRST 1</h1>
-        <p>Photovoltaic systems absorb solar energy (irradiance). Ergo the more irradiance the better their output.
-           One would think that countries around the equator have the most irradiance since they have the highest temperature however this is false as illustrated here:
-        </p>
-        <h2>Although solar panels absorb energy from the sun, hotter temperatures actually make them less efficient.</h2>
-        <div class="chart1" id="chloro1"></div>
+<!-- /////////////////// END NAVIGATION BUTTONS //////////////////////////////////// -->
 
+<container class="separator1">
+</container>
 
-        <h1>FIRST 2</h1>
-        <p>The areas in the chloropleth above are seen here to have low percipitation and so can be identified as deserts, meaning higher output of PV systems comes from those placed in deserts as opposed to those by the equator</p>
-        <div class="chart1" id="chloro2"></div>
+<h4>Adopting Solar Energy: The Path to a Cleaner Earth</h4>
 
-
-        <h1>FIRST 3</h1>
-        <p>Upon the disproval that countries close to the equator have higher irradiances, this clustering algorithm groups 3 sets of countries on their choice of solar energy adoption:</p>
-        <p>Closest to equator: Higher spread of irradiance - Ideal to for some, not all</p>
-        <p>2000-4000Kms from equator: Smaller spread of higher irradiance - Ideal for all</p>
-        <p>Furthest from equator: Smaller spread of lower irradiance - Ideal for none</p>
-        <img src="Clusters_DNI_Lat.png" alt="Global Clusters" width="400" height="400">
-    </div>
-    <div class="myWeek1">
-        <h1>Change chloropleth's to have drop-down boxes of temperature, DNI and precipiation</h1>
-    </div>
-    <div class="myWeek1">
-        
+<div class="text_type1">Knowing where solar energy can be utilized is crucial for a number of reasons. Solar energy is a renewable resource, capable of providing a constant source of power for the future. It also helps to lower greenhouse gas emissions and can decrease energy costs for households and businesses. By identifying where solar energy can thrive, we can work towards a more sustainable and environmentally-friendly future.
+    Identifying locations where solar energy can be adopted is important for several reasons. Not only is solar energy a renewable energy source that can provide a sustainable source of power for the long term, it also helps to reduce greenhouse gas emissions and can lower energy costs for households and businesses. By identifying areas where solar energy can thrive, we can not only take advantage of these benefits but also work towards a more sustainable and environmentally-friendly future.
     </div>
 
-    <div class="myWeek1">
-        <h1>SECOND</h1>
-        <p>One of the main benefits of switching to Solar is to reduce GHG emissions.
-            Using the graph below, we can see that adoption of solar energy from high emission countries has not occurred but that it has paid off for those who have adopted it like Australia and Chile
-            Notably, Argentina has a 25% energy generation from all renewables, hence its low emissions, but South Africa as one of the highest GHG emittors is simply found to have low methane emissions as opposed to all other greenhouse gases
-        </p>
-        <div class="chart1" id="graff"></div>
+
+<container class="separator1">
+</container>
+
+<h5>IRRADIANCE & OPTIMAL COUNTRIES</h5>
+<container class="separator2">
+
+
+
+<div class="text_type1">Contrary to popular assumption, equatorial nations are not always those with the most solar energy potential. In reality, data indicates that deserts farther from the equator, where there is high irradiance and low precipitation, are the optimum places for solar energy systems. The choropleth and clusters below illustrate this, suggesting that regions 2000-4000Km away from the equator with low precipitation (deserts) tend to have higher irradiance.</div>
+    
+        <div class="text_type1"></div>
+    <div class="chart1" id="chloro1"></div>
+
+    <div class="navbuttons">
+        <button class="button2" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1r2l8fmqdymfJJ6Tn92VWStSPEej7mTkj?authuser=1#scrollTo=kS62mOcfy0GZ'"><span>Irradiance Scraper</span></button>
     </div>
 
-    <div class="myWeek1">
-        <h1>THIRD</h1>
-        <p>Countries that consume more energy emit more pollution and so would benefit more from the switch to solar.
-            In this regression, warmer countries are shown to consume less electricity up until their average temperature exceeds ~23°C where the developed ones can consume more on ventilation and the less-developed majority cannot.
-            This means that countries on the extremes of temperature would benefit the most from the switch as they can consume environmentally-cleaner energy.
-        </p>
+    <div class="text_type1"></div>
+    <img src="Clusters_DNI_Lat.png" alt="Global Clusters" width="400" height="400">
+
+</container>
+
+
+<h5>EMISSIONS & OPTIMAL COUNTRIES</h5>
+<container class="separator2">
+
+    <div class="text_type1">A primary advantage of solar energy is its reduction of fossil fuel dependency and greenhouse gas emissions. Countries with high electricity consumption typically release more GHGs, as seen in the scatterplot below. These nations can reduce their emissions and reliance on fossil fuels by switching to solar power.</div>
+    
+        <div class="chart1" id="scatter1"></div>
+
+        <div class="navbuttons">
+            <button class="button2" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/12FGIzxBSlzZWvvPOrrK7LiueS4zIx0df?authuser=1#scrollTo=vfvoGonnPgtN'"><span>Emissions Scraper</span></button>
+
+            <button class="button2" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1EErKJqAPvUfUTrauBwtZd0QuAWQ4QIlD?authuser=1'"><span>Consumption Scraper</span></button>
+
+            <button class="button2" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1P05CXp5cSFkJJKu929zW_w6YdFozc1uR?authuser=1#scrollTo=AwwKnAPfMeOT'"><span>Data cleaning</span></button>
+        </div>
+</container>
+
+<h5>CONSUMPTION & OPTIMAL COUNTRIES</h5>
+<container class="separator2">
+
+    <div class="text_type1">To determine the optimal countries for solar energy adoption, I regressed electricity consumption on average temperature. The result of the loess regression reveals a negative relationship between the two when the average temperature is below 23˚C. Above that, the electricity consumption is more spread as developed countries with high temperatures use more energy for air conditioning, while the less-developed majority cannot afford to.</div>
+
         <div class="chart1" id="loess"></div>
-    </div>
+        
+        <div class="navbuttons">
+            <button class="button2" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1Dum7Owyx_SCjEv-GC7EHOJJEObWka-Tq?authuser=1#scrollTo=vZzZjJkbAaoR'"><span>Temperature Scraper</span></button>
 
-    <div class="myWeek1">
-        <h1>FORTH 1</h1>
-        <p>Adoption of technology is largely connected its cost. This chart shows that as costs of energy decreased, its maximum outputs have increased and this combination drives up its usage</p>
+            <button class="button2" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1hSSeYF-xVzyay4Xnb9AmmcUDv0mFpYtc?authuser=1'"><span>Data Cleaning</span></button>
+        </div>
+
+<h6>link two colab's here</h6>
+
+</container>
+
+
+<h5>DEVELOPMENT & OPTIMAL COUNTRIES</h5>
+<container class="separator2">
+
+    <div class="text_type1">As seen, solar adoption depends on a country's development and ability to afford initial costs. Developed countries have seen increases in solar capacity and decreases in costs, while less-developed countries like Vietnam are experiencing initial cost increases. </div>
+
         <div class="chart1" id="trellis_Cap"></div>
 
-
-        <h1>FORTH 2</h1>
         <div class="chart1" id="trellis_Cos"></div>
-    </div>
 
-    <div>
-        <h1>Add a toggle and have both trellis charts in one AND ALSO USAGE ie %SOLAR</h1>
-    </div>
+        <div class="navbuttons">
+            <button class="button2" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1fyh8rzacnYwBNCFEWK4nafkzOpenmRf-?authuser=1#scrollTo=RTRfURu32kOv'"><span>Scraper</span></button>
+        </div>
 
-    <div class="myWeek1">
-       
-    </div>
-     
-    <div class="myWeek1">
-        <h1>See if you can put regressions and clustering into vega to make them look nicer? Ask ChatGPT</h1>
-    </div>
 
-    <div class="myWeek1">
+        <div class="text_type1">The correlation between percentage of solar energy generation and solar energy costs is negative, with higher costs resulting in less usage. However, low costs do not yet result in higher usage due to less-developed countries' limited monetary ability to switch to solar.</div>
+
+        <img src="Reg_Costs_USE.png" alt="Regression1" width="400" height="400">
+        <h6>Don't put button here, just < a > link them to some text</h6>
+    
         
-    </div>
+        <div class="navbuttons">
+            <button class="button2" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1RsyXqHzf7gCvMZKE07NPxV1D4mJ77IVF?authuser=1#scrollTo=lgJfCzc1MHwZ'"><span>Data Cleaning</span></button>
+        </div>
+</container>
 
-    <div class="myWeek1">
-        <h1>FIFTH</h1>
-        <h2>CHANGE TITLE OF THIS REGRESSION</h2>
-        <p>Join this under trellis charts to show how larger costs equals lower use. BUT that lower costs does not mean higher use. Countries not adopting due to other factors such as legislation or development (Find a data on these and plot costs against them to see if lower costs are less developed or if they are have more restrictive legislation OR IF CLIMATE CHANGE SUPPORT ISN'T AS BIG IN THESE COUNTRIES WITH THE COP27 ATTENDEES DATA</p>
-        <img src="Reg_Use_cost.png" alt="Regression1" width="400" height="400">
+<h5>CONCLUSION: OPTIMAL COUNTRIES</h5>
+<container class="separator2">
+    <div class="text_type1">By gathering all the information presented, the best country to adopt solar energy is one that has a desert, is within 2000 to 4000km of the equator, has high energy consumption and high GHG emissions, and is well developed. Following these criteria, countries like China, the USA and Australia are obvious candidates with their large deserts, developed economies and high consumption and emission industries. However, if we remember that below 2000km away from the equator there were countries with very high irradiance, we reach our honeypot site: the Persian Gulf. Countries like UAE, Qatar and Kuwait boast large deserts, strong economies and absurd amounts of emissions due to their >94% fossil fuel usage as an electricity source.
+        Further work in these countries is necessary to allow for a legislative implementation of this adoption, for a more sustainable and environmentally-friendly planet.
+        </div>
+    <h6>https://ourworldindata.org/grapher/per-capita-electricity-fossil-nuclear-renewables?tab=table&country=OWID_WRL~CHN~IND~USA~GBR~FRA~AUS~SWE~ZAF~JPN~BRA</h6>
+</container>
 
-        <div class="chart1" id="scatter2"></div>
-    </div>
+
+<h5>CHALLENGES IN DATA CLEANING & ANALYSIS</h5>
+<container class="separator2">
+    <div class="text_type1">In my data cleaning and analysis process, I encountered a number of challenges. One issue I faced was that Vega-lite had difficulty reading my raw Github CSV data, so I had to input the values manually to overcome this problem. Additionally, I had to scrape data from a PDF and use PyPDF2 to do so. This required splitting the page into cells by " " and manipulating the dataframe to resemble the table I wanted from the PDF.
+        To batch download emissions data that updates whenever the API updates, I used for-loops and the "requests" library. In order to complete machine learning visualizations, I had to create NumPy matrices by creating a list of lists for the X-axis and a list for the y-axis. I used KMeans for clustering and Linear Regressions from the scipy and sklearn libraries.
+        I also encountered challenges when reading large files, as pandas was unable to do so initially. To overcome this issue, I had to read the files in chunks and then concatenate them, creating masks to filter the data I needed. In addition, a few of my regressions returned low R-squared values, which required me to change some underlying assumptions of my project. This led me to discover correlated data that prompted me to re-evaluate my project. Initially, I had been trying to prove that countries on the equator would be the best to adopt solar energy, but I had to reformulate my argument when faced with the facts of the data.</div>
+
+</container>
 
 
-    <div class="myWeek1">
-        <h1>SIXTH</h1>
-        <p>This correlation matrix highlights:</p>
-        <p>Positive relationships between **Electricity Consumption with Entrepreneurship** and with **Solar Energy Costs**</p>
-        <p>Negative relationships between Distance from equator with Irradiance and Temperature and between **Irradiance and Solar Energy Costs** and between Solar Capacity and Temperature</p>
-        <img src="Correlation Matrix.png" alt="Correlation Matrix" width="400" height="400">
-    </div>
+
+    <h2>SIXTH</h2>
+    <p>This correlation matrix highlights:</p>
+    <p>Positive relationships between **Electricity Consumption with Entrepreneurship** and with **Solar Energy Costs**</p>
+    <p>Negative relationships between Distance from equator with Irradiance and Temperature and between **Irradiance and Solar Energy Costs** and between Solar Capacity and Temperature</p>
 
 
 
@@ -119,26 +159,20 @@
 <script>
     //Define charts:
     var DNI_chloro = "DNI_chloro.json";
-    var Rain_chloro = "Precipitation.json";
-    var graff = "scatter1.json";
+    var scatter1 = "scatter1.json";
     var loess = "manual_Temp_ECons.json";
     var trellis_Costs = "SolarCosts.json";
     var trellis_Cap = "SolarCapacity.json";
-    var scatter2 = "GDP_Costs.json";
     var DNI_chloro = "DNI_chloro.json";
     var DNI_chloro = "DNI_chloro.json";
 
     
     // Embed charts:
     vegaEmbed('#chloro1', DNI_chloro);
-    vegaEmbed('#chloro2', Rain_chloro);
-    vegaEmbed('#graff', graff);
+    vegaEmbed('#scatter1', scatter1);
     vegaEmbed('#loess', loess);
     vegaEmbed('#trellis_Cos', trellis_Costs);
     vegaEmbed('#trellis_Cap', trellis_Cap);
-    vegaEmbed('#scatter2', scatter2);
-    vegaEmbed('#chloro2', Rain_chloro);
-    vegaEmbed('#chloro2', Rain_chloro);
 
 </script>
 

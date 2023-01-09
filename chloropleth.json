@@ -2,35 +2,39 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 300,
   "height": 350,
+  "title": {
+  "text": "Total revenue per league in € Mill",
+  "subtitle": ["Source: https://en.wikipedia.org/wiki/List_of_professional_sports_leagues_by_revenue"]
+},
   "data": {
     "url": "https://raw.githubusercontent.com/alexffsilva2001/alexffsilva2001.github.io/main/rev_euro_fut_league.csv",
     "format": {"property": "csv"}
   },
-
   "transform": [
     {
       "lookup": "Country",
-      "from":{
-        "data":{
+      "from": {
+        "data": {
           "url": "https://raw.githubusercontent.com/alexffsilva2001/alexffsilva2001.github.io/main/Europe.geojson",
-          "format":{"property": "features"}
+          "format": {"property": "features"}
         },
         "key": "properties.NAME",
         "fields": ["properties", "type", "geometry"]
       }
     }
   ],
-
-
   "projection": {"type": "mercator", "scale": 300, "center": [15, 56]},
   "mark": "geoshape",
   "encoding": {
-      "color":{
-        "field": "Revenue (� mill)",
-        "legend":{"title": null, "orient": "right", "direction": "vertical"},
-        "type": "quantitative",
-        "scale":{"scheme": "reds"}
-      },
-      "tooltip": [{"field": "properties.NAME", "type": "nominal", "title": "Country"},
-      {"field": "Revenue (� mill)", "title": "Revenue (€ mill)"}]
-}}
+    "color": {
+      "field": "Revenue (� mill)",
+      "legend": {"title": null, "orient": "right", "direction": "vertical"},
+      "type": "quantitative",
+      "scale": {"scheme": "reds"}
+    },
+    "tooltip": [
+      {"field": "properties.NAME", "type": "nominal", "title": "Country"},
+      {"field": "Revenue (� mill)", "title": "Revenue (€ mill)"}
+    ]
+  }
+}

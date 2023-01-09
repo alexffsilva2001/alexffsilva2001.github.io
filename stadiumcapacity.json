@@ -1,20 +1,65 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+  "text": "Stadium Capacity for every team in Portuguese Primeira Liga",
+  "subtitle": ["Teams in 2016/17 season","Source: https://www.footballhistory.org/league/primeira-liga.html"]
+},
   "data": {
-    "values": [{"Team": "Arouca", "Capacity": 5000}, {"Team": "Tondela", "Capacity": 5000}, {"Team": "Nacional", "Capacity": 5142}, {"Team": "Pa\u00e7os de Ferreira", "Capacity": 5250}, {"Team": "Feirense", "Capacity": 5401}, {"Team": "Moreirense", "Capacity": 6100}, {"Team": "Chaves", "Capacity": 8000}, {"Team": "Estoril", "Capacity": 8000}, {"Team": "Mar\u00edtimo", "Capacity": 10500}, {"Team": "Rio Ave", "Capacity": 12815}, {"Team": "Vit\u00f3ria de Set\u00fabal", "Capacity": 18692}, {"Team": "Belenenses", "Capacity": 19300}, {"Team": "Boavista", "Capacity": 28263}, {"Team": "Vit\u00f3ria de Guimar\u00e3es", "Capacity": 30146}, {"Team": "Braga", "Capacity": 30154}, {"Team": "Porto", "Capacity": 50035}, {"Team": "Sporting", "Capacity": 50095}, {"Team": "Benfica", "Capacity": 64642}]
+    "values": [
+      {"Team": "Arouca", "Capacity": 5000},
+      {"Team": "Tondela", "Capacity": 5000},
+      {"Team": "Nacional", "Capacity": 5142},
+      {"Team": "Paços de Ferreira", "Capacity": 5250},
+      {"Team": "Feirense", "Capacity": 5401},
+      {"Team": "Moreirense", "Capacity": 6100},
+      {"Team": "Chaves", "Capacity": 8000},
+      {"Team": "Estoril", "Capacity": 8000},
+      {"Team": "Marítimo", "Capacity": 10500},
+      {"Team": "Rio Ave", "Capacity": 12815},
+      {"Team": "Vitória de Setúbal", "Capacity": 18692},
+      {"Team": "Belenenses", "Capacity": 19300},
+      {"Team": "Boavista", "Capacity": 28263},
+      {"Team": "Vitória de Guimarães", "Capacity": 30146},
+      {"Team": "Braga", "Capacity": 30154},
+      {"Team": "Porto", "Capacity": 50035},
+      {"Team": "Sporting", "Capacity": 50095},
+      {"Team": "Benfica", "Capacity": 64642}
+    ]
   },
   "mark": "bar",
   "width": 700,
   "config": {
-    "legend": {"orient": "bottom","symbolSize":100, "labelFontSize":8
-    }
+    "legend": {"orient": "bottom", "symbolSize": 100, "labelFontSize": 8}
   },
   "encoding": {
-    "x": {"aggregate": "sum", "field": "Capacity", "scale":{"domain":[0,363000]},"axis":{"values":[0,45000,90000,135000,180000,225000,270000,315000,360000]}},
+    "x": {
+      "aggregate": "sum",
+      "field": "Capacity",
+      "scale": {"domain": [0, 363000]},
+      "axis": {
+        "values": [
+          0,
+          45000,
+          90000,
+          135000,
+          180000,
+          225000,
+          270000,
+          315000,
+          360000
+        ]
+      }
+    },
     "y": {"field": ""},
-    "color": {"field": "Team","scale": {"scheme": "rainbow"},"legend": {"columns":9}},
-    "order": {"aggregate":"sum", "field":"Capacity"},
-    "tooltip":[{"field": "Team", "type": "nominal"},
-               {"field": "Capacity", "type": "nominal"}]
+    "color": {
+      "field": "Team",
+      "scale": {"scheme": "rainbow"},
+      "legend": {"columns": 9}
+    },
+    "order": {"aggregate": "sum", "field": "Capacity"},
+    "tooltip": [
+      {"field": "Team", "type": "nominal"},
+      {"field": "Capacity", "type": "nominal"}
+    ]
   }
 }

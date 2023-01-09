@@ -1,251 +1,31 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" >
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
-    
-    <!-- Title for the page -->
-    <title>Title of Project</title>
 
-    <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index.css">
+<meta charset="UTF-8">
+<title>Alexandre Silva</title>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> <link rel="stylesheet" href="index.css">
 
-    <!--The next three lines allow the Vega embed-->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 </head>
 
 
-
 <body>
-    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
-    <div class="myTitle">
-        <h1>Data Science project by Alexandre Silva</h1>
-    </div>
 
-    <div class="myToolbar">
-        <a class="myToolbar1" href="project.html">Project</a>
-        <a class="myToolbar1" href="portfolio.html">Portfolio</a>
-        <a class="myToolbar1" href="https://github.com/alexffsilva2001/alexffsilva2001.github.io">Github</a>
-        
-    </div>
-
-
-    <div class="myWeek1">
-        <h1>
-            Week 1
-            - CHANGE GRAPHS TO RAPID CHARTS ONES
-        </h1>
-
-        <h2>Embedding two pre-made charts</h2>
-    
-        <h3>Particulate matter 2.5 levels in the air in a 15-day period</h3>
-        <p>The term fine particles, or particulate matter 2.5 (PM2.5), refers to tiny particles or droplets in the air that are two and one half microns or less in width.
-        Like inches, meters and miles, a micron is a unit of measurement for distance.
-        There are about 25,000 microns in an inch.</p>
-        <div class="chart1" id="Chart1"></div>
-
-        <h3>Cryptocurrencies</h3>
-        <p>This chart hasn't loaded for the last 2 graphs I tried to put into this page.
-        I don't know how to solve this issue.</p>
-        <div class="chart2" id="Chart2"> </div>
-    </div> 
-    <!-- ---------------------------------- -->
-    <div class="myWeek1">
-        <h1>Week 2</h1>
-        <h2>Creating a chart using FT data and subsequently improving for clarity's sake</h2>
-        <h3>IMF Credit Outstanding</h3>
-        <p>This chart of IMF lending outstanding is deceptive as inexperienced readers could perceive it as saying that investing in 1984 was safer as less countries needed bailouts according to the data</p>
-        <div class="chart3" id="imflending"> </div>
-        
-        <h4>IMF Credit Outstanding as a percentage of global GDP</h4>
-        <p>CHANGE THE COLUMN NAMES AND STYLE AND EVERYTHING OF THE EXCEL CHART STOLEN.This chart suggests that 1984 was the riskiest to invest in since the proportion of world GDP used as IMF outstanding lending is the highest.</p>
-        <div class="chart4" id="imflendingadjustedGDP"> </div>
-    </div>
-    <div class="myWeek1">
-        <h1>Week 3</h1>
-        <h2>Exporting JSON using python code to convert data and subsequently changing its visual encoding</h2>
-        <h1>this chart has to have data source defined "inline", does it??</h1>
-        <h2>*Say what this graph is*</h2>
-        <div class="chart4" id="Chart5"> </div>
-        <h2>*Say that this graph represents the same data but with a different visual encoding*</h2>
-        <h1>EDIT THIS GRAPH'S KEY: NOT NOT NOT WEATHER TYPE</h1>
-        <div class="chart4" id="Chart6"> </div>
-        <h2>Realistically, re-do this graph with something that better represents the data</h2>
-        <h3>Tenta meter a visualization como a "flor" em cima, podera parecer bem - como um estadio</h3>
-        <h3>***Comment (not more than 25 words) what is the difference in the second visual encoding and 
-            especially why did you choose it.***</h3>
-    </div>
-
-    <div class="myWeek1">
-        <h1>Week 4</h1>
-        <h2>Data scraping at xyz colab python notebook. Data used to build the following graph</h2>
-        <h2>*Say what this graph is*</h2>
-        <p>This is graph was scraped from the footballhistory.org website using this <a class="reference" href="https://colab.research.google.com/drive/1BW-ID2PnXSY3eeAS_81EGyDUWBQujoFg?authuser=1#scrollTo=xo8kJHTPWoYy">scraper</a>.</p>
-        <h1>why does the graphs x-axis go past the data on here but not in vega??</h1>
-        <div class="chart4" id="Chart7"> </div>
-    </div>
-
-    <div class="myWeek1">
-        <h1>Week 5</h1>
-        <h2>Using a Collab python notebok*** to use an ONS API to translate their JSON data into charts that update when the data updates too.</h2>
-        <h2>Ask Professor if Household Population is the correct metric.</h2>
-        <h1>WRITE ANOTHER SUBHEADING: SOURCE: ONS</h1>
-        <h3>Can I re-do this dashboard with covid data from ONS?</h3>
-        <div class="dashboard" id="onsChart1"></div>
-        <div class="dashboard" id="onsChart2"></div>
-        <div class="dashboard" id="onsChart3"></div>
-        <div class="dashboard" id="onsChart4"></div>
-        <div class="dashboard" id="onsChart5"></div>        
-        <div class="dashboard" id="onsChart6"></div>
-        <div class="dashboard" id="onsChart7"></div>
-        <div class="dashboard" id="onsChart8"></div>
-        <div class="dashboard" id="onsChart9"></div>
-
-    </div>
-    <div class="myWeek1">
-        <h1> Week 7 hmk: use "facet" in encoding of vega graph</h1>
-        <p>gives trelis charts. Splits data in multiple charts</p>
-        <p>thinking about changing theme to strawberry/pastel reds theme, nicer?
-            It's the google calendar theme that I like, search it up and see wagwarn
-        </p>
-        <h3>Colba*** notebook used to transform football's European top flight league revenue data</h3>
-        <p>Test out a page thats got a link similar to: https://rapidcharts.io/UpdateMe </p>
-        <p>rgb(0,67,167) is IKB blue, very nice blue</p>
-        <h2> Use this to make 2 advanced charts</h2>
-
-        <h3>Possible other project: 
-        <p> "Has the war on drugs been successful?"</p>
-        <p> "Has the investment into the fight against drugs been returned with higher productivity due to less use of drugs?"</p>
-        <p> "What would be the effect of legalisation of drugs on the labour market"</p>
-        <p> "Does job gender representation matter?" - Can get help from Helene on questions </p>
-        <p> "Is the increase in women labour particiapation important?"</p>
-        <p> "What is the economic impact of the gradual loss in biodiversity since x year or industrial revolution"</p>          
-        <p>"How has immigration affected the UK's quality of life?</p>
-        <p>"How has sexism or discrimination hindered the economic/social developement of our society. Could speak about Marie Tharp and her critics.</p>
-        </h3>
-    </div>
-    <div>
-        <h3>To see about scraping multiple tables using a loop in python (colab0 check out George Miles code and the class recording from 17/11/22</h3>
-    </div>
-    <div>
-        <h3>To know how to get the datasets from the ons go to 24th recording after 1:44:00</h3>
-    </div>
-    <div>
-        <h3>When working with datasets with labels, use One-hot encoding, as in Is it Bristol? or Is it Porto?</h3>
-    </div>
-    <div>
-        <h1>Week 7 homework</h1>
-        <h2>Producing a base map of an area and a chloropleth of a certain statistic</h2>
-        <p>OR</p>
-        <h2>CREATE A MAP OF EUROPE THAT SHOWS TOTAL TRANSFER REVENUE AND UEFA LEAGUE RANKINGS</h2>
-        <div class="chart4" id="euromap"></div>
-        <div class="chart4" id="chloro"></div>
-    </div>
-    <div>
-        <h1>Week 8</h1>
-        <h2>Producing two charts that support/refute an argument at the Festival of Economics attended.</h2>
-        <p>USE A TRELLIS CHART FOR 2nd graph. as in one on top of the other, possibly with some vertical lines showing that when inflation moves, btc searches move too</p>
-        <h3>WHY DOES IT NOT WORK... WORKS WELL IN VEGA!</h3>
-        <p>In the cryptocurrencies talk at the Festival of Economics, the [speaker] spoke about the creation of a bubble and reinforced that ideal with the spike of google searches compared to its historic levels.</p>
-        <div class="chart4" id="w8g1"></div>
-        <p>Chart 1 shows ...</p>
-        <p>Chart 2 shows google "news searches" for Bitcoin and Inflation. You can see that searches spike relatively close to eachother in time. This infers that investors are taking bitcoin as a hedge against inflation and the spikes in searches are due to due diligence as opposed to hive speculation.</p>
-    </div>
-    <div>
-        <h3>Could have a cluster (2-Clustering-KMeansfrom week10 lecture) machine-learning type shit to cluster all teams in top 7 european leagues and then cluster them together on a revenue x-axis and a success in comps y-axis</h3>
-    </div>
-    <div>
-        <h1>How to have a website like https://restofworld.org/2021/the-cryptocurrency-dons-of-beirut/, where when you scroll, you stop by a picture (in my PROJECT's case, a graph)</h1>
-    </div>
-    <div>
-    <h1>I built a scraper that resulted in some data that needed to be heavily cleaned...</h1>
-    <h1>Show off skills within paragraphs. And have a challenges section at the bottom with how you overcame your biggest issues</h1>
-    </div>
-    <div>
-        <h3>Do https://jamieprince.github.io/project 's thing of having source, colab, data and code links under every graph</h1>
-        <p>He also gives good descriptions of what he did like the text before chart5. copy that too.</h2>
-        <h3>Do what https://norettevulkan.github.io/project did in the "Challenges" section at the end</h1>
-        <h1>Use https://tahaadamaly.github.io/project.html 's "Select a legend item to focus" on feature in CONSTRUCTOR POINTS graph. very very sick</h1>
-        <h2>Also use his "Hover over points for detailed information" tooltip thing, very snazzy and helpful</h2>
-        <h1>Use a graph like https://danwbeeston.github.io/Project.html 's "Changes in Freedom Index". Cool way to display changing data over the years. Make it interactive too</h1>
-        <h3>Could include Kepler maps like in taha and mia's project for the fuckin bants</h3>
-        <h1>Check out https://natalytsangarides.github.io/project.html 's CSS, she has a very very good looking website</h1>
-        <h1>Try to use https://ohdata1.github.io/project 's map graph type, I like the bubbles on the mao. See if pertinent though, population may not matter and just be cluttering</h1>
-    </div>
-    <div>
-        <h3>Last 2hr class will be on the 5th. They will group the questions that students will send over to them during Christmas and answer them generally in those 2hrs.</h3>
-        <h3>This means: send your question as early as possible so that they include it in that!</h3>
-    </div>
-
-    <div>
-        <h1>Week 9</h1>
-        <h2>Producing advanced charts</h2>
-        <p>**do these on your project straight away**</p>
-        <h2>Scatter/Bubble plots if time-constrained. Diff-in-diff/Heat map if able to</h2>
-        <p>Heat map of GDP-per-capita and COP27 and other meetings attendance or % of Green Party MPs</p>
-    </div>
-
-    <div>
-        <h1>Week 10 & 11</h1>
-        <h2>Applying data analysis using different machine learning techniques, former being Supervised learning and the latter being Unsupervised learning</h2>
-        <p>For Supervised use regression - find youtube tutorial</p>
-        <p>For Unsupervised use Clustering - find youtube tutorial & ASK NUNO if he can make something or give me an example he's already coded</p>
-        <h4>Make sure to check the checklist given in these two weeks before commencing these charts for your project.</h4>
-    </div>
+<!-- partial:index.partial.html -->
+<div class="background-one">
+  <div class="link-container">
+    <a class="link-one" href="portfolio.html">Portfolio</a>
+  </div>
+</div>
+<div class="background-two link-container">
+  <a class="link-two" href="project.html">Project</a>
+</div>
+<div class="background-three link-container">
+  <a class="link-three" href="https://github.com/alexffsilva2001/alexffsilva2001.github.io">Github</a>
+</div>
+<!-- partial -->
+  
 </body>
-
-
-<script>
-    //Define charts:
-    //chart1_covidUKRegions.json replaced by new_graph1.json
-    var myChart1 = "new_graph1.json";
-    //chart2_ukProductivity.json replaced by new_graph2.json
-    var myChart2 = "new_graph2.json";
-    var imflending = "imflending.json";
-    var imflendingadjustedGDP = "imflendingadjustedGDP.json";
-    var test1 = "chained_vol_gdp.json";
-    var test2 = "chained_vol_gdp_diff.json";
-    var capacity = "stadiumcapacity.json";
-    var ons1 = "week5_hmk_mgsx.json";
-    var ons2 = "week5_hmk_mgsz.json";
-    var ons3 = "week5_hmk_lf2o.json";
-    var ons4 = "week5_hmk_lf2p.json";
-    var ons5 = "week5_hmk_ybvm.json";
-    var ons6 = "week5_hmk_ybvs.json";
-    var ons7 = "week5_hmk_ycgr.json";
-    var ons8 = "week5_hmk_ycgx.json";
-    var ons9 = "week5_hmk_lf2f.json";
-    var euromap = "EuropeMap.json";
-    var chloro = "chloropleth.json";
-    var w8g1 = "week8graph1.json"
-    
-    // Embed charts:
-    vegaEmbed('#Chart1', myChart1);
-    vegaEmbed('#Chart2', myChart2);
-    vegaEmbed('#imflending', imflending);
-    vegaEmbed('#imflendingadjustedGDP', imflendingadjustedGDP);
-    vegaEmbed('#Chart5', test1);
-    vegaEmbed('#Chart6', test2);
-    vegaEmbed('#Chart7', capacity);
-    vegaEmbed('#onsChart1', ons1);
-    vegaEmbed('#onsChart2', ons2);
-    vegaEmbed('#onsChart3', ons3);
-    vegaEmbed('#onsChart4', ons4);
-    vegaEmbed('#onsChart5', ons5);
-    vegaEmbed('#onsChart6', ons6);
-    vegaEmbed('#onsChart7', ons7);
-    vegaEmbed('#onsChart8', ons8);    
-    vegaEmbed('#onsChart9', ons9);
-    vegaEmbed('#euromap', euromap);
-    vegaEmbed('#chloro', chloro);
-    vegaEmbed('#w8g1', w8g1)
-</script>
-
 
 </html>

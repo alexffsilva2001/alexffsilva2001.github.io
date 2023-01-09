@@ -1,74 +1,95 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {
-      "text": "Solar Capacity over time",
-      "subtitle": [
-        "",
-        "% Change in V.C Investment level from 2 Years previous. Constant prices, US$. Source: OECD.",
-        ""
-      ],
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 12.5,
-      "fontSize": 15.5,
-      "anchor": "middle",
-      "color": "black"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Solar Capacity over time",
+    "subtitle": [
+      "Measured as installed photovoltaic power, in GW.", "Source: Statistical Review of World Energy 2022."
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12.5,
+    "fontSize": 15.5,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/alexffsilva2001/alexffsilva2001.github.io/main/Solar_Capac_Costs.csv"
+  },
+  "height": 90,
+  "width": 130,
+  "mark": {"type": "line", "strokeWidth": 1.4},
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": true, "labelAngle": 30, "labelFontSize": 12}
     },
-    "data": {
-      "url": "https://raw.githubusercontent.com/alexffsilva2001/alexffsilva2001.github.io/main/Solar_Capac_Costs.csv"
+    "y": {
+      "field": "Solar Capacity",
+      "type": "quantitative",
+      "title": "Capacity (GW)"
     },
-    "height": 135,
-    "width": 160,
-    "mark": {"type": "line", "strokeWidth": 1.4},
-    "encoding": {
-      "x": {
-        "field": "Year",
-        "type": "temporal",
-        "title": null,
-        "axis": {"grid": true, "labelAngle": 30, "labelFontSize": 12}
-      },
-      "y": {
-        "field": "Solar Capacity",
-        "type": "quantitative",
-        "title": "2-Year % Change"
-      },
-      "facet": {
-        "field": "Country",
-        "columns": 3,
-        "title": null,
-        "header": {
-          "titleColor": "black",
-          "labelColor": "black",
-          "labelFontSize": 14
-        }
-      },
-      "color": {
-        "value": "black",
-        "condition": [
-          {"test": "datum.Country =='Australia'", "value": "darkred"},
-          {"test": "datum.Country =='China'", "value": "red"},
-          {"test": "datum.Country =='France'", "value": "brown"},
-          {"test": "datum.Country =='Germany'", "value": "orange"},
-          {"test": "datum.Country =='India'", "value": "gold"},
-          {"test": "datum.Country =='Italy'", "value": "#9ACD32"},
-          {"test": "datum.Country =='Japan'", "value": "green"},
-          {"test": "datum.Country =='Netherlands'", "value": "turquoise"},
-          {"test": "datum.Country =='South Korea'", "value": "blue"},
-          {"test": "datum.Country =='Spain'", "value": "violet"},
-          {"test": "datum.Country =='Turkey'", "value": "magenta"},
-          {"test": "datum.Country =='US'", "value": "indigo"},
-          {"test": "datum.Country =='Ukraine'", "value": "black"},
-          {"test": "datum.Country =='United Kingdom'", "value": "grey"},
-          {"test": "datum.Country =='Vietnam'", "value": "cyan"}
-        ]
-      },
-      "tooltip": [
+    "facet": {
+      "field": "Country",
+      "columns": 3,
+      "title": null,
+      "header": {
+        "titleColor": "black",
+        "labelColor": "black",
+        "labelFontSize": 14
+      }
+    },
+    "color": {
+      "value": "black",
+      "condition": [
+        {"test": "datum.Country =='Australia'", "value": "darkblue"},
+        {"test": "datum.Country =='China'", "value": "red"},
+        {"test": "datum.Country =='France'", "value": "darkblue"},
+        {"test": "datum.Country =='Germany'", "value": "gold"},
+        {"test": "datum.Country =='India'", "value": "orange"},
+        {"test": "datum.Country =='Italy'", "value": "darkgreen"},
+        {"test": "datum.Country =='Japan'", "value": "red"},
+        {"test": "datum.Country =='Netherlands'", "value": "orange"},
+        {"test": "datum.Country =='South Korea'", "value": "blue"},
+        {"test": "datum.Country =='Spain'", "value": "gold"},
+        {"test": "datum.Country =='Turkey'", "value": "red"},
+        {"test": "datum.Country =='US'", "value": "red"},
+        {"test": "datum.Country =='Ukraine'", "value": "yellow"},
+        {"test": "datum.Country =='United Kingdom'", "value": "darkblue"},
+        {"test": "datum.Country =='Vietnam'", "value": "black"}
+      ]
+    }
+  },
+  "resolve": {"scale": {"y": "independent"}},
+  "selection": {
+    "toggle": {
+      "type": "single",
+      "on": "click",
+      "empty": "all",
+      "fields": ["toggle"]
+    }
+  },
+  "transform": [{"filter": {"selection": "toggle"}}],
+  "signals": [
+    {
+      "name": "Solar Capacity",
+      "value": "Solar Capacity",
+      "on": [
         {
-          "field": "2 yr % Change",
-          "type": "quantitative",
-          "title": "2-Year % Change"
-        },
-        {"field": "Year", "type": "temporal", "title": "Year"}
+          "events": "toggle:clicked",
+          "update": "datum.toggle == 1 ? 'Solar Capacity' : 'Solar Energy Costs'"
+        }
       ]
     },
-    "resolve": {"scale": {"y": "independent"}}
-  }
+    {
+      "name": "Solar Energy Costs",
+      "value": "Solar Energy Costs",
+      "on": [
+        {
+          "events": "toggle:clicked",
+          "update": "datum.toggle == 1 ? 'Solar Capacity' : 'Another Title'"
+        }
+      ]
+    }
+  ]
+}

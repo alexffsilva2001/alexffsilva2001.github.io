@@ -3,51 +3,38 @@
   "data": {
     "url": "https://raw.githubusercontent.com/alexffsilva2001/alexffsilva2001.github.io/main/week8chart1.csv"
   },
-  //"background": "#5A0000",
+  "title": {
+  "text": "BTC movement and News Searches",
+  "subtitle": ["Source: Google Trends, Yahoo Finance"]
+},
   "layer": [
     {
       "mark": "bar",
       "encoding": {
-        "x": {
-          //"timeUnit": "month",
-          "field": "Week",
-          "type": "temporal"
-        },
+        "x": {"field": "Week", "type": "temporal"},
         "y": {
-          //"aggregate": "ci0",
           "field": "Bitcoin searches worldwide",
-          //"title": {"value":"fd", "color":{"value": "#FFFFFF"}},
-          "title": "Bitcoin News Searches (xcolor)",
+          "title": "Bitcoin News Searches (pink)",
           "scale": {"domain": [0, 120]},
           "type": "quantitative",
-          "axis": {
-            "orient": "left"
-          }
-        },//#e3242b"
-        "color":{"value": "#ef7d6a"},
-        "size":{"value": 2}
+          "axis": {"orient": "left"}
+        },
+        "color": {"value": "#ef7d6a"},
+        "size": {"value": 2}
       }
     },
     {
       "mark": "line",
       "encoding": {
-        "x": {
-          //"timeUnit": "month",
-          "field": "Week",
-          "type": "temporal"
-        },
+        "x": {"field": "Week", "type": "temporal"},
         "y": {
-          //"aggregate": "mean",
           "field": "BTC-USD",
-          "title": "BTC-USD price (ycolor)",
+          "title": "BTC-USD price US$ (purple)",
           "scale": {"domain": [0, 70000]},
           "type": "quantitative",
-          "axis": {
-            "orient": "right"
-          }
-          
+          "axis": {"orient": "right"}
         },
-        "color": {"value": "#702963"},
+        "color": {"value": "#702963"}
       }
     }
   ],

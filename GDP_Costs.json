@@ -1,503 +1,507 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
-    "data": {
-      "values": [
- {
-   "Country": "Australia",
-   "Year": 2011,
-   "GDP in 2021 US$": "62596.4321748915",
-   "Solar Energy Costs": 6777
- },
- {
-   "Country": "Australia",
-   "Year": 2012,
-   "GDP in 2021 US$": "68044.714816234",
-   "Solar Energy Costs": 4908
- },
- {
-   "Country": "Australia",
-   "Year": 2013,
-   "GDP in 2021 US$": "68158.5797427053",
-   "Solar Energy Costs": 2881
- },
- {
-   "Country": "Australia",
-   "Year": 2014,
-   "GDP in 2021 US$": "62513.4112171122",
-   "Solar Energy Costs": 3007
- },
- {
-   "Country": "Australia",
-   "Year": 2015,
-   "GDP in 2021 US$": "56710.4457244504",
-   "Solar Energy Costs": 2236
- },
- {
-   "Country": "Australia",
-   "Year": 2016,
-   "GDP in 2021 US$": "49875.5651433836",
-   "Solar Energy Costs": 1925
- },
- {
-   "Country": "Australia",
-   "Year": 2017,
-   "GDP in 2021 US$": "53936.1402549903",
-   "Solar Energy Costs": 1971
- },
- {
-   "Country": "Australia",
-   "Year": 2018,
-   "GDP in 2021 US$": "57207.8715094806",
-   "Solar Energy Costs": 1520
- },
- {
-   "Country": "Australia",
-   "Year": 2019,
-   "GDP in 2021 US$": "54941.4341793948",
-   "Solar Energy Costs": 1236
- },
- {
-   "Country": "China",
-   "Year": 2011,
-   "GDP in 2021 US$": "5614.35213522574",
-   "Solar Energy Costs": 3417
- },
- {
-   "Country": "China",
-   "Year": 2012,
-   "GDP in 2021 US$": "6300.61511825789",
-   "Solar Energy Costs": 2742
- },
- {
-   "Country": "China",
-   "Year": 2013,
-   "GDP in 2021 US$": "7020.33848453658",
-   "Solar Energy Costs": 2117
- },
- {
-   "Country": "China",
-   "Year": 2014,
-   "GDP in 2021 US$": "7636.11660125265",
-   "Solar Energy Costs": 1763
- },
- {
-   "Country": "China",
-   "Year": 2015,
-   "GDP in 2021 US$": "8016.43143498352",
-   "Solar Energy Costs": 1362
- },
- {
-   "Country": "China",
-   "Year": 2016,
-   "GDP in 2021 US$": "8094.36336674652",
-   "Solar Energy Costs": 1233
- },
- {
-   "Country": "China",
-   "Year": 2017,
-   "GDP in 2021 US$": "8816.98690451883",
-   "Solar Energy Costs": 1157
- },
- {
-   "Country": "China",
-   "Year": 2018,
-   "GDP in 2021 US$": "9905.34200388822",
-   "Solar Energy Costs": 879
- },
- {
-   "Country": "China",
-   "Year": 2019,
-   "GDP in 2021 US$": "10143.8381955585",
-   "Solar Energy Costs": 794
- },
- {
-   "Country": "Germany",
-   "Year": 2011,
-   "GDP in 2021 US$": "46705.8957963353",
-   "Solar Energy Costs": 2959
- },
- {
-   "Country": "Germany",
-   "Year": 2012,
-   "GDP in 2021 US$": "43855.8544658618",
-   "Solar Energy Costs": 2341
- },
- {
-   "Country": "Germany",
-   "Year": 2013,
-   "GDP in 2021 US$": "46298.9229177341",
-   "Solar Energy Costs": 2007
- },
- {
-   "Country": "Germany",
-   "Year": 2014,
-   "GDP in 2021 US$": "48023.8699845462",
-   "Solar Energy Costs": 1600
- },
- {
-   "Country": "Germany",
-   "Year": 2015,
-   "GDP in 2021 US$": "41103.2564363768",
-   "Solar Energy Costs": 1280
- },
- {
-   "Country": "Germany",
-   "Year": 2016,
-   "GDP in 2021 US$": "42136.1207907991",
-   "Solar Energy Costs": 1162
- },
- {
-   "Country": "Germany",
-   "Year": 2017,
-   "GDP in 2021 US$": "44652.5891722719",
-   "Solar Energy Costs": 1114
- },
- {
-   "Country": "Germany",
-   "Year": 2018,
-   "GDP in 2021 US$": "47939.2782884504",
-   "Solar Energy Costs": 1113
- },
- {
-   "Country": "Germany",
-   "Year": 2019,
-   "GDP in 2021 US$": "46793.6867616004",
-   "Solar Energy Costs": 899
- },
- {
-   "Country": "Spain",
-   "Year": 2011,
-   "GDP in 2021 US$": "31677.9003083652",
-   "Solar Energy Costs": 3263
- },
- {
-   "Country": "Spain",
-   "Year": 2012,
-   "GDP in 2021 US$": "28322.9465923276",
-   "Solar Energy Costs": 2688
- },
- {
-   "Country": "Spain",
-   "Year": 2013,
-   "GDP in 2021 US$": "29077.1820557563",
-   "Solar Energy Costs": 2310
- },
- {
-   "Country": "Spain",
-   "Year": 2014,
-   "GDP in 2021 US$": "29513.6511800405",
-   "Solar Energy Costs": 2316
- },
- {
-   "Country": "Spain",
-   "Year": 2015,
-   "GDP in 2021 US$": "25754.36102944",
-   "Solar Energy Costs": 1195
- },
- {
-   "Country": "Spain",
-   "Year": 2019,
-   "GDP in 2021 US$": "29581.5185513299",
-   "Solar Energy Costs": 766
- },
- {
-   "Country": "France",
-   "Year": 2011,
-   "GDP in 2021 US$": "43846.4660764798",
-   "Solar Energy Costs": 5592
- },
- {
-   "Country": "France",
-   "Year": 2012,
-   "GDP in 2021 US$": "40870.8523645734",
-   "Solar Energy Costs": 5153
- },
- {
-   "Country": "France",
-   "Year": 2013,
-   "GDP in 2021 US$": "42602.7179652667",
-   "Solar Energy Costs": 3245
- },
- {
-   "Country": "France",
-   "Year": 2014,
-   "GDP in 2021 US$": "43068.5487241739",
-   "Solar Energy Costs": 2369
- },
- {
-   "Country": "France",
-   "Year": 2015,
-   "GDP in 2021 US$": "36652.9223052178",
-   "Solar Energy Costs": 1559
- },
- {
-   "Country": "France",
-   "Year": 2016,
-   "GDP in 2021 US$": "37062.5335723829",
-   "Solar Energy Costs": 1320
- },
- {
-   "Country": "France",
-   "Year": 2017,
-   "GDP in 2021 US$": "38781.0494870836",
-   "Solar Energy Costs": 1240
- },
- {
-   "Country": "France",
-   "Year": 2018,
-   "GDP in 2021 US$": "41557.8548588876",
-   "Solar Energy Costs": 1074
- },
- {
-   "Country": "France",
-   "Year": 2019,
-   "GDP in 2021 US$": "40494.8982936276",
-   "Solar Energy Costs": 979
- },
- {
-   "Country": "India",
-   "Year": 2011,
-   "GDP in 2021 US$": "1449.60178853415",
-   "Solar Energy Costs": 3112
- },
- {
-   "Country": "India",
-   "Year": 2012,
-   "GDP in 2021 US$": "1434.01819806113",
-   "Solar Energy Costs": 2730
- },
- {
-   "Country": "India",
-   "Year": 2013,
-   "GDP in 2021 US$": "1438.05748041006",
-   "Solar Energy Costs": 2810
- },
- {
-   "Country": "India",
-   "Year": 2014,
-   "GDP in 2021 US$": "1559.86451848257",
-   "Solar Energy Costs": 1907
- },
- {
-   "Country": "India",
-   "Year": 2015,
-   "GDP in 2021 US$": "1590.17391842781",
-   "Solar Energy Costs": 1300
- },
- {
-   "Country": "India",
-   "Year": 2016,
-   "GDP in 2021 US$": "1714.28035526737",
-   "Solar Energy Costs": 1119
- },
- {
-   "Country": "India",
-   "Year": 2017,
-   "GDP in 2021 US$": "1957.968841235",
-   "Solar Energy Costs": 1116
- },
- {
-   "Country": "India",
-   "Year": 2018,
-   "GDP in 2021 US$": "1974.37778792366",
-   "Solar Energy Costs": 793
- },
- {
-   "Country": "India",
-   "Year": 2019,
-   "GDP in 2021 US$": "2047.23270433512",
-   "Solar Energy Costs": 618
- },
- {
-   "Country": "Italy",
-   "Year": 2011,
-   "GDP in 2021 US$": "38649.6394836789",
-   "Solar Energy Costs": 4876
- },
- {
-   "Country": "Italy",
-   "Year": 2012,
-   "GDP in 2021 US$": "35051.5212697703",
-   "Solar Energy Costs": 2571
- },
- {
-   "Country": "Italy",
-   "Year": 2013,
-   "GDP in 2021 US$": "35560.0814062288",
-   "Solar Energy Costs": 2035
- },
- {
-   "Country": "Italy",
-   "Year": 2014,
-   "GDP in 2021 US$": "35565.7213771496",
-   "Solar Energy Costs": 1972
- },
- {
-   "Country": "Italy",
-   "Year": 2017,
-   "GDP in 2021 US$": "32406.7203150134",
-   "Solar Energy Costs": 972
- },
- {
-   "Country": "Italy",
-   "Year": 2018,
-   "GDP in 2021 US$": "34622.1696664741",
-   "Solar Energy Costs": 870
- },
- {
-   "Country": "Italy",
-   "Year": 2019,
-   "GDP in 2021 US$": "33673.7509627421",
-   "Solar Energy Costs": 830
- },
- {
-   "Country": "Japan",
-   "Year": 2011,
-   "GDP in 2021 US$": "48760.0789494211",
-   "Solar Energy Costs": 5431
- },
- {
-   "Country": "Japan",
-   "Year": 2012,
-   "GDP in 2021 US$": "49145.2804308193",
-   "Solar Energy Costs": 3918
- },
- {
-   "Country": "Japan",
-   "Year": 2013,
-   "GDP in 2021 US$": "40898.6478964744",
-   "Solar Energy Costs": 3348
- },
- {
-   "Country": "Japan",
-   "Year": 2014,
-   "GDP in 2021 US$": "38475.3952461838",
-   "Solar Energy Costs": 3069
- },
- {
-   "Country": "Japan",
-   "Year": 2015,
-   "GDP in 2021 US$": "34960.6393843385",
-   "Solar Energy Costs": 2221
- },
- {
-   "Country": "Japan",
-   "Year": 2016,
-   "GDP in 2021 US$": "39375.4731620781",
-   "Solar Energy Costs": 2437
- },
- {
-   "Country": "Japan",
-   "Year": 2017,
-   "GDP in 2021 US$": "38834.0529341227",
-   "Solar Energy Costs": 2210
- },
- {
-   "Country": "Japan",
-   "Year": 2018,
-   "GDP in 2021 US$": "39727.1165995928",
-   "Solar Energy Costs": 2101
- },
- {
-   "Country": "Japan",
-   "Year": 2019,
-   "GDP in 2021 US$": "40458.0018755824",
-   "Solar Energy Costs": 2070
- },
- {
-   "Country": "Netherlands",
-   "Year": 2016,
-   "GDP in 2021 US$": "46039.1059284098",
-   "Solar Energy Costs": 1147
- },
- {
-   "Country": "Netherlands",
-   "Year": 2017,
-   "GDP in 2021 US$": "48675.2223350213",
-   "Solar Energy Costs": 1548
- },
- {
-   "Country": "Netherlands",
-   "Year": 2018,
-   "GDP in 2021 US$": "53044.5324352253",
-   "Solar Energy Costs": 1168
- },
- {
-   "Country": "Netherlands",
-   "Year": 2019,
-   "GDP in 2021 US$": "52476.2732533327",
-   "Solar Energy Costs": 1121
- },
- {
-   "Country": "Ukraine",
-   "Year": 2011,
-   "GDP in 2021 US$": "3704.82495117188",
-   "Solar Energy Costs": 4922
- },
- {
-   "Country": "Ukraine",
-   "Year": 2013,
-   "GDP in 2021 US$": "4187.73974609375",
-   "Solar Energy Costs": 4012
- },
- {
-   "Country": "Ukraine",
-   "Year": 2017,
-   "GDP in 2021 US$": "2638.326171875",
-   "Solar Energy Costs": 1225
- },
- {
-   "Country": "Ukraine",
-   "Year": 2018,
-   "GDP in 2021 US$": "3096.56176757813",
-   "Solar Energy Costs": 1344
- },
- {
-   "Country": "Ukraine",
-   "Year": 2019,
-   "GDP in 2021 US$": "3661.45629882813",
-   "Solar Energy Costs": 874
- },
- {
-   "Country": "Vietnam",
-   "Year": 2016,
-   "GDP in 2021 US$": "2760.71710527049",
-   "Solar Energy Costs": 2249
- },
- {
-   "Country": "Vietnam",
-   "Year": 2017,
-   "GDP in 2021 US$": "2992.07174150097",
-   "Solar Energy Costs": 2869
- },
- {
-   "Country": "Vietnam",
-   "Year": 2019,
-   "GDP in 2021 US$": "3491.09127354876",
-   "Solar Energy Costs": 1054
- }
-]
-    },
-    "mark": "point",
-    "encoding": {
-      "x": {"field": "Solar Energy Costs", "type": "quantitative"},
-      "y": {"field": "GDP in 2021 US$", "type": "quantitative"},
-      "color":{"field":"Country"},
-      "tooltip": [
-        {"field": "Country", "type": "nominal", "title": "Country"},
-        {"field": "GDP in 2021 US$", "type": "quantitative", "title": "GDP","format": ".2f"},
-        {
-          "field": "Solar Energy Costs",
-          "type": "quantitative",
-          "title": "Solar Energy Costs"
-        },
-        {
-          "field": "Year",
-          "type": "quantitative",
-          "title": "Year"
-        }
-      ]
-    }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Distribution between GDP and Solar Energy Costs",
+    "subtitle": ["GDP-per-capita in 2021US$.", "Source: IRENA, World Bank."],
+    "subtitleFontStyle": "italic"
+  },
+  "data": {
+    "values": [
+      {
+        "Country": "Australia",
+        "Year": 2011,
+        "GDP in 2021 US$": "62596.4321748915",
+        "Solar Energy Costs": 6777
+      },
+      {
+        "Country": "Australia",
+        "Year": 2012,
+        "GDP in 2021 US$": "68044.714816234",
+        "Solar Energy Costs": 4908
+      },
+      {
+        "Country": "Australia",
+        "Year": 2013,
+        "GDP in 2021 US$": "68158.5797427053",
+        "Solar Energy Costs": 2881
+      },
+      {
+        "Country": "Australia",
+        "Year": 2014,
+        "GDP in 2021 US$": "62513.4112171122",
+        "Solar Energy Costs": 3007
+      },
+      {
+        "Country": "Australia",
+        "Year": 2015,
+        "GDP in 2021 US$": "56710.4457244504",
+        "Solar Energy Costs": 2236
+      },
+      {
+        "Country": "Australia",
+        "Year": 2016,
+        "GDP in 2021 US$": "49875.5651433836",
+        "Solar Energy Costs": 1925
+      },
+      {
+        "Country": "Australia",
+        "Year": 2017,
+        "GDP in 2021 US$": "53936.1402549903",
+        "Solar Energy Costs": 1971
+      },
+      {
+        "Country": "Australia",
+        "Year": 2018,
+        "GDP in 2021 US$": "57207.8715094806",
+        "Solar Energy Costs": 1520
+      },
+      {
+        "Country": "Australia",
+        "Year": 2019,
+        "GDP in 2021 US$": "54941.4341793948",
+        "Solar Energy Costs": 1236
+      },
+      {
+        "Country": "China",
+        "Year": 2011,
+        "GDP in 2021 US$": "5614.35213522574",
+        "Solar Energy Costs": 3417
+      },
+      {
+        "Country": "China",
+        "Year": 2012,
+        "GDP in 2021 US$": "6300.61511825789",
+        "Solar Energy Costs": 2742
+      },
+      {
+        "Country": "China",
+        "Year": 2013,
+        "GDP in 2021 US$": "7020.33848453658",
+        "Solar Energy Costs": 2117
+      },
+      {
+        "Country": "China",
+        "Year": 2014,
+        "GDP in 2021 US$": "7636.11660125265",
+        "Solar Energy Costs": 1763
+      },
+      {
+        "Country": "China",
+        "Year": 2015,
+        "GDP in 2021 US$": "8016.43143498352",
+        "Solar Energy Costs": 1362
+      },
+      {
+        "Country": "China",
+        "Year": 2016,
+        "GDP in 2021 US$": "8094.36336674652",
+        "Solar Energy Costs": 1233
+      },
+      {
+        "Country": "China",
+        "Year": 2017,
+        "GDP in 2021 US$": "8816.98690451883",
+        "Solar Energy Costs": 1157
+      },
+      {
+        "Country": "China",
+        "Year": 2018,
+        "GDP in 2021 US$": "9905.34200388822",
+        "Solar Energy Costs": 879
+      },
+      {
+        "Country": "China",
+        "Year": 2019,
+        "GDP in 2021 US$": "10143.8381955585",
+        "Solar Energy Costs": 794
+      },
+      {
+        "Country": "Germany",
+        "Year": 2011,
+        "GDP in 2021 US$": "46705.8957963353",
+        "Solar Energy Costs": 2959
+      },
+      {
+        "Country": "Germany",
+        "Year": 2012,
+        "GDP in 2021 US$": "43855.8544658618",
+        "Solar Energy Costs": 2341
+      },
+      {
+        "Country": "Germany",
+        "Year": 2013,
+        "GDP in 2021 US$": "46298.9229177341",
+        "Solar Energy Costs": 2007
+      },
+      {
+        "Country": "Germany",
+        "Year": 2014,
+        "GDP in 2021 US$": "48023.8699845462",
+        "Solar Energy Costs": 1600
+      },
+      {
+        "Country": "Germany",
+        "Year": 2015,
+        "GDP in 2021 US$": "41103.2564363768",
+        "Solar Energy Costs": 1280
+      },
+      {
+        "Country": "Germany",
+        "Year": 2016,
+        "GDP in 2021 US$": "42136.1207907991",
+        "Solar Energy Costs": 1162
+      },
+      {
+        "Country": "Germany",
+        "Year": 2017,
+        "GDP in 2021 US$": "44652.5891722719",
+        "Solar Energy Costs": 1114
+      },
+      {
+        "Country": "Germany",
+        "Year": 2018,
+        "GDP in 2021 US$": "47939.2782884504",
+        "Solar Energy Costs": 1113
+      },
+      {
+        "Country": "Germany",
+        "Year": 2019,
+        "GDP in 2021 US$": "46793.6867616004",
+        "Solar Energy Costs": 899
+      },
+      {
+        "Country": "Spain",
+        "Year": 2011,
+        "GDP in 2021 US$": "31677.9003083652",
+        "Solar Energy Costs": 3263
+      },
+      {
+        "Country": "Spain",
+        "Year": 2012,
+        "GDP in 2021 US$": "28322.9465923276",
+        "Solar Energy Costs": 2688
+      },
+      {
+        "Country": "Spain",
+        "Year": 2013,
+        "GDP in 2021 US$": "29077.1820557563",
+        "Solar Energy Costs": 2310
+      },
+      {
+        "Country": "Spain",
+        "Year": 2014,
+        "GDP in 2021 US$": "29513.6511800405",
+        "Solar Energy Costs": 2316
+      },
+      {
+        "Country": "Spain",
+        "Year": 2015,
+        "GDP in 2021 US$": "25754.36102944",
+        "Solar Energy Costs": 1195
+      },
+      {
+        "Country": "Spain",
+        "Year": 2019,
+        "GDP in 2021 US$": "29581.5185513299",
+        "Solar Energy Costs": 766
+      },
+      {
+        "Country": "France",
+        "Year": 2011,
+        "GDP in 2021 US$": "43846.4660764798",
+        "Solar Energy Costs": 5592
+      },
+      {
+        "Country": "France",
+        "Year": 2012,
+        "GDP in 2021 US$": "40870.8523645734",
+        "Solar Energy Costs": 5153
+      },
+      {
+        "Country": "France",
+        "Year": 2013,
+        "GDP in 2021 US$": "42602.7179652667",
+        "Solar Energy Costs": 3245
+      },
+      {
+        "Country": "France",
+        "Year": 2014,
+        "GDP in 2021 US$": "43068.5487241739",
+        "Solar Energy Costs": 2369
+      },
+      {
+        "Country": "France",
+        "Year": 2015,
+        "GDP in 2021 US$": "36652.9223052178",
+        "Solar Energy Costs": 1559
+      },
+      {
+        "Country": "France",
+        "Year": 2016,
+        "GDP in 2021 US$": "37062.5335723829",
+        "Solar Energy Costs": 1320
+      },
+      {
+        "Country": "France",
+        "Year": 2017,
+        "GDP in 2021 US$": "38781.0494870836",
+        "Solar Energy Costs": 1240
+      },
+      {
+        "Country": "France",
+        "Year": 2018,
+        "GDP in 2021 US$": "41557.8548588876",
+        "Solar Energy Costs": 1074
+      },
+      {
+        "Country": "France",
+        "Year": 2019,
+        "GDP in 2021 US$": "40494.8982936276",
+        "Solar Energy Costs": 979
+      },
+      {
+        "Country": "India",
+        "Year": 2011,
+        "GDP in 2021 US$": "1449.60178853415",
+        "Solar Energy Costs": 3112
+      },
+      {
+        "Country": "India",
+        "Year": 2012,
+        "GDP in 2021 US$": "1434.01819806113",
+        "Solar Energy Costs": 2730
+      },
+      {
+        "Country": "India",
+        "Year": 2013,
+        "GDP in 2021 US$": "1438.05748041006",
+        "Solar Energy Costs": 2810
+      },
+      {
+        "Country": "India",
+        "Year": 2014,
+        "GDP in 2021 US$": "1559.86451848257",
+        "Solar Energy Costs": 1907
+      },
+      {
+        "Country": "India",
+        "Year": 2015,
+        "GDP in 2021 US$": "1590.17391842781",
+        "Solar Energy Costs": 1300
+      },
+      {
+        "Country": "India",
+        "Year": 2016,
+        "GDP in 2021 US$": "1714.28035526737",
+        "Solar Energy Costs": 1119
+      },
+      {
+        "Country": "India",
+        "Year": 2017,
+        "GDP in 2021 US$": "1957.968841235",
+        "Solar Energy Costs": 1116
+      },
+      {
+        "Country": "India",
+        "Year": 2018,
+        "GDP in 2021 US$": "1974.37778792366",
+        "Solar Energy Costs": 793
+      },
+      {
+        "Country": "India",
+        "Year": 2019,
+        "GDP in 2021 US$": "2047.23270433512",
+        "Solar Energy Costs": 618
+      },
+      {
+        "Country": "Italy",
+        "Year": 2011,
+        "GDP in 2021 US$": "38649.6394836789",
+        "Solar Energy Costs": 4876
+      },
+      {
+        "Country": "Italy",
+        "Year": 2012,
+        "GDP in 2021 US$": "35051.5212697703",
+        "Solar Energy Costs": 2571
+      },
+      {
+        "Country": "Italy",
+        "Year": 2013,
+        "GDP in 2021 US$": "35560.0814062288",
+        "Solar Energy Costs": 2035
+      },
+      {
+        "Country": "Italy",
+        "Year": 2014,
+        "GDP in 2021 US$": "35565.7213771496",
+        "Solar Energy Costs": 1972
+      },
+      {
+        "Country": "Italy",
+        "Year": 2017,
+        "GDP in 2021 US$": "32406.7203150134",
+        "Solar Energy Costs": 972
+      },
+      {
+        "Country": "Italy",
+        "Year": 2018,
+        "GDP in 2021 US$": "34622.1696664741",
+        "Solar Energy Costs": 870
+      },
+      {
+        "Country": "Italy",
+        "Year": 2019,
+        "GDP in 2021 US$": "33673.7509627421",
+        "Solar Energy Costs": 830
+      },
+      {
+        "Country": "Japan",
+        "Year": 2011,
+        "GDP in 2021 US$": "48760.0789494211",
+        "Solar Energy Costs": 5431
+      },
+      {
+        "Country": "Japan",
+        "Year": 2012,
+        "GDP in 2021 US$": "49145.2804308193",
+        "Solar Energy Costs": 3918
+      },
+      {
+        "Country": "Japan",
+        "Year": 2013,
+        "GDP in 2021 US$": "40898.6478964744",
+        "Solar Energy Costs": 3348
+      },
+      {
+        "Country": "Japan",
+        "Year": 2014,
+        "GDP in 2021 US$": "38475.3952461838",
+        "Solar Energy Costs": 3069
+      },
+      {
+        "Country": "Japan",
+        "Year": 2015,
+        "GDP in 2021 US$": "34960.6393843385",
+        "Solar Energy Costs": 2221
+      },
+      {
+        "Country": "Japan",
+        "Year": 2016,
+        "GDP in 2021 US$": "39375.4731620781",
+        "Solar Energy Costs": 2437
+      },
+      {
+        "Country": "Japan",
+        "Year": 2017,
+        "GDP in 2021 US$": "38834.0529341227",
+        "Solar Energy Costs": 2210
+      },
+      {
+        "Country": "Japan",
+        "Year": 2018,
+        "GDP in 2021 US$": "39727.1165995928",
+        "Solar Energy Costs": 2101
+      },
+      {
+        "Country": "Japan",
+        "Year": 2019,
+        "GDP in 2021 US$": "40458.0018755824",
+        "Solar Energy Costs": 2070
+      },
+      {
+        "Country": "Netherlands",
+        "Year": 2016,
+        "GDP in 2021 US$": "46039.1059284098",
+        "Solar Energy Costs": 1147
+      },
+      {
+        "Country": "Netherlands",
+        "Year": 2017,
+        "GDP in 2021 US$": "48675.2223350213",
+        "Solar Energy Costs": 1548
+      },
+      {
+        "Country": "Netherlands",
+        "Year": 2018,
+        "GDP in 2021 US$": "53044.5324352253",
+        "Solar Energy Costs": 1168
+      },
+      {
+        "Country": "Netherlands",
+        "Year": 2019,
+        "GDP in 2021 US$": "52476.2732533327",
+        "Solar Energy Costs": 1121
+      },
+      {
+        "Country": "Ukraine",
+        "Year": 2011,
+        "GDP in 2021 US$": "3704.82495117188",
+        "Solar Energy Costs": 4922
+      },
+      {
+        "Country": "Ukraine",
+        "Year": 2013,
+        "GDP in 2021 US$": "4187.73974609375",
+        "Solar Energy Costs": 4012
+      },
+      {
+        "Country": "Ukraine",
+        "Year": 2017,
+        "GDP in 2021 US$": "2638.326171875",
+        "Solar Energy Costs": 1225
+      },
+      {
+        "Country": "Ukraine",
+        "Year": 2018,
+        "GDP in 2021 US$": "3096.56176757813",
+        "Solar Energy Costs": 1344
+      },
+      {
+        "Country": "Ukraine",
+        "Year": 2019,
+        "GDP in 2021 US$": "3661.45629882813",
+        "Solar Energy Costs": 874
+      },
+      {
+        "Country": "Vietnam",
+        "Year": 2016,
+        "GDP in 2021 US$": "2760.71710527049",
+        "Solar Energy Costs": 2249
+      },
+      {
+        "Country": "Vietnam",
+        "Year": 2017,
+        "GDP in 2021 US$": "2992.07174150097",
+        "Solar Energy Costs": 2869
+      },
+      {
+        "Country": "Vietnam",
+        "Year": 2019,
+        "GDP in 2021 US$": "3491.09127354876",
+        "Solar Energy Costs": 1054
+      }
+    ]
+  },
+  "mark": "point",
+  "encoding": {
+    "x": {"field": "Solar Energy Costs", "type": "quantitative","title":"Solar Energy Costs (US$/kW)"},
+    "y": {"field": "GDP in 2021 US$", "type": "quantitative","title":"GDP-per-capita (US$)"},
+    "color": {"field": "Country"},
+    "tooltip": [
+      {"field": "Country", "type": "nominal", "title": "Country"},
+      {
+        "field": "GDP in 2021 US$",
+        "type": "quantitative",
+        "title": "GDP",
+        "format": ".2f"
+      },
+      {
+        "field": "Solar Energy Costs",
+        "type": "quantitative",
+        "title": "Solar Energy Costs"
+      },
+      {"field": "Year", "type": "quantitative", "title": "Year"}
+    ]
   }
-  
+}

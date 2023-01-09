@@ -1,23 +1,234 @@
+<!--------------------------------------------------------------------------
+Nia Thomas, Data Science 2021
+Project
+--------------------------------------------------------------------------->
+
 <!DOCTYPE html>
-<html lang="en">
+
+<!-- CSS -->
+<link rel="stylesheet" href="portfolio.css"> 
+
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
-    
-    <!-- Title for the page -->
-    <title>Title of Project</title>
 
-    <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index.css">
+<!-- Title -->
 
-    <!--The next three lines allow the Vega embed-->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+<!-- Title -->
+<h1>Data Science Portfolio</h1>
+
+<!-- Header -->
+<h2>Alexandre Fernandes Ferreira da Silva</h2>
+
 </head>
+    
+<!-- ///////////////////  START BODY //////////////////////////////////// -->
+
 <body>
-    <h1>This is my Project</h1>
-    <h2>but mind your business</h2>
+
+<!-- /////////////////// NAVIGATION BUTTONS //////////////////////////////////// -->
+
+<div class="navbuttons">
+    <button class="button" style="vertical-align:middle" onclick="location.href='portfolio.html'"><span>Portfolio </span></button>
+    <button class="button" style="vertical-align:middle" onclick="location.href='project.html'"><span>Project </span></button>
+    <button class="button" style="vertical-align:middle" onclick="location.href='https://github.com/alexffsilva2001/alexffsilva2001.github.io'"><span>GitHub </span></button>
+
+
+</div>
+    
+<!-- /////////////////// END NAVIGATION BUTTONS //////////////////////////////////// -->
+
+<container class="separator1">
+</container>
+
+
+<h5>Week 1</h5>
+<container class="separator2">
+
+<h3>Task: Embed pre-made charts into the website:</h3><br>
+<div class="text_type1">The first chart displays certain industries' contribution to the calculation of inflation</div>
+<div class="chart1" id="Chart1"></div>
+<br><br>
+<div class="text_type1">The second chart displays year-on-year inflation in the US from 1963 to 2022</div>
+<div class="chart2" id="Chart2"></div>
+</container>
+
+<h5>Week 2</h5>
+<container class="separator2">
+<h3>Task: Creating a chart using FT data and improving it:</h3>
+
+<div class="text_type1">The first chart displays IMF lending in nominal terms (1984-2022).</div>
+<div class="chart3" id="imflending"></div>
+
+<div class="text_type1">The second chart is an improvement on the first as it charts the level of lending by the level of World GDP at the time</div>
+<div class="text_type1"></div>
+<div class="chart4" id="imflendingadjustedGDP"></div>
+
+<div class="text_type1">The riskiest year to invest in markets was therefore 1984 as IMF lending proportional to World GDP was the highest</div>
+
+</container>
+
+<h5>Week 3</h5>
+<container class="separator2">
+<h3>Task: Use Python to convert csv data into JSON to make a chart and then to modify the visual endcoding:</h3>
+<div class="text_type1">This bar chart exhibits the UK's GDP: chained volume measures, seasonally adjusted in millions of £s</div>
+<div class="chart5" id="Chart5"></div>
+<div class="text_type1">This chart is an area chart where you can highlight each quarter area to have more distinction for the lower measures thus making it easier to read the data</div>
+<div class="chart6" id="Chart6"></div>
+</container>
+
+<h5>Week 4</h5>
+<container class="separator2">
+<h3>Task: Scrape data from a website using Python and produce a chart with it:</h3>
+<div class="text_type1">This stacked bar chart shows the sum and individual capacity of stadiums of Primeira Liga football clubs. The data was <a class="textLink"
+  href="https://colab.research.google.com/drive/1BW-ID2PnXSY3eeAS_81EGyDUWBQujoFg?authuser=1" style="color:#89ffe0">scraped</a> using python.</div>.
+<div class="chart1" id="Chart7"></div>
+
+</container>
+
+<h5>Week 5</h5>
+<container class="separator2">
+<h3>Task: Use an ONS API to collect data into a dashboard of charts that update when the data updates too:</h3>
+<div class="text_type1">These charts were batch downloaded using a Python loop seen <a class="textLink"
+  href="https://colab.research.google.com/drive/1mFkJsG-Q37R7VkQTXJwUe_9y7b3P1cNG?authuser=1" style="color:#89ffe0">here</a>.</div>.
+<div class="dashboard" id="ons1"></div>
+<div class="dashboard" id="ons2"></div>
+<div class="dashboard" id="ons3"></div>
+<div class="dashboard" id="ons4"></div>
+<div class="dashboard" id="ons5"></div>
+<div class="dashboard" id="ons6"></div>
+<div class="dashboard" id="ons7"></div>
+<div class="dashboard" id="ons8"></div>
+<div class="dashboard" id="ons9"></div>
+
+</container>
+
+<h5>Week 6</h5>
+<container class="separator2">
+<h3>Reading Week: No Task</h3>
+</div>
+</container>
+
+<h5>Week 7</h5>
+<container class="separator2">
+
+<h3>Task: Embed a base map and a chloropleth:</h3>
+<div class="text_type1">This is a base map of Europe with all its countries outlined</div>
+<div class="chart1" id="euromap"></div>
+<div class="text_type1">This chloropleth shows the revenue of each country's top flight of football.</div>
+<div class="chart1" id="chloro"></div>
+<div class="text_type1">This chloropleth illustrates Premier League's supremacy in league football and the difference between the Top 5 leagues in Europe compared to the rest</div>
+  <div class="navbuttons">
+    <button class="button2" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1lry-_anBQWZvht_O36PlXfCIBPGqdTDR?authuser=1'"><span>Scraped revenue (python)</span></button>
+
+</div>
+</container>
+
+<h5>Week 8</h5>
+<container class="separator2">
+<h3>Task: Support or refute an argument made at The Festival of Economics using two graphs:</h3>
+<div class="text_type1">In the cryptocurrencies talk at the Festival of Economics, the speaker said that they thought that cryptocurrencies investors were acting on herd mentality and that they were not informed. This chart shows that with every big movement in BTC, google searches for BTC shot up. This shows that investor did inform themselves of the current happenings within the space and hence I refute this argument.</div>
+<div class="chart1" id="w8g1"></div>
+<div class="text_type1">The speaker also stated that cryptocurrencies' investors believed Bitcoin to be a hedge against inflation and a way to take back control of their money. This chart shows that BTC dropped as inflation kept rising, which would not be the case if it were a hedge for it, hence I support their statement.</div>
+<div class="chart1" id="w8g2"></div>
+
+</container>
+
+<h5>Week 9</h5>
+<container class="separator2">
+<h3>Task: Advanced charts</h3>
+<div class="text_type1">This scatter graph shows the disposition of a country's GDP-per-capita and the cost of their solar energy, throughout the years. Showing a significant shift to the left (cheaper solar energy) regardless of their GDP-per-capita - albeit they are all developing/developed countries</div>
+<div class="chart1" id="scatter2"></div>
+<div class="text_type1">This loess regression shows the relationship between a country's average temperature and its electricity consumption in 2014, showing a strong negative relationship for those not extremely hot (>25°C average)</div>
+<div class="chart1" id="loess"></div>
+
+</container>
+
+<h5>Week 10</h5>
+<container class="separator2">
+<h3>Task: Supervised Machine Learning:</h3>
+<div class="text_type1">This <a class="textLink" href="https://colab.research.google.com/drive/1r2l8fmqdymfJJ6Tn92VWStSPEej7mTkj?authuser=1" style="color:#89ffe0">Machine Learning Linear Regression</a> shows a negative relationship between precipitation and solar irradiance (DNI) that furthers the belief that deserts host the most irradiance in the world and thus are the best places for solar energy adoption</div>
+<img src="Reg_Rain_DNI.png" alt="Regression1" width="400" height="400">
+
+</container>
+
+<h5>Week 11</h5>
+<container class="separator2">
+<h3>Task: Unsupervised Machine Learning:</h3>
+<div class="text_type1">This <a class="textLink" href="https://colab.research.google.com/drive/1EElmiI9IQgwYcl_lQCt-9XtCooX2akuI?authuser=1" style="color:#89ffe0">Machine Learning Clustering</a> algorithm shows three clusters:
+  <div class="text_type1"></div>
+  <img src="Clusters_DNI_Lat.png" alt="Global Clusters" width="400" height="400">
+
+  <div class="text_type1">1) Countries near the equator have a volatile level of irradiance, some have a lot, some have a little, likely due to humidity within those climates that causes cloud-cover.</div>
+  <div class="text_type1">2) Countries in the 2000km-4000Km area vary much less in their level of irradiance and have, on average, higher irradiance.</div>
+  <div class="text_type1">3) Countries far from the equator, 4000+Km either way, vary less than those near the equator but, on average, have a lower irradiance.</div>
+  This furthers the belief that countries around the tropics of capricorn and cancer host the best average irradiance in the world among all the countries and thus are the best places for solar energy adoption</div>
+
+</container>
+
 </body>
+<!-- ///////////////////  END BODY //////////////////////////////////// -->
+
+<script>
+  //Define charts:
+  var myChart1 = "new_graph1.json";
+  var myChart2 = "new_graph2.json";
+  var imflending = "imflending.json";
+  var imflendingadjustedGDP = "imflendingadjustedGDP.json";
+  var test1 = "chained_vol_gdp.json";
+  var test2 = "chained_vol_gdp_diff.json";
+  var capacity = "stadiumcapacity.json";
+  var ons1 = "week5_hmk_mgsx.json";
+  var ons2 = "week5_hmk_mgsz.json";
+  var ons3 = "week5_hmk_lf2o.json";
+  var ons4 = "week5_hmk_lf2p.json";
+  var ons5 = "week5_hmk_ybvm.json";
+  var ons6 = "week5_hmk_ybvs.json";
+  var ons7 = "week5_hmk_ycgr.json";
+  var ons8 = "week5_hmk_ycgx.json";
+  var ons9 = "week5_hmk_lf2f.json";
+  var euromap = "EuropeMap.json";
+  var chloro = "chloropleth.json";
+  var w8g1 = "week8_graph1.json";
+  var scatter2 = "GDP_Costs.json";
+  var w8g1 = "week8_graph1.json";
+  var w8g2 = "week8_graph2.json";
+  var w8g1 = "week8_graph1.json";
+  var loess = "manual_Temp_ECons.json";
+
+  
+  // Embed charts:
+  vegaEmbed('#Chart1', myChart1);
+  vegaEmbed('#Chart2', myChart2);
+  vegaEmbed('#imflending', imflending);
+  vegaEmbed('#imflendingadjustedGDP', imflendingadjustedGDP);
+  vegaEmbed('#Chart5', test1);
+  vegaEmbed('#Chart6', test2);
+  vegaEmbed('#Chart7', capacity);
+  vegaEmbed('#ons1', ons1);
+  vegaEmbed('#ons2', ons2);
+  vegaEmbed('#ons3', ons3);
+  vegaEmbed('#ons4', ons4);
+  vegaEmbed('#ons5', ons5);
+  vegaEmbed('#ons6', ons6);
+  vegaEmbed('#ons7', ons7);
+  vegaEmbed('#ons8', ons8);    
+  vegaEmbed('#ons9', ons9);
+  vegaEmbed('#euromap', euromap);
+  vegaEmbed('#chloro', chloro);
+  vegaEmbed('#w8g1', w8g1);
+  vegaEmbed('#scatter2', scatter2);
+  vegaEmbed('#w8g2', w8g2);
+  vegaEmbed('#w8g1', w8g1);
+  vegaEmbed('#loess', loess);
+
+</script>
+
+
 </html>
