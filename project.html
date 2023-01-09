@@ -37,8 +37,8 @@
 
 <h4>Adopting Solar Energy: The Path to a Cleaner Earth</h4>
 
-<div class="text_type1">Knowing where solar energy can be utilized is crucial for a number of reasons. Solar energy is a renewable resource, capable of providing a constant source of power for the future. It also helps to lower greenhouse gas emissions and can decrease energy costs for households and businesses. By identifying where solar energy can thrive, we can work towards a more sustainable and environmentally-friendly future.
-    Identifying locations where solar energy can be adopted is important for several reasons. Not only is solar energy a renewable energy source that can provide a sustainable source of power for the long term, it also helps to reduce greenhouse gas emissions and can lower energy costs for households and businesses. By identifying areas where solar energy can thrive, we can not only take advantage of these benefits but also work towards a more sustainable and environmentally-friendly future.
+<div class="text_type1">Knowing where solar energy can be utilized is crucial. Solar energy is a renewable resource, capable of providing a constant source of power for the future. It also helps to lower greenhouse gas emissions and can decrease energy costs for households and businesses. By identifying where solar energy can thrive, we can work towards a more sustainable and environmentally-friendly future.
+    The utilisation of solar energy and other renewables is vital for the longevity of life on Earth, but for their implementation to be successful, income and development inequality has to cease. This page will highlight which countries solar-adoption would benefit most and why implementation world-wide is not yet possible.
     </div>
 
 
@@ -68,7 +68,8 @@
 <h5>EMISSIONS & OPTIMAL COUNTRIES</h5>
 <container class="separator2">
 
-    <div class="text_type1">A primary advantage of solar energy is its reduction of fossil fuel dependency and greenhouse gas emissions. Countries with high electricity consumption typically release more GHGs, as seen in the scatterplot below. These nations can reduce their emissions and reliance on fossil fuels by switching to solar power.</div>
+    <div class="text_type1">A primary advantage of solar energy is its reduction of fossil fuel dependency and greenhouse gas emissions. Countries with high electricity consumption typically release more GHGs, as seen in the scatterplot below. These nations can reduce their emissions and reliance on fossil fuels by switching to solar power. This data is replicable as its automation allows for analysation over time, as the API updates its data.
+    </div>
     
         <div class="chart1" id="scatter1"></div>
 
@@ -94,7 +95,6 @@
             <button class="button2" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1hSSeYF-xVzyay4Xnb9AmmcUDv0mFpYtc?authuser=1'"><span>Data Cleaning</span></button>
         </div>
 
-<h6>link two colab's here</h6>
 
 </container>
 
@@ -113,23 +113,17 @@
         </div>
 
 
-        <div class="text_type1">The correlation between percentage of solar energy generation and solar energy costs is negative, with higher costs resulting in less usage. However, low costs do not yet result in higher usage due to less-developed countries' limited monetary ability to switch to solar.</div>
+        <div class="text_type1">The correlation from the <a class="textLink" href="https://colab.research.google.com/drive/1A_NVGqrK_5d9N6ZhQCIyZDVInJbYql4P?authuser=1" style="color:#89ffe0">regression</a> between percentage of solar energy generation and solar energy costs is negative, with higher costs resulting in less usage. However, low costs do not yet result in higher usage due to less-developed countries' limited monetary ability to switch to solar.</div>
 
         <img src="Reg_Costs_USE.png" alt="Regression1" width="400" height="400">
-        <h6>Don't put button here, just < a > link them to some text</h6>
-    
-        
-        <div class="navbuttons">
-            <button class="button2" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1RsyXqHzf7gCvMZKE07NPxV1D4mJ77IVF?authuser=1#scrollTo=lgJfCzc1MHwZ'"><span>Data Cleaning</span></button>
-        </div>
+   
 </container>
 
 <h5>CONCLUSION: OPTIMAL COUNTRIES</h5>
 <container class="separator2">
     <div class="text_type1">By gathering all the information presented, the best country to adopt solar energy is one that has a desert, is within 2000 to 4000km of the equator, has high energy consumption and high GHG emissions, and is well developed. Following these criteria, countries like China, the USA and Australia are obvious candidates with their large deserts, developed economies and high consumption and emission industries. However, if we remember that below 2000km away from the equator there were countries with very high irradiance, we reach our honeypot site: the Persian Gulf. Countries like UAE, Qatar and Kuwait boast large deserts, strong economies and absurd amounts of emissions due to their >94% fossil fuel usage as an electricity source.
-        Further work in these countries is necessary to allow for a legislative implementation of this adoption, for a more sustainable and environmentally-friendly planet.
+        Further work in these countries is necessary to allow for a legislative implementation of this adoption, for a more sustainable and environmentally-friendly planet. Furthermore, the replicability of this study is high, with access to all data sources and manipulations and so should be carried out for other renewable energy sources.
         </div>
-    <div class="text_type1"><h6>https://ourworldindata.org/grapher/per-capita-electricity-fossil-nuclear-renewables?tab=table&country=OWID_WRL~CHN~IND~USA~GBR~FRA~AUS~SWE~ZAF~JPN~BRA</h6></div>
 </container>
 
 
@@ -140,19 +134,6 @@
         I also encountered challenges when reading large files, as pandas was unable to do so initially. To overcome this issue, I had to read the files in chunks and then concatenate them, creating masks to filter the data I needed. In addition, a few of my regressions returned low R-squared values, which required me to change some underlying assumptions of my project. This led me to discover correlated data that prompted me to re-evaluate my project. Initially, I had been trying to prove that countries on the equator would be the best to adopt solar energy, but I had to reformulate my argument when faced with the facts of the data.</div>
 
 </container>
-
-
-
-    <h2>SIXTH</h2>
-    <p>This correlation matrix highlights:</p>
-    <p>Positive relationships between **Electricity Consumption with Entrepreneurship** and with **Solar Energy Costs**</p>
-    <p>Negative relationships between Distance from equator with Irradiance and Temperature and between **Irradiance and Solar Energy Costs** and between Solar Capacity and Temperature</p>
-
-
-
-
-
-
 
 </body>
 
