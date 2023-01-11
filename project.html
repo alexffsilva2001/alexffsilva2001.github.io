@@ -35,7 +35,7 @@
 <container class="separator1">
 </container>
 
-<h4>Adopting Solar Energy: The Path to a Cleaner Earth</h4>
+<h4>Adopting Solar Energy</h4>
 
 <div class="text_type1">Knowing where solar energy can be utilized is crucial. Solar energy is a renewable resource, capable of providing a constant source of power for the future. It also helps to lower greenhouse gas emissions and can decrease energy costs for households and businesses. By identifying where solar energy can thrive, we can work towards a more sustainable and environmentally-friendly future.
     The utilisation of solar energy and other renewables is vital for the longevity of life on Earth, but for their implementation to be successful, income and development inequality has to decrease. This page will highlight which countries' solar-adoption would benefit most and why implementation world-wide is not yet possible.
@@ -45,13 +45,12 @@
 <container class="separator1">
 </container>
 
-<h5>IRRADIANCE &</h5>
-<h5>OPTIMAL COUNTRIES</h5>
+<h5>IRRADIANCE</h5>
 <container class="separator2">
 
 
 
-<div class="text_type1">Contrary to popular assumption and as <a class="textLink" href="https://colab.research.google.com/drive/1EElmiI9IQgwYcl_lQCt-9XtCooX2akuI?authuser=1" style="color:#89ffe0">depicted by the clusters</a>, equatorial nations are not always those with the most solar energy potential. In reality, data indicates that deserts farther from the equator, where there is high irradiance and low precipitation, are the optimum places for solar energy systems. The choropleth and clusters below illustrate this, suggesting that regions 2000-4000Km away from the equator with low precipitation (deserts) tend to have higher irradiance.</div>
+<div class="text_type1">Contrary to popular assumption and as the <a class="textLink" href="https://colab.research.google.com/drive/1EElmiI9IQgwYcl_lQCt-9XtCooX2akuI?authuser=1" style="color:#89ffe0">clusters depict</a>, equatorial nations are not always those with the most solar energy potential. In reality, data indicates that deserts farther from the equator, where there is high irradiance and low precipitation, are the optimum places for solar energy systems. The figures below illustrate this, suggesting that regions 2000-4000Km away from the equator with low precipitation tend to have higher irradiance.</div>
     <div class="text_type1"></div>
 
     <div class="chart1" id="chloro1"></div>
@@ -64,12 +63,11 @@
 </container>
 
 
-<h5>EMISSIONS &</h5>
-<h5>OPTIMAL COUNTRIES</h5>
+<h5>EMISSIONS</h5>
 <container class="separator2">
 
-    <div class="text_type1">A primary advantage of solar energy is its reduction of fossil fuel dependency and greenhouse gas emissions. Countries with high electricity consumption typically release more GHGs, as seen in the scatterplot below. These nations can reduce their emissions and reliance on fossil fuels by switching to solar power. This data is replicable as its automation allows for analysation over time, as the API updates its data.
-    </div>
+    <div class="text_type1">A primary advantage of solar energy is its reduction of greenhouse gas emissions. Countries with high electricity consumption typically release more GHGs, as the scatterplot shows. These nations can reduce their emissions and reliance on fossil fuels by switching to solar power.</div>
+    <div class="text_type1">(This data is replicable as API automation allows for analysation over time)</div>
     
         <div class="chart1" id="scatter1"></div>
 
@@ -82,11 +80,10 @@
         </div>
 </container>
 
-<h5>CONSUMPTION & </h5>
-<h5>OPTIMAL COUNTRIES</h5>
+<h5>CONSUMPTION</h5>
 <container class="separator2">
 
-    <div class="text_type1">To determine the optimal countries for solar energy adoption, I regressed electricity consumption on average temperature which revealed a negative relationship. However, when the average temperature is above 25˚C, the electricity consumption is more spread as developed countries with high temperatures, like Qatar/Kuwait, use more energy for air conditioning, while the less-developed majority cannot afford to. This indicates that switching to solar favours countries at temperature extremes.</div>
+    <div class="text_type1">To determine the optimal countries for the switch, I regressed electricity consumption on average temperature which revealed a negative relationship. However, when average temperature is above 25˚C, electricity consumption is more spread as developed countries with high temperatures, like Qatar/Kuwait, use more energy for ventilation, while the less-developed majority cannot afford to. This indicates that switching to solar favours countries at temperature extremes.</div>
 
         <div class="chart1" id="inter_reg"></div>
         
@@ -98,11 +95,10 @@
 </container>
 
 
-<h5>DEVELOPMENT & </h5>
-<h5>OPTIMAL COUNTRIES</h5>
+<h5>DEVELOPMENT</h5>
 <container class="separator2">
 
-    <div class="text_type1">As seen, solar adoption depends on a country's development and ability to afford initial costs. Developed countries have seen increases in solar capacity and decreases in costs, while less-developed countries like Vietnam are experiencing initial cost increases. </div>
+    <div class="text_type1">As explained, solar adoption depends on a country's development and affordability of initial costs. Developed countries have seen increases in solar capacity and decreases in costs, while less-developed countries like Vietnam are experiencing initial cost increases. </div>
 
         <div class="chart1" id="trellis_Cap"></div>
 
@@ -129,7 +125,6 @@
 
 
 <h5>CHALLENGES:</h5>
-<h5>DATA CLEANING & DATA ANALYSIS</h5>
 <container class="separator2">
     <div class="text_type1">In my data cleaning and analysis process, I encountered a number of challenges. One issue I faced was that Vega-lite had difficulty reading my raw Github CSV data, I circumvented this by inputting the values manually. Additionally, I had to scrape data from a PDF and used PyPDF2 to do so. This required splitting the page into cells by " " and manipulating the dataframe to resemble the table I wanted.
         To batch-download emissions data that updates whenever the API updates, I used for-loops and the "requests" library. In order to complete machine learning visualizations, I had to create NumPy matrices by creating a list of lists for the X-axis and a list for the y-axis. I used K-Means for clustering and Linear Regressions from the scipy and sklearn libraries.
