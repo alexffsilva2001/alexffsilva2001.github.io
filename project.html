@@ -38,7 +38,7 @@
 <h4>Adopting Solar Energy: The Path to a Cleaner Earth</h4>
 
 <div class="text_type1">Knowing where solar energy can be utilized is crucial. Solar energy is a renewable resource, capable of providing a constant source of power for the future. It also helps to lower greenhouse gas emissions and can decrease energy costs for households and businesses. By identifying where solar energy can thrive, we can work towards a more sustainable and environmentally-friendly future.
-    The utilisation of solar energy and other renewables is vital for the longevity of life on Earth, but for their implementation to be successful, income and development inequality has to cease. This page will highlight which countries solar-adoption would benefit most and why implementation world-wide is not yet possible.
+    The utilisation of solar energy and other renewables is vital for the longevity of life on Earth, but for their implementation to be successful, income and development inequality has to cease. This page will highlight which countries' solar-adoption would benefit most and why implementation world-wide is not yet possible.
     </div>
 
 
@@ -50,17 +50,17 @@
 
 
 
-<div class="text_type1">Contrary to popular assumption, equatorial nations are not always those with the most solar energy potential. In reality, data indicates that deserts farther from the equator, where there is high irradiance and low precipitation, are the optimum places for solar energy systems. The choropleth and clusters below illustrate this, suggesting that regions 2000-4000Km away from the equator with low precipitation (deserts) tend to have higher irradiance.</div>
+<div class="text_type1">Contrary to popular assumption and as depicted by the clusters, equatorial nations are not always those with the most solar energy potential. In reality, data indicates that deserts farther from the equator, where there is high irradiance and low precipitation, are the optimum places for solar energy systems. The choropleth and clusters below illustrate this, suggesting that regions 2000-4000Km away from the equator with low precipitation (deserts) tend to have higher irradiance.</div>
     
         <div class="text_type1"></div>
     <div class="chart1" id="chloro1"></div>
-
+    <div class="chart1"><img src="Clusters_DNI_Lat.png" alt="Global Clusters" width="400" height="400"></div>
+   
     <div class="navbuttons">
         <button class="button2" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1r2l8fmqdymfJJ6Tn92VWStSPEej7mTkj?authuser=1#scrollTo=kS62mOcfy0GZ'"><span>Irradiance Scraper</span></button>
     </div>
 
-    <div class="text_type1"></div>
-    <img src="Clusters_DNI_Lat.png" alt="Global Clusters" width="400" height="400">
+    <!-- <div class="text_type1"></div> -->
 
 </container>
 
@@ -85,9 +85,9 @@
 <h5>CONSUMPTION & OPTIMAL COUNTRIES</h5>
 <container class="separator2">
 
-    <div class="text_type1">To determine the optimal countries for solar energy adoption, I regressed electricity consumption on average temperature. The result of the loess regression reveals a negative relationship between the two when the average temperature is below 23˚C. Above that, the electricity consumption is more spread as developed countries with high temperatures use more energy for air conditioning, while the less-developed majority cannot afford to.</div>
+    <div class="text_type1">To determine the optimal countries for solar energy adoption, I regressed electricity consumption on average temperature. The result of this reveals a negative relationship between the two. However, when the average temperature is above 25˚C, the electricity consumption is more spread as developed countries with high temperatures, like Qatar/Kuwait, use more energy for air conditioning, while the less-developed majority cannot afford to. This indicates that switching to solar favours countries at temperature extremes.</div>
 
-        <div class="chart1" id="loess"></div>
+        <div class="chart1" id="inter_reg"></div>
         
         <div class="navbuttons">
             <button class="button2" style="vertical-align:middle" onclick="location.href='https://colab.research.google.com/drive/1Dum7Owyx_SCjEv-GC7EHOJJEObWka-Tq?authuser=1#scrollTo=vZzZjJkbAaoR'"><span>Temperature Scraper</span></button>
@@ -115,7 +115,7 @@
 
         <div class="text_type1">The correlation from the <a class="textLink" href="https://colab.research.google.com/drive/1A_NVGqrK_5d9N6ZhQCIyZDVInJbYql4P?authuser=1" style="color:#89ffe0">regression</a> between percentage of solar energy generation and solar energy costs is negative, with higher costs resulting in less usage. However, low costs do not yet result in higher usage due to less-developed countries' limited monetary ability to switch to solar.</div>
 
-        <img src="Reg_Costs_USE.png" alt="Regression1" width="400" height="400">
+        <div class="chart1"><img src="Reg_Costs_USE.png" alt="Regression1" width="400" height="400"></div>
    
 </container>
 
@@ -127,7 +127,8 @@
 </container>
 
 
-<h5>CHALLENGES IN DATA CLEANING & ANALYSIS</h5>
+<div class="text_type1"><h5>CHALLENGES:</h5>
+    <h5>DATA CLEANING & ANALYSIS</h5></div>
 <container class="separator2">
     <div class="text_type1">In my data cleaning and analysis process, I encountered a number of challenges. One issue I faced was that Vega-lite had difficulty reading my raw Github CSV data, so I had to input the values manually to overcome this problem. Additionally, I had to scrape data from a PDF and use PyPDF2 to do so. This required splitting the page into cells by " " and manipulating the dataframe to resemble the table I wanted from the PDF.
         To batch download emissions data that updates whenever the API updates, I used for-loops and the "requests" library. In order to complete machine learning visualizations, I had to create NumPy matrices by creating a list of lists for the X-axis and a list for the y-axis. I used KMeans for clustering and Linear Regressions from the scipy and sklearn libraries.
@@ -141,7 +142,7 @@
     //Define charts:
     var DNI_chloro = "DNI_chloro.json";
     var scatter1 = "scatter1.json";
-    var loess = "manual_Temp_ECons.json";
+    var inter_reg = "interactive_reg.json";
     var trellis_Costs = "SolarCosts.json";
     var trellis_Cap = "SolarCapacity.json";
     var DNI_chloro = "DNI_chloro.json";
@@ -151,7 +152,7 @@
     // Embed charts:
     vegaEmbed('#chloro1', DNI_chloro);
     vegaEmbed('#scatter1', scatter1);
-    vegaEmbed('#loess', loess);
+    vegaEmbed('#inter_reg', inter_reg);
     vegaEmbed('#trellis_Cos', trellis_Costs);
     vegaEmbed('#trellis_Cap', trellis_Cap);
 
