@@ -3,7 +3,6 @@
 
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 
-/* Format my paragraph */
 
 h1 {
     background-color: rgb(20, 95, 86);
@@ -19,7 +18,6 @@ h1 {
     border-radius: 25px;
     border-width: 8px;
 }
-/* First line */
 
 
 h2 {
@@ -32,7 +30,7 @@ h2 {
 	font-family: 'Poppins', sans-serif ;
 }
 
-h3{
+h3{ /*Used in portfolio only */
 	color: rgb(48, 213, 200);
 	font-size: 20px;
     font-weight: bold;
@@ -60,7 +58,7 @@ h3{
   font-style: italic;
 }
 
-h6{
+h6{ /*Used as a to-do tasks font as it contrasts a lot and so I'm reminded of what's next*/
     color: rgb(102, 255, 0);
 	font-size: 20px;
     font-weight: bolder;
@@ -92,16 +90,6 @@ body{
     background: #569ac2;
   }
  
- 
- footer {
-    height: 100px
- }
- 
- 
- .pagecontainer {
-   display: grid;
- 
- }
 
  .separator1 {
     
@@ -123,9 +111,6 @@ body{
 
 }
  
- /* --------------------------------------CONTENT IN BODY----------------------------------------------*/
- 
- /* Flexbox container with home page graphs */
  .separator2 {
     display: flex;
     flex-flow: row wrap;
@@ -139,19 +124,6 @@ body{
     border-radius: 0px;
     align-items: center;
   }
-  
- 
- /* Chart Format */
- .chart-container {
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    border-radius: 5px;
-    padding: 20px;
-    display: inline-block;
- }
 
  .navbuttons {
 	display:flex;
@@ -161,21 +133,6 @@ body{
   width: 100%;
  }
  
- /* Buttons inspired by Freddie Lowe */
-
- /* Button style */
-container {
-	align-content: center;
-	justify-content: center;
-	flex-flow: row wrap;
-	border-style: solid;
-	border-width: 2px;
-	border-radius: 3px;
-	border-color: #ffffff;
-	padding: 60px;
-	clear:both;
-
-}
 
 .button{
 	align-content: center;
@@ -194,40 +151,24 @@ container {
 	font-family: 'Poppins', sans-serif ;
   }
 
-  .button1{
-    align-content: center;
-    flex-flow: center;
-    border-radius: 4px;
-    background-color: rgb(48, 213, 200);
-    border: 2px outset #ffffff;
-    color: #ffffff;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 20%;
-    cursor: pointer;
-    margin: 5px;
-    transition: color 1s;
-    font-family: 'Poppins', sans-serif;
-    }
 
-    .button2{
-      align-content: center;
-      flex-flow: center;
-      border-radius: 4px;
-      background-color: rgb(48, 213, 200);
-      border: 2px outset #ffffff;
-      color: #ffffff;
-      text-align: center;
-      font-size: 28px;
-      padding: 0px;
-      width: 25%;
-      cursor: pointer;
-      margin: 5px;
-      transition: color 1s;
-      font-family: 'Poppins', sans-serif;
-      font-weight:lighter;
-      }
+.button2{
+  align-content: center;
+  flex-flow: center;
+  border-radius: 4px;
+  background-color: rgb(48, 213, 200);
+  border: 2px outset #ffffff;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 0px;
+  width: 25%;
+  cursor: pointer;
+  margin: 5px;
+  transition: color 1s;
+  font-family: 'Poppins', sans-serif;
+  font-weight:lighter;
+  }
 
 
 
@@ -259,7 +200,7 @@ container {
 	right: 0;
   }
 
-  .text_type1, .text{
+  .text_type1{
     color: #e5f3fd;
     font-size: 20px;
     margin-top: 10px;
@@ -273,13 +214,8 @@ container {
 
   .dashboard{
     align-items: center;
-    /* background-color: white; */
     width: 280px;
     height: 250px;
-    /* border-width: 2px;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: rgb(48, 213, 200); */
     margin-left: 30px;
     margin-bottom: 30px;
 }
